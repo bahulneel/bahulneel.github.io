@@ -4,8 +4,8 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          darkBlue: '#002F6C',
-          teal: '#008080',
+          darkBlue: '#1A1D23',
+          teal: '#34C759',
         },
         secondary: {
           gray: '#4A4A4A',
@@ -16,8 +16,8 @@ module.exports = {
           white: '#FFFFFF',
         },
         gradient: {
-          start: '#005B99',
-          end: '#00CCCC',
+          start: '#34C759',
+          end: '#FF8E0D',
         },
       },
     },

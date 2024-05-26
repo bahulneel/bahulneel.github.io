@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Update to align with new design specifications */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #1A1D23;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #34C759;
+}
+
+a {
+  color: #34C759;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF8E0D;
+}
