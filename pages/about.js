@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 function Page() {
   return (
-    <div className="container mx-auto px-4 py-6 bg-secondary-lightGray">
+    <div className="container mx-auto">
       <Head>
         <title>About Me</title>
       </Head>
