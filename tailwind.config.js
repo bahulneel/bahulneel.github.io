@@ -4,8 +4,8 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          darkBlue: '#1A1D23',
-          teal: '#34C759',
+          darkBlue: '#002F6C',
+          teal: '#008080',
         },
         secondary: {
           gray: '#4A4A4A',
@@ -16,10 +16,13 @@ module.exports = {
           white: '#FFFFFF',
         },
         gradient: {
-          start: '#34C759',
-          end: '#FF8E0D',
+          start: '#005B99',
+          end: '#00CCCC',
         },
       },
+      backgroundImage: theme => ({
+        'gradient-to-r': `linear-gradient(to right, ${theme('colors.gradient.start')}, ${theme('colors.gradient.end')})`,
+      }),
     },
   },
   plugins: [],

@@ -80,3 +80,74 @@
   - Input Fields: Light Gray (`bg-secondary-lightGray text-secondary-gray`)
 - **Email Address:** Teal (`text-primary-teal`)
 - **Social Media Links:** Orange (`text-accent-orange hover:text-primary-teal`)
+
+## Example Usage in HTML
+
+### Home Page Header
+```html
+<header class="bg-gradient-to-r from-gradient-start to-gradient-end text-accent-white p-4">
+  <nav class="container mx-auto">
+    <ul class="flex space-x-4">
+      <li><a href="/" class="text-secondary-lightGray hover:text-accent-orange">Home</a></li>
+      <li><a href="/about" class="text-secondary-lightGray hover:text-accent-orange">About Me</a></li>
+      <li><a href="/experience" class="text-secondary-lightGray hover:text-accent-orange">Experience</a></li>
+      <li><a href="/projects" class="text-secondary-lightGray hover:text-accent-orange">Projects</a></li>
+      <li><a href="/skills" class="text-secondary-lightGray hover:text-accent-orange">Skills</a></li>
+      <li><a href="/contact" class="text-secondary-lightGray hover:text-accent-orange">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+```
+### About Me Section
+```html
+<section class="bg-secondary-lightGray p-8 text-secondary-gray">
+  <h1 class="text-primary-darkBlue text-3xl font-bold mb-4">About Me</h1>
+  <p class="mb-4">Detailed professional summary...</p>
+  <h2 class="text-primary-teal text-2xl font-bold mb-2">Career Goals and Interests</h2>
+  <p>...</p>
+</section>
+```
+### Experience Section
+```html
+<section class="bg-primary-darkBlue p-8 text-accent-white">
+  <h1 class="text-3xl font-bold mb-4">Experience</h1>
+  <ul>
+    <li class="mb-2">
+      <h2 class="text-2xl font-bold">Company Name</h2>
+      <p>Role and accomplishments...</p>
+      <a href="https://example.com" class="text-accent-orange hover:text-gradient-end">Project Link</a>
+    </li>
+    <!-- Repeat for other experiences -->
+  </ul>
+</section>
+```
+### Skills Section
+```html
+<section class="bg-secondary-lightGray p-8 text-secondary-gray">
+  <h1 class="text-primary-darkBlue text-3xl font-bold mb-4">Skills</h1>
+  <ul>
+    <li class="mb-2">
+      <h2 class="text-primary-teal text-2xl font-bold">Technical Skills</h2>
+      <p>Proficiency levels...</p>
+    </li>
+    <!-- Repeat for other skills -->
+  </ul>
+</section>
+```
+### Contact Section
+```html
+<section class="bg-primary-darkBlue p-8 text-accent-white">
+  <h1 class="text-3xl font-bold mb-4">Contact</h1>
+  <form>
+    <!-- Contact form fields -->
+    <input type="email" class="bg-secondary-lightGray text-secondary-gray p-2 mb-4" placeholder="Your email">
+    <textarea class="bg-secondary-lightGray text-secondary-gray p-2 mb-4" placeholder="Your message"></textarea>
+    <button type="submit" class="bg-primary-teal text-accent-white p-2">Send</button>
+  </form>
+  <p>Email: <span class="text-primary-teal">you@example.com</span></p>
+  <div>
+    <a href="#" class="text-accent-orange hover:text-primary-teal">LinkedIn</a>
+    <a href="#" class="text-accent-orange hover:text-primary-teal">GitHub</a>
+  </div>
+</section>
+```

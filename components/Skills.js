@@ -3,11 +3,12 @@ import cv from '../public/cv.json';
 
 const SkillsComponent = () => {
   return (
-    <div>
-      <ul>
+    <div className="bg-secondary-lightGray p-4 rounded-md shadow-md">
+      <h2 className="text-2xl font-bold mb-4 text-primary-darkBlue">Skills</h2>
+      <ul className="list-disc list-inside">
         {cv.skills.map((skill, index) => (
-          <li key={index}>
-            <strong>{skill.name}:</strong> {skill.keywords.join(', ')}
+          <li key={index} className="mb-2">
+            <strong className="text-primary-darkBlue">{skill.name}:</strong> {skill.keywords.join(', ')}
           </li>
         ))}
       </ul>

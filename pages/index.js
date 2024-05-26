@@ -4,7 +4,7 @@ import HomeComponent from '../components/Home';
 
 function Page() {
   return (
-    <div className="mx-auto p-4">
+    <div className="mx-auto p-4 bg-gray-100">
       <Head>
         <title>Home</title>
       </Head>
