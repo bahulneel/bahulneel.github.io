@@ -8,7 +8,7 @@ function Page() {
       <Head>
         <title>Skills</title>
       </Head>
-      <h1 className="text-3xl font-bold mb-4 text-primary-darkBlue">Professional Skills</h1>
+      <h1 className="text-3xl font-bold mb-4">Professional Skills</h1>
       <SkillsComponent />
     </div>
   );

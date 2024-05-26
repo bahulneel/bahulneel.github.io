@@ -4,11 +4,11 @@ import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <body className="prose mx-auto">
       <Header />
       <Component {...pageProps} />
       <Footer />
-    </>
+    </body>
   );
 }
 

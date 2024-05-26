@@ -2,22 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Update to align with new design specifications */
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: text-gray-800;
-  background-color: bg-white;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: text-blue-500;
-}
-
-a {
-  color: text-blue-500;
-  text-decoration: none;
-}
-
-a:hover {
-  color: text-blue-400;
-}

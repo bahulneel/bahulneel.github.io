@@ -4,7 +4,7 @@ import WorkExperienceComponent from '../components/WorkExperience';
 
 function Page() {
   return (
-    <div className="mx-auto p-4 bg-primary-darkBlue text-accent-white">
+    <div className="mx-auto p-4">
       <Head>
         <title>Experience</title>
       </Head>

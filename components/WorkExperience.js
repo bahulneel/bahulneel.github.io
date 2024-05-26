@@ -13,8 +13,8 @@ const WorkExperienceComponent = () => {
       {cv.work.map((job, index) => (
         <div key={index} className="bg-secondary-gray p-4 rounded-md shadow-md mb-4">
           <h2 className="text-2xl font-semibold">{job.position} at {job.company}</h2>
-          <p className="text-accent-white">{formatDate(job.startDate)} - {job.endDate ? formatDate(job.endDate) : 'Present'}</p>
-          <p className="text-accent-white">{job.summary}</p>
+          <p>{formatDate(job.startDate)} - {job.endDate ? formatDate(job.endDate) : 'Present'}</p>
+          <p>{job.summary}</p>
         </div>
       ))}
     </>
