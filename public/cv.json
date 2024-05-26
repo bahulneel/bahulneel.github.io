@@ -1,0 +1,268 @@
+{
+  "basics": {
+    "name": "Bahul Upadhyaya",
+    "email": "bahulneel@gmail.com",
+    "phone": "+44 7771 603207",
+    "website": "https://medium.com/@bahulneel",
+    "summary": "Seasoned software architect and developer with over 20 years of experience in building large-scale, innovative software solutions. Adept at data platform development, web systems, and enhancing team performance. Regularly engages with academic research and industry trends to stay at the cutting edge of technology. Open about living with ADHD and awaiting assessment for ASD, and committed to promoting neurodiversity in the workplace.",
+    "picture": "profile.webp",
+    "location": {
+      "address": "London, UK"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "bahulneel",
+        "url": "https://github.com/bahulneel"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "bahulneel",
+        "url": "https://www.linkedin.com/in/bahulneel/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Hybr Ltd",
+      "position": "Senior Full-stack Web Developer",
+      "startDate": "2023-06",
+      "endDate": "2024-05",
+      "summary": "Developed and maintained the Hybr product and platform, introduced semantic web concepts, and led the design system effort.",
+      "highlights": [
+        "Developed and maintained the Hybr product and platform.",
+        "Introduced semantic web concepts.",
+        "Led the effort to build a design system."
+      ]
+    },
+    {
+      "company": "Contxt",
+      "position": "Contract ML Architect and Senior Developer",
+      "startDate": "2022-08",
+      "endDate": "2023-02",
+      "summary": "Investigated model and architecture options and developed a synthetic data generator for model training without sensitive data.",
+      "highlights": [
+        "Conducted initial investigations and consultations on model and architecture options.",
+        "Developed a proprietary synthetic data generator to train models without sensitive customer data."
+      ]
+    },
+    {
+      "company": "Elsevier (RELX)",
+      "position": "Data Platform Architect",
+      "startDate": "2020-09",
+      "endDate": "2022-08",
+      "summary": "Led design and strategy for the Entellect data platform, enhancing functionality and supporting trial customers and internal users.",
+      "highlights": [
+        "Led architectural design and strategy for the Entellect data platform.",
+        "Mediated between product and engineering teams to enhance platform functionality, supporting trial customers and retaining internal users."
+      ]
+    },
+    {
+      "company": "Honeybee Solutions (Synchronoss Technologies Inc.)",
+      "position": "R&D Lead, Architecture Team / Senior Platform Architect",
+      "startDate": "2017-08",
+      "endDate": "2020-06",
+      "summary": "Developed a rules-based product recommendation service and integrated a schemaless product catalog with a recommendation engine.",
+      "highlights": [
+        "Developed a rules-based solution for a product recommendation service using Datalog derivatives.",
+        "Integrated a domain-specific layer for a schemaless product catalog with a recommendation engine using JSON-LD and RDF."
+      ]
+    },
+    {
+      "company": "Janrain Inc.",
+      "position": "Independent Contractor",
+      "startDate": "2017-04",
+      "endDate": "2017-07",
+      "summary": "Built a rule-based system with Clojure, ClojureScript, and Datomic for runtime business logic modifications without core code changes.",
+      "highlights": [
+        "Built a rule-based system with Clojure, ClojureScript, and Datomic, enabling runtime business logic modifications without core code changes."
+      ]
+    },
+    {
+      "company": "Eckoh plc",
+      "position": "Head of Research & Development",
+      "startDate": "2013-09",
+      "endDate": "2016-11",
+      "summary": "Managed an R&D team, exploring new technologies and advising on best practices, focusing on data-driven architectures and technology advancements.",
+      "highlights": [
+        "Managed a small R&D team, exploring new technologies and advising on best practices.",
+        "Focused on data-driven architectures and industry-academic technology advancements."
+      ]
+    },
+    {
+      "company": "BraveNewTalent",
+      "position": "Senior Developer / Team Lead",
+      "startDate": "2012-01",
+      "endDate": "2013-08",
+      "summary": "Led a scrum team transitioning from a monolithic platform to discrete services, introducing technologies like ElasticSearch, Jenkins, and Vagrant.",
+      "highlights": [
+        "Led a scrum team, transitioning from a monolithic platform to discrete services.",
+        "Introduced new technologies including ElasticSearch, Jenkins, and Vagrant."
+      ]
+    },
+    {
+      "company": "Eckoh plc",
+      "position": "Senior Developer",
+      "startDate": "2005-06",
+      "endDate": "2012-01",
+      "summary": "Developed and maintained the PHP/VoiceXML platform, implemented coding and security standards (PCI/DSS), and mentored development teams.",
+      "highlights": [
+        "Developed and maintained the PHP/VoiceXML platform.",
+        "Implemented internal coding and security standards (PCI/DSS) and mentored development teams."
+      ]
+    },
+    {
+      "company": "365 Corporation plc / Eckoh plc",
+      "position": "Developer",
+      "startDate": "1999-10",
+      "endDate": "2005-06",
+      "summary": "Maintained and improved a C++ IVR platform, enhancing uptime and developing voice applications.",
+      "highlights": [
+        "Maintained and improved a C++ IVR platform, enhancing uptime and developing voice applications."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Imperial College London",
+      "area": "Physics",
+      "studyType": "BSc",
+      "startDate": "",
+      "endDate": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "PHP",
+        "JavaScript (ES6)",
+        "TypeScript",
+        "Node.js",
+        "C/C++",
+        "Clojure",
+        "ClojureScript",
+        "Perl",
+        "Java",
+        "Python",
+        "SQL",
+        "SPARQL",
+        "Datalog"
+      ]
+    },
+    {
+      "name": "Web and Markup Technologies",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "SVG",
+        "VoiceXML",
+        "CCXML",
+        "JSX",
+        "React",
+        "Redux",
+        "GraphQL",
+        "WebRTC",
+        "Pug",
+        "WebWorkers",
+        "Schema.org",
+        "Vue/Nuxt",
+        "Pinia",
+        "TailwindCSS",
+        "Vuetify"
+      ]
+    },
+    {
+      "name": "Databases and Data Management",
+      "keywords": [
+        "MySQL/MariaDB",
+        "Postgres",
+        "ElasticSearch",
+        "Datomic",
+        "MongoDB",
+        "FlureeDB"
+      ]
+    },
+    {
+      "name": "Development and Deployment Tools",
+      "keywords": [
+        "Storybook",
+        "NATS",
+        "Docker",
+        "Chromatic",
+        "AWS",
+        "AWS Cognito",
+        "N8N",
+        "RabbitMQ",
+        "Kafka",
+        "ZooKeeper",
+        "Langium",
+        "GitHub Actions",
+        "ESLint"
+      ]
+    },
+    {
+      "name": "Artificial Intelligence and Machine Learning",
+      "keywords": [
+        "Tensorflow",
+        "statistical methods",
+        "production-rule systems",
+        "AI planning",
+        "synthetic data generation",
+        "ChatGPT",
+        "Custom GPTs",
+        "GPT Agents",
+        "Vector Symbolic Architectures",
+        "Google Colab"
+      ]
+    },
+    {
+      "name": "Methodologies",
+      "keywords": [
+        "TDD",
+        "BDD",
+        "Domain-Driven Design",
+        "Scaled Agile",
+        "Lean",
+        "Scrum",
+        "Kanban",
+        "SAFe"
+      ]
+    },
+    {
+      "name": "Architectures",
+      "keywords": [
+        "Distributed architectures",
+        "micro-service architectures",
+        "event/streaming architectures",
+        "data-driven architectures",
+        "serverless architectures",
+        "C4"
+      ]
+    },
+    {
+      "name": "Compliance",
+      "keywords": [
+        "PCI DSS",
+        "GDPR"
+      ]
+    },
+    {
+      "name": "Additional Tools",
+      "keywords": [
+        "Notion",
+        "Figma",
+        "PostHog"
+      ]
+    },
+    {
+      "name": "Knowledge Engineering",
+      "keywords": [
+        "RDF",
+        "Semantic Web",
+        "JSON-LD",
+        "Schema.org"
+      ]
+    }
+  ]
+}
