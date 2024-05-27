@@ -27,6 +27,8 @@ module.exports = {
             '--tw-prose-headings': theme('colors.primary.darkBlue'),
             '--tw-prose-lead': theme('colors.secondary.lightGray'),
             '--tw-prose-links': theme('colors.accent.orange'),
+            '--tw-prose-links-hover': theme('colors.accent.orange', 'hover'),
+            '--tw-prose-links-active': theme('colors.accent.orange', 'active'),
             '--tw-prose-bold': theme('colors.primary.darkBlue'),
             '--tw-prose-counters': theme('colors.secondary.gray'),
             '--tw-prose-bullets': theme('colors.primary.teal'),
