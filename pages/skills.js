@@ -4,7 +4,7 @@ import SkillsComponent from '../components/Skills';
 
 function Page() {
   return (
-    <div className="mx-auto p-4">
+    <div className="mx-auto p-4 bg-secondary-lightGray">
       <Head>
         <title>Skills</title>
       </Head>

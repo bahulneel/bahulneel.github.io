@@ -3,16 +3,12 @@ import cv from '../public/cv.json';
 
 const HomeComponent = () => {
   return (
-    <div className="flex flex-col items-center">
-      <img src={cv.basics.picture} alt={`${cv.basics.name}'s profile`} className="w-36 h-36 rounded-full" />
-      <h1 className="text-2xl font-bold mt-4">{cv.basics.name}</h1>
-      <p className="mt-2">{cv.basics.summary}</p>
-      <h2 className="mt-4">Contact</h2>
-      <ul className="list-disc list-inside">
-        <li className="mt-2">Email: {cv.basics.email}</li>
-        <li className="mt-2">Phone: {cv.basics.phone}</li>
-        <li className="mt-2">LinkedIn: {cv.basics.profiles.find(profile => profile.network === "LinkedIn").url}</li>
-      </ul>
+    <div className="flex flex-row items-center prose prose-sm sm:prose-lg lg:prose-xl">
+      <div className="flex flex-col">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">{cv.basics.name}</h1>
+        <p className="text-sm md:text-base lg:text-lg">{cv.basics.summary}</p>
+      </div>
+      <img src={cv.basics.picture} alt={`${cv.basics.name}'s profile`} className="w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48 rounded-full ml-4" />
     </div>
   );
 };

@@ -1,21 +1,27 @@
 import React from 'react';
 import cv from '../public/cv.json';
 
+const formatDate = (date) => {
+  const options = { year: 'numeric', month: 'long' };
+  const newDate = new Date(date);
+  return newDate.toLocaleDateString('en-US', options);
+};
+
 const EducationComponent = () => {
   return (
-    <div className="bg-secondary-lightGray p-4 rounded-md shadow-md">
-      <h2 className="font-bold text-2xl mb-4">Education</h2>
+    <>
       {cv.education.map((education, index) => (
-        <div key={index} className="mb-4">
-          <h3 className="font-semibold text-lg">{education.institution}</h3>
-          <p>{education.degree}</p>
-          <p>{education.startDate} - {education.endDate}</p>
-          <p>{education.description}</p>
+        <div key={index} className="bg-primary-darkBlue px-6 pt-1 pb-4 rounded-md shadow-md mb-6 text-accent-white">
+          <h2 className="text-2xl font-semibold text-accent-orange">{education.institution}</h2>
+          <p className="text-accent-white mb-1">
+            {education.startDate ? formatDate(education.startDate) : 'Date not available'} -
+            {education.endDate ? formatDate(education.endDate) : 'Present'}
+          </p>
+          <p className="text-accent-white">{education.studyType ? `${education.studyType} in ${education.area}` : 'Degree not specified'}</p>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
 export default EducationComponent;
-
