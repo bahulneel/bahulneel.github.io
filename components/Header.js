@@ -11,7 +11,7 @@ function Header() {
     <header className="bg-gradient-to-r from-gradient-start to-gradient-end p-4 text-accent-white">
       <nav className="container mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">Bahul Upadhyaya</div>
-        <div className={`relative ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className={`relative ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
           <button className="absolute top-0 right-0 text-accent-lightBlue md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <FontAwesomeIcon icon={faTimes} />
           </button>

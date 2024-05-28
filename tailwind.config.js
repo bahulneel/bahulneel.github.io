@@ -45,6 +45,9 @@ module.exports = {
       backgroundImage: theme => ({
         'gradient-to-r': `linear-gradient(to right, ${theme('colors.gradient.start')}, ${theme('colors.gradient.end')})`,
       }),
+      screens: {
+        '2k': '2736px',  // Adding a breakpoint for high DPI screens like the Surface Pro 7
+      }
     },
   },
   plugins: [

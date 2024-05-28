@@ -11,13 +11,12 @@ const EducationComponent = () => {
   return (
     <>
       {cv.education.map((education, index) => (
-        <div key={index} className="bg-primary-darkBlue px-6 pt-1 pb-4 rounded-md shadow-md mb-6 text-accent-white">
-          <h2 className="text-2xl font-semibold text-accent-orange">{education.institution}</h2>
-          <p className="text-accent-white mb-1">
-            {education.startDate ? formatDate(education.startDate) : 'Date not available'} -
-            {education.endDate ? formatDate(education.endDate) : 'Present'}
+        <div key={index} className="bg-primary-darkBlue px-8 py-6 rounded-lg shadow-lg mb-8 text-accent-white flex flex-col">
+          <h2 className="text-accent-lightBlue text-lg mb-2 mt-0">{education.institution}</h2>
+          <p className="text-base mb-2">
+            {education.startDate && formatDate(education.startDate)}{education.startDate && education.endDate ? ' - ' : ''}{education.endDate ? formatDate(education.endDate) : 'Present'}
           </p>
-          <p className="text-accent-white">{education.studyType ? `${education.studyType} in ${education.area}` : 'Degree not specified'}</p>
+          <p className="text-base mb-0">{education.studyType ? `${education.studyType} in ${education.area}` : 'Degree not specified'}</p>
         </div>
       ))}
     </>
