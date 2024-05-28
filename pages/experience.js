@@ -5,7 +5,7 @@ import Education from '../components/Education';
 
 function Page() {
   return (
-    <div className="mx-auto p-4 bg-secondary-lightGray">
+    <div className="mx-auto p-4 bg-secondary-lightGray" itemscope itemType="http://schema.org/Person" itemID={`${cv.basics.name}`}>
       <Head>
         <title>Experience</title>
       </Head>
