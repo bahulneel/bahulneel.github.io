@@ -1,5 +1,7 @@
+
 = Bahul Upadhyaya
-Email: bahulneel@gmail.com | GitHub: github.com/bahulneel | Medium: medium.com/@bahulneel | LinkedIn: linkedin.com/in/bahulneel | London, UK | +44 7771 603207
+Email: bahulneel@gmail.com | GitHub:  | LinkedIn:  | Location: London, United Kingdom
+Phone: +44 7771 603207
 
 == Professional Summary
 
@@ -69,32 +71,31 @@ _October 1999 - June 2005_
 
 - Maintained and improved a C++ IVR platform, enhancing uptime and developing voice applications.
 
+
 == Technical Skills
 
-**Programming Languages:** PHP, JavaScript (ES6), TypeScript, Node.js, C/C++, Clojure, ClojureScript, Perl, Java, Python, SQL, SPARQL, Datalog.
+**Programming Languages:** PHP, JavaScript (ES6), TypeScript, Node.js, C/C++, Clojure, ClojureScript, Perl, Java, Python, SQL, SPARQL, Datalog, 
 
-**Web and Markup Technologies:** HTML, CSS, SVG, VoiceXML, CCXML, JSX, React, Redux, GraphQL, WebRTC, Pug, WebWorkers, Schema.org, Vue/Nuxt, Pinia, TailwindCSS, Vuetify.  
+**Web and Markup Technologies:** HTML, CSS, SVG, VoiceXML, CCXML, JSX, React, Redux, GraphQL, WebRTC, Pug, WebWorkers, Schema.org, Vue/Nuxt, Pinia, TailwindCSS, Vuetify, 
 
-**Databases and Data Management:** MySQL/MariaDB, Postgres, ElasticSearch, Datomic, MongoDB, FlureeDB.  
+**Databases and Data Management:** MySQL/MariaDB, Postgres, ElasticSearch, Datomic, MongoDB, FlureeDB, 
 
-**Development and Deployment Tools:** Storybook, NATS, Docker, Chromatic, AWS, AWS Cognito, N8N, RabbitMQ, Kafka, ZooKeeper, Langium, GitHub Actions, ESLint.  
+**Development and Deployment Tools:** Storybook, NATS, Docker, Chromatic, AWS, AWS Cognito, N8N, RabbitMQ, Kafka, ZooKeeper, Langium, GitHub Actions, ESLint, 
 
-**Artificial Intelligence and Machine Learning:** Tensorflow, statistical methods, production-rule systems, AI planning, synthetic data generation, ChatGPT, Custom GPTs, GPT Agents, Vector Symbolic Architectures, Google Colab.  
+**Artificial Intelligence and Machine Learning:** Tensorflow, statistical methods, production-rule systems, AI planning, synthetic data generation, ChatGPT, Custom GPTs, GPT Agents, Vector Symbolic Architectures, Google Colab, 
 
-**Methodologies:** TDD, BDD, Domain-Driven Design, Scaled Agile, Lean, Scrum, Kanban, SAFe.  
+**Methodologies:** TDD, BDD, Domain-Driven Design, Scaled Agile, Lean, Scrum, Kanban, SAFe, 
 
-**Architectures:** Distributed architectures, micro-service architectures, event/streaming architectures, data-driven architectures, serverless architectures, C4.  
+**Architectures:** Distributed architectures, micro-service architectures, event/streaming architectures, data-driven architectures, serverless architectures, C4, 
 
-**Compliance:** PCI DSS, GDPR.  
+**Compliance:** PCI DSS, GDPR, 
 
-**Additional Tools:** Notion, Figma, PostHog.  
+**Additional Tools:** Notion, Figma, PostHog, 
 
-**Knowledge Engineering:** RDF, Semantic Web, JSON-LD, Schema.org.
+**Knowledge Engineering:** RDF, Semantic Web, JSON-LD, Schema.org, 
+
 
 == Education
 
-**BSc in Physics**  
+**BSc in Physics**
 Imperial College London
-
-**A-Levels**  
-Maths, Physics, Computer Studies, Electronics
