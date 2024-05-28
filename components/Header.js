@@ -3,14 +3,16 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faBriefcase, faCode, faEnvelope, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import cv from '../public/cv.json'; // Import cv.json to access data
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { name } = cv.basics; // Destructure name from cv.json basics
 
   return (
     <header className="bg-gradient-to-r from-gradient-start to-gradient-end p-4 text-accent-white">
       <nav className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">Bahul Upadhyaya</div>
+        <div className="text-2xl font-bold">{name}</div> {/* Use name from cv.json */}
         <div className={`relative ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
           <button className="absolute top-0 right-0 text-accent-lightBlue md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <FontAwesomeIcon icon={faTimes} />
