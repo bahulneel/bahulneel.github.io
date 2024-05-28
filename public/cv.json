@@ -1,13 +1,15 @@
 {
   "basics": {
     "name": "Bahul Upadhyaya",
+    "label": "Software Architect & Engineer",
     "email": "bahulneel@gmail.com",
     "phone": "+44 7771 603207",
-    "website": "https://medium.com/@bahulneel",
-    "summary": "Experienced software architect with expertise in data platforms and web systems. Actively follows industry trends and contributes to neurodiversity advocacy.",
-    "picture": "profile.webp",
+    "url": "https://bahulneel.github.io",
+    "summary": "Seasoned software architect and developer with over 20 years of experience in building large-scale, innovative software solutions. Adept at data platform development, web systems, and enhancing team performance. Regularly engages with academic research and industry trends to stay at the cutting edge of technology. Open about living with ADHD and awaiting assessment for ASD, and committed to promoting neurodiversity in the workplace.",
+    "image": "profile.webp",
     "location": {
-      "address": "London, UK"
+      "city": "London",
+      "country": "United Kingdom"
     },
     "profiles": [
       {

@@ -4,20 +4,20 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          darkBlue: '#002F6C',
-          teal: '#008080',
+          darkBlue: '#0A1F44',
+          teal: '#005B99',
         },
         secondary: {
-          gray: '#4A4A4A',
-          lightGray: '#D3D3D3',
+          gray: '#2E2E3A',
+          lightGray: '#B0B0B8',
         },
         accent: {
-          orange: '#FF6600',
+          lightBlue: '#00A8E8',
           white: '#FFFFFF',
         },
         gradient: {
-          start: '#005B99',
-          end: '#00CCCC',
+          start: '#0A1F44',
+          end: '#005B99',
         },
       },
       typography: ({ theme }) => ({
@@ -26,9 +26,9 @@ module.exports = {
             '--tw-prose-body': theme('colors.secondary.gray'),
             '--tw-prose-headings': theme('colors.primary.darkBlue'),
             '--tw-prose-lead': theme('colors.secondary.lightGray'),
-            '--tw-prose-links': theme('colors.accent.orange'),
-            '--tw-prose-links-hover': theme('colors.accent.orange', 'hover'),
-            '--tw-prose-links-active': theme('colors.accent.orange', 'active'),
+            '--tw-prose-links': theme('colors.accent.lightBlue'),
+            '--tw-prose-links-hover': theme('colors.accent.lightBlue', 'hover'),
+            '--tw-prose-links-active': theme('colors.accent.lightBlue', 'active'),
             '--tw-prose-bold': theme('colors.primary.darkBlue'),
             '--tw-prose-counters': theme('colors.secondary.gray'),
             '--tw-prose-bullets': theme('colors.primary.teal'),
@@ -36,7 +36,7 @@ module.exports = {
             '--tw-prose-quotes': theme('colors.primary.teal'),
             '--tw-prose-quote-borders': theme('colors.gradient.end'),
             '--tw-prose-captions': theme('colors.secondary.lightGray'),
-            '--tw-prose-code': theme('colors.accent.orange'),
+            '--tw-prose-code': theme('colors.accent.lightBlue'),
             '--tw-prose-pre-code': theme('colors.primary.teal'),
             '--tw-prose-pre-bg': theme('colors.primary.darkBlue'),
           },
