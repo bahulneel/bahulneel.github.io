@@ -7,7 +7,7 @@ const Skills = () => {
       {cv.skills.map((skill, index) => (
         <li key={index} className="bg-primary-darkBlue px-8 py-4 rounded-lg shadow-lg mb-8 text-accent-white flex flex-col">
           <h3 className="text-accent-lightBlue text-lg mb-1 mt-0">{skill.name}</h3>
-          <span className="text-base">{skill.keywords.join(', ')}</span>
+          <span className="text-base">{skill.keywords.sort().join(', ')}.</span>
         </li>
       ))}
     </ul>
