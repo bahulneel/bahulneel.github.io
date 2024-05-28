@@ -1,7 +1,6 @@
 // Import required modules
 const fs = require('fs');
-const Mustache = require('mustache');
-const { format, parseISO } = require('date-fns');
+const Handlebars = require('handlebars');
 console.log('Writing to cv.adoc');
 
 // Read the CV JSON data
@@ -19,49 +18,16 @@ function formatDate() {
   }
 }
 
-// Define the Mustache template with corrected date formatting
-const template = `
-= {{{basics.name}}}
-Email: {{{basics.email}}} | GitHub: {{#basics.profiles}}{{#github}}{{{url}}}{{/github}}{{/basics.profiles}} | LinkedIn: {{#basics.profiles}}{{#linkedin}}{{{url}}}{{/linkedin}}{{/basics.profiles}} | Location: {{{basics.location.city}}}, {{{basics.location.country}}}
-Phone: {{{basics.phone}}}
-
-== Professional Summary
-
-{{{basics.summary}}}
-
-== Professional Experience
-
-{{#work}}
-=== {{{company}}}
-*{{{position}}}*
-_{{#formatDate}}{{startDate}}{{/formatDate}} - {{#formatDate}}{{endDate}}{{/formatDate}}_
-
-{{#highlights}}
-- {{{.}}}
-{{/highlights}}
-
-{{/work}}
-
-== Technical Skills
-
-{{#skills}}
-**{{{name}}}:** {{#keywords}}{{{.}}}, {{/keywords}}
-
-{{/skills}}
-
-== Education
-
-{{#education}}
-**{{{studyType}}} in {{{area}}}**
-{{{institution}}}
-{{/education}}
-`;
+// Load the Handlebars template from cv_template.mustache
+const template = fs.readFileSync('scripts/cv_template.mustache', 'utf8');
+const handlebarsTemplate = Handlebars.compile(template);
 
 // Render the template with the CV data and custom formatting for dates
-const output = Mustache.render(template, {
+const output = handlebarsTemplate({
   ...cvData,
   formatDate
 });
 
 // Write the output to cv.adoc
 fs.writeFileSync('public/cv.adoc', output);
+

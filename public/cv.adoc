@@ -1,5 +1,4 @@
-
-= Bahul Upadhyaya
+= Bahul Neel Upadhyaya
 Email: bahulneel@gmail.com | GitHub:  | LinkedIn:  | Location: London, United Kingdom
 Phone: +44 7771 603207
 
@@ -11,7 +10,7 @@ Seasoned software architect and developer with over 20 years of experience in bu
 
 === Hybr Ltd
 *Senior Full-stack Web Developer*
-_June 2023 - May 2024_
+_ - _
 
 - Developed and maintained the Hybr product and platform.
 - Introduced semantic web concepts.
@@ -19,83 +18,84 @@ _June 2023 - May 2024_
 
 === Contxt
 *Contract ML Architect and Senior Developer*
-_August 2022 - February 2023_
+_ - _
 
 - Conducted initial investigations and consultations on model and architecture options.
 - Developed a proprietary synthetic data generator to train models without sensitive customer data.
 
 === Elsevier (RELX)
 *Data Platform Architect*
-_September 2020 - August 2022_
+_ - _
 
 - Led architectural design and strategy for the Entellect data platform.
 - Mediated between product and engineering teams to enhance platform functionality, supporting trial customers and retaining internal users.
 
 === Honeybee Solutions (Synchronoss Technologies Inc.)
 *R&D Lead, Architecture Team / Senior Platform Architect*
-_August 2017 - June 2020_
+_ - _
 
 - Developed a rules-based solution for a product recommendation service using Datalog derivatives.
 - Integrated a domain-specific layer for a schemaless product catalog with a recommendation engine using JSON-LD and RDF.
 
 === Janrain Inc.
 *Independent Contractor*
-_April 2017 - July 2017_
+_ - _
 
 - Built a rule-based system with Clojure, ClojureScript, and Datomic, enabling runtime business logic modifications without core code changes.
 
 === Eckoh plc
 *Head of Research & Development*
-_September 2013 - November 2016_
+_ - _
 
 - Managed a small R&D team, exploring new technologies and advising on best practices.
 - Focused on data-driven architectures and industry-academic technology advancements.
 
 === BraveNewTalent
 *Senior Developer / Team Lead*
-_January 2012 - August 2013_
+_ - _
 
 - Led a scrum team, transitioning from a monolithic platform to discrete services.
 - Introduced new technologies including ElasticSearch, Jenkins, and Vagrant.
 
 === Eckoh plc
 *Senior Developer*
-_June 2005 - January 2012_
+_ - _
 
 - Developed and maintained the PHP/VoiceXML platform.
 - Implemented internal coding and security standards (PCI/DSS) and mentored development teams.
 
 === 365 Corporation plc / Eckoh plc
 *Developer*
-_October 1999 - June 2005_
+_ - _
 
 - Maintained and improved a C++ IVR platform, enhancing uptime and developing voice applications.
 
 
 == Technical Skills
 
-**Programming Languages:** PHP, JavaScript (ES6), TypeScript, Node.js, C/C++, Clojure, ClojureScript, Perl, Java, Python, SQL, SPARQL, Datalog, 
+**Programming Languages:** PHP, JavaScript (ES6), TypeScript, Node.js, C/C++, Clojure, ClojureScript, Perl, Java, Python, SQL, SPARQL, Datalog.
 
-**Web and Markup Technologies:** HTML, CSS, SVG, VoiceXML, CCXML, JSX, React, Redux, GraphQL, WebRTC, Pug, WebWorkers, Schema.org, Vue/Nuxt, Pinia, TailwindCSS, Vuetify, 
+**Web and Markup Technologies:** HTML, CSS, SVG, VoiceXML, CCXML, JSX, React, Redux, GraphQL, WebRTC, Pug, WebWorkers, Schema.org, Vue/Nuxt, Pinia, TailwindCSS, Vuetify.
 
-**Databases and Data Management:** MySQL/MariaDB, Postgres, ElasticSearch, Datomic, MongoDB, FlureeDB, 
+**Databases and Data Management:** MySQL/MariaDB, Postgres, ElasticSearch, Datomic, MongoDB, FlureeDB.
 
-**Development and Deployment Tools:** Storybook, NATS, Docker, Chromatic, AWS, AWS Cognito, N8N, RabbitMQ, Kafka, ZooKeeper, Langium, GitHub Actions, ESLint, 
+**Development and Deployment Tools:** Storybook, NATS, Docker, Chromatic, AWS, AWS Cognito, N8N, RabbitMQ, Kafka, ZooKeeper, Langium, GitHub Actions, ESLint.
 
-**Artificial Intelligence and Machine Learning:** Tensorflow, statistical methods, production-rule systems, AI planning, synthetic data generation, ChatGPT, Custom GPTs, GPT Agents, Vector Symbolic Architectures, Google Colab, 
+**Artificial Intelligence and Machine Learning:** Tensorflow, statistical methods, production-rule systems, AI planning, synthetic data generation, ChatGPT, Custom GPTs, GPT Agents, Vector Symbolic Architectures, Google Colab.
 
-**Methodologies:** TDD, BDD, Domain-Driven Design, Scaled Agile, Lean, Scrum, Kanban, SAFe, 
+**Methodologies:** TDD, BDD, Domain-Driven Design, Scaled Agile, Lean, Scrum, Kanban, SAFe.
 
-**Architectures:** Distributed architectures, micro-service architectures, event/streaming architectures, data-driven architectures, serverless architectures, C4, 
+**Architectures:** Distributed architectures, micro-service architectures, event/streaming architectures, data-driven architectures, serverless architectures, C4.
 
-**Compliance:** PCI DSS, GDPR, 
+**Compliance:** PCI DSS, GDPR.
 
-**Additional Tools:** Notion, Figma, PostHog, 
+**Additional Tools:** Notion, Figma, PostHog.
 
-**Knowledge Engineering:** RDF, Semantic Web, JSON-LD, Schema.org, 
+**Knowledge Engineering:** RDF, Semantic Web, JSON-LD, Schema.org.
 
 
 == Education
 
 **BSc in Physics**
 Imperial College London
+

@@ -1,0 +1,35 @@
+= {{{basics.name}}}
+Email: {{{basics.email}}} | GitHub: {{#basics.profiles}}{{#github}}{{{url}}}{{/github}}{{/basics.profiles}} | LinkedIn: {{#basics.profiles}}{{#linkedin}}{{{url}}}{{/linkedin}}{{/basics.profiles}} | Location: {{{basics.location.city}}}, {{{basics.location.country}}}
+Phone: {{{basics.phone}}}
+
+== Professional Summary
+
+{{{basics.summary}}}
+
+== Professional Experience
+
+{{#work}}
+=== {{{company}}}
+*{{{position}}}*
+_{{#formatDate}}{{startDate}}{{/formatDate}} - {{#formatDate}}{{endDate}}{{/formatDate}}_
+
+{{#highlights}}
+- {{{.}}}
+{{/highlights}}
+
+{{/work}}
+
+== Technical Skills
+
+{{#skills}}
+**{{{name}}}:** {{#keywords}}{{{.}}}{{^@last}}, {{/@last}}{{#@last}}.{{/@last}}{{/keywords}}
+
+{{/skills}}
+
+== Education
+
+{{#education}}
+**{{{studyType}}} in {{{area}}}**
+{{{institution}}}
+{{/education}}
+
