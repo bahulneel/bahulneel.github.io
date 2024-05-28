@@ -8,6 +8,12 @@ function Footer() {
         <a href="https://linkedin.com/in/bahulneel" className="text-accent-lightBlue hover:underline">LinkedIn</a>
         <span className="mx-2">|</span>
         <a href="https://medium.com/@bahulneel" className="text-accent-lightBlue hover:underline">Blog</a>
+        <span className="mx-2">|</span>
+        <a href="/cv.json" className="text-accent-lightBlue hover:underline">CV (JSON)</a>
+        <span className="mx-2">|</span>
+        <a href="/cv.adoc" className="text-accent-lightBlue hover:underline">CV (ADOC)</a>
+        <span className="mx-2">|</span>
+        <a href="/cv.pdf" className="text-accent-lightBlue hover:underline">CV (PDF)</a>
       </div>
     </footer>
   );
