@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-        <title>{name}'s Personal Website</title>
         <meta name="description" content={summary} />
         <meta property="og:title" content={`${name}'s Personal Website`} />
         <meta property="og:description" content={summary} />
