@@ -1,6 +1,6 @@
 // Skills content
 import Head from 'next/head';
-import SkillsComponent from '../components/Skills';
+import Skills from '../components/Skills';
 
 function Page() {
   return (
@@ -9,7 +9,7 @@ function Page() {
         <title>Skills</title>
       </Head>
       <h1 className="text-3xl font-bold mb-4">Professional Skills</h1>
-      <SkillsComponent />
+      <Skills />
     </div>
   );
 }

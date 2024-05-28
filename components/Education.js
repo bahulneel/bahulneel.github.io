@@ -7,7 +7,7 @@ const formatDate = (date) => {
   return newDate.toLocaleDateString('en-US', options);
 };
 
-const EducationComponent = () => {
+const Education = () => {
   return (
     <>
       {cv.education.map((education, index) => (
@@ -23,4 +23,4 @@ const EducationComponent = () => {
   );
 };
 
-export default EducationComponent;
+export default Education;

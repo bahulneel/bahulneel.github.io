@@ -1,6 +1,6 @@
 // Home Page content
 import Head from 'next/head';
-import HomeComponent from '../components/Home';
+import Person from '../components/Person';
 import cv from '../public/cv.json';
 
 function Page() {
@@ -8,7 +8,7 @@ function Page() {
 
   return (
     <div className="mx-auto p-4 bg-secondary-lightGray">
-      <HomeComponent />
+      <Person />
     </div>
   );
 }

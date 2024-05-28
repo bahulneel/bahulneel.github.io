@@ -1,7 +1,7 @@
 import React from 'react';
 import cv from '../public/cv.json';
 
-const SkillsComponent = () => {
+const Skills = () => {
   return (
     <ul className="list-disc list-inside space-y-4">
       {cv.skills.map((skill, index) => (
@@ -14,5 +14,5 @@ const SkillsComponent = () => {
   );
 };
 
-export default SkillsComponent;
+export default Skills;
 

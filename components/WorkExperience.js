@@ -7,7 +7,7 @@ const formatDate = (date) => {
   return newDate.toLocaleDateString('en-US', options);
 };
 
-const WorkExperienceComponent = () => {
+const WorkExperience = () => {
   return (
     <>
       {cv.work.map((job, index) => (
@@ -21,4 +21,4 @@ const WorkExperienceComponent = () => {
   );
 };
 
-export default WorkExperienceComponent;
+export default WorkExperience;
