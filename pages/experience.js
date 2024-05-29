@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import WorkExperience from '../components/WorkExperience';
 import Education from '../components/Education';
+import cv from '../public/cv.json';
 
 function Page() {
   return (

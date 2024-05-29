@@ -1,6 +1,7 @@
 // Skills content
 import Head from 'next/head';
 import Skills from '../components/Skills';
+import cv from '../public/cv.json';
 
 function Page() {
   return (
