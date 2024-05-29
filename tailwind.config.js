@@ -18,6 +18,8 @@ module.exports = {
         gradient: {
           start: '#0A1F44',
           end: '#005B99',
+          radialStart: '#F5F5F5',
+          radialEnd: '#B0B0B8',
         },
       },
       typography: ({ theme }) => ({
@@ -44,6 +46,7 @@ module.exports = {
       }),
       backgroundImage: theme => ({
         'gradient-to-r': `linear-gradient(to right, ${theme('colors.gradient.start')}, ${theme('colors.gradient.end')})`,
+        'radial-gradient': `radial-gradient(circle, ${theme('colors.gradient.radialStart')} 0%, ${theme('colors.gradient.radialEnd')} 100%)`,
       }),
       screens: {
         '2k': '2736px',  // Adding a breakpoint for high DPI screens like the Surface Pro 7

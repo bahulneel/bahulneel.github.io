@@ -7,7 +7,7 @@ import cv from '../public/cv.json';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    document.body.className = 'prose mx-auto';
+    document.body.className = 'bg-radial-gradient w-screen h-screen';
   }, []);
 
   const { name, image, summary } = cv.basics;
@@ -28,9 +28,11 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:description" content={summary} />
         <meta name="twitter:image" content={image} />
       </Head>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <div className="prose mx-auto">
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </>
   );
 }
