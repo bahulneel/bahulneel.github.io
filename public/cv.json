@@ -21,6 +21,11 @@
         "network": "LinkedIn",
         "username": "bahulneel",
         "url": "https://www.linkedin.com/in/bahulneel/"
+      },
+      {
+        "network": "GitHub (Org)",
+        "username": "totalperspective",
+        "url": "https://github.com/totalperspective"
       }
     ]
   },
@@ -122,6 +127,19 @@
       "highlights": [
         "Maintained and improved a C++ IVR platform, enhancing uptime and developing voice applications."
       ]
+    },
+    {
+      "company": "Total Perspective Tech",
+      "position": "Founder & Lead Developer",
+      "startDate": "2024-06",
+      "endDate": "",
+      "summary": "Leading the development of innovative software solutions and open-source projects, focusing on functional programming and data-driven architectures.",
+      "highlights": [
+        "Founded Total Perspective Tech to provide cutting-edge software solutions.",
+        "Developed and maintained several open-source projects including 'oolon', 'megadodo', and 'pondermatic'.",
+        "Implemented Bloom filters in Clojure/ClojureScript for efficient data querying.",
+        "Created a functional effect system driven rules engine for Clojure/ClojureScript."
+      ]
     }
   ],
   "education": [
@@ -171,7 +189,9 @@
         "Vue/Nuxt",
         "Pinia",
         "TailwindCSS",
-        "Vuetify"
+        "Vuetify",
+        "Svelte 4",
+        "Next.js"
       ]
     },
     {
@@ -182,7 +202,8 @@
         "ElasticSearch",
         "Datomic",
         "MongoDB",
-        "FlureeDB"
+        "FlureeDB",
+        "Redis"
       ]
     },
     {
@@ -200,7 +221,10 @@
         "ZooKeeper",
         "Langium",
         "GitHub Actions",
-        "ESLint"
+        "ESLint",
+        "Histoire",
+        "SST (Ion)",
+        "Terraform"
       ]
     },
     {
@@ -215,7 +239,8 @@
         "Custom GPTs",
         "GPT Agents",
         "Vector Symbolic Architectures",
-        "Google Colab"
+        "Google Colab",
+        "PyTorch"
       ]
     },
     {
@@ -263,7 +288,8 @@
         "RDF",
         "Semantic Web",
         "JSON-LD",
-        "Schema.org"
+        "Schema.org",
+        "OWL"
       ]
     }
   ]
