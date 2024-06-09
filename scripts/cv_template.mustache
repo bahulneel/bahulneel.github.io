@@ -24,9 +24,14 @@ _{{#formatDate}}{{startDate}}{{/formatDate}} - {{#formatDate}}{{endDate}}{{/form
 {{#projects}}
 === {{{title}}}
 *Status:* {{{status}}}
+
 *Type:* {{{type}}}
-*Description:* {{{description}}}
-{{#if link}}*Site:* [{{{link}}}]({{{link}}}){{else if repoLink}}*Repository:* [{{{repoLink}}}]({{{repoLink}}}){{/if}}
+
+{{#if link}}*Site:* {{{link}}}{{else if repoLink}}*Repository:* {{{repoLink}}}{{/if}}
+
+*Description:* 
+
+{{{description}}}
 
 {{#highlights}}
 - {{{.}}}

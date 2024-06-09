@@ -84,9 +84,14 @@ _ - _
 
 === Pondermatic
 *Status:* Active
+
 *Type:* Open Source
-*Description:* Functional effect system driven rules engine for Clojure/ClojureScript.
-*Repository:* [https://github.com/totalperspective/pondermatic](https://github.com/totalperspective/pondermatic)
+
+*Repository:* https://github.com/totalperspective/pondermatic
+
+*Description:* 
+
+Functional effect system driven rules engine for Clojure/ClojureScript.
 
 - Developed core engine using functional programming principles.
 - Integrated with Asami for efficient data storage and querying.
@@ -96,9 +101,14 @@ _ - _
 
 === Oolon
 *Status:* Superseded
+
 *Type:* Open Source
-*Description:* Bloom implementation for Clojure/ClojureScript leaning on Datomic datalog. Superseded by Pondermatic.
-*Repository:* [https://github.com/totalperspective/oolon](https://github.com/totalperspective/oolon)
+
+*Repository:* https://github.com/totalperspective/oolon
+
+*Description:* 
+
+Bloom implementation for Clojure/ClojureScript leaning on Datomic datalog. Superseded by Pondermatic.
 
 - Developed Oolon, a purely declarative language for building systems that manage state over time.
 - Implemented modules and rules in Oolon to handle state and asynchrony in distributed systems.
@@ -107,17 +117,27 @@ _ - _
 
 === JeltzJS
 *Status:* Work in Progress
+
 *Type:* Open Source
-*Description:* Unlock Vogonian Precision: Craft Fluent APIs with JeltzJS.
-*Repository:* [https://github.com/totalperspective/jeltz-js](https://github.com/totalperspective/jeltz-js)
+
+*Repository:* https://github.com/totalperspective/jeltz-js
+
+*Description:* 
+
+Unlock Vogonian Precision: Craft Fluent APIs with JeltzJS.
 
 - Documented JeltzJS usage and purpose.
 
 === Nuxt Fluree
 *Status:* Active
+
 *Type:* Open Source
-*Description:* Nuxt module for the Fluree graph database, needs updating to match Fluree's new API.
-*Repository:* [https://github.com/totalperspective/nuxt-fluree](https://github.com/totalperspective/nuxt-fluree)
+
+*Repository:* https://github.com/totalperspective/nuxt-fluree
+
+*Description:* 
+
+Nuxt module for the Fluree graph database, needs updating to match Fluree's new API.
 
 - Developed Nuxt module for easy integration with Fluree.
 - Ensured compatibility with the latest Nuxt and Fluree versions.
@@ -126,9 +146,14 @@ _ - _
 
 === Bartfast
 *Status:* Work in Progress
+
 *Type:* Open Source
-*Description:* Bartfast is a design language builder inspired by Douglas Adams' character Slartibartfast, emphasizing clarity, modularity, and reusability in digital design.
-*Repository:* [https://github.com/totalperspective/bartfast](https://github.com/totalperspective/bartfast)
+
+*Repository:* https://github.com/totalperspective/bartfast
+
+*Description:* 
+
+Bartfast is a design language builder inspired by Douglas Adams' character Slartibartfast, emphasizing clarity, modularity, and reusability in digital design.
 
 - Created modular design components for reuse.
 - Adopted a declarative and incremental approach to design language definition.
@@ -138,9 +163,14 @@ _ - _
 
 === Groove Dojo
 *Status:* Work in Progress
+
 *Type:* Commercial
-*Description:* Groove.dojo is the ultimate AI-powered solution for creating the perfect soundtrack for any occasion. With seamless Spotify integration, customizable rules, and collaborative features, Groove.dojo ensures a personalized and engaging listening experience that adapts to your ever-changing moods and activities.
-*Site:* [https://www.groovedojo.app](https://www.groovedojo.app)
+
+*Site:* https://www.groovedojo.app
+
+*Description:* 
+
+Groove.dojo is the ultimate AI-powered solution for creating the perfect soundtrack for any occasion. With seamless Spotify integration, customizable rules, and collaborative features, Groove.dojo ensures a personalized and engaging listening experience that adapts to your ever-changing moods and activities.
 
 - Created comprehensive Design System using Svelte, shadcn-svelte, and TailwindCSS.
 - Will integrate AI for personalized music recommendations.
