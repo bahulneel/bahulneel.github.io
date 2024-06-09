@@ -19,6 +19,21 @@ _{{#formatDate}}{{startDate}}{{/formatDate}} - {{#formatDate}}{{endDate}}{{/form
 
 {{/work}}
 
+== Projects
+
+{{#projects}}
+=== {{{title}}}
+*Status:* {{{status}}}
+*Type:* {{{type}}}
+*Description:* {{{description}}}
+{{#if link}}*Site:* [{{{link}}}]({{{link}}}){{else if repoLink}}*Repository:* [{{{repoLink}}}]({{{repoLink}}}){{/if}}
+
+{{#highlights}}
+- {{{.}}}
+{{/highlights}}
+
+{{/projects}}
+
 == Technical Skills
 
 {{#skills}}
@@ -32,4 +47,3 @@ _{{#formatDate}}{{startDate}}{{/formatDate}} - {{#formatDate}}{{endDate}}{{/form
 **{{{studyType}}} in {{{area}}}**
 {{{institution}}}
 {{/education}}
-

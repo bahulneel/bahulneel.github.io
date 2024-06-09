@@ -70,18 +70,97 @@ _ - _
 
 - Maintained and improved a C++ IVR platform, enhancing uptime and developing voice applications.
 
+=== Total Perspective Tech
+*Founder & Lead Developer*
+_ - _
+
+- Founded Total Perspective Tech to provide cutting-edge software solutions.
+- Developed and maintained several open-source projects including 'oolon', 'megadodo', and 'pondermatic'.
+- Implemented Bloom filters in Clojure/ClojureScript for efficient data querying.
+- Created a functional effect system driven rules engine for Clojure/ClojureScript.
+
+
+== Projects
+
+=== Pondermatic
+*Status:* Active
+*Type:* Open Source
+*Description:* Functional effect system driven rules engine for Clojure/ClojureScript.
+*Repository:* [https://github.com/totalperspective/pondermatic](https://github.com/totalperspective/pondermatic)
+
+- Developed core engine using functional programming principles.
+- Integrated with Asami for efficient data storage and querying.
+- Extended support for JavaScript environments including NodeJS and browser.
+- Implemented rule-based logic using O'Doyle Rules.
+- Published the project on Clojars and npm for easy accessibility.
+
+=== Oolon
+*Status:* Superseded
+*Type:* Open Source
+*Description:* Bloom implementation for Clojure/ClojureScript leaning on Datomic datalog. Superseded by Pondermatic.
+*Repository:* [https://github.com/totalperspective/oolon](https://github.com/totalperspective/oolon)
+
+- Developed Oolon, a purely declarative language for building systems that manage state over time.
+- Implemented modules and rules in Oolon to handle state and asynchrony in distributed systems.
+- Leveraged DataScript for internal state management within Oolon.
+- Utilized Oolon's data-oriented DSL to facilitate integration with Java and JavaScript environments.
+
+=== JeltzJS
+*Status:* Work in Progress
+*Type:* Open Source
+*Description:* Unlock Vogonian Precision: Craft Fluent APIs with JeltzJS.
+*Repository:* [https://github.com/totalperspective/jeltz-js](https://github.com/totalperspective/jeltz-js)
+
+- Documented JeltzJS usage and purpose.
+
+=== Nuxt Fluree
+*Status:* Active
+*Type:* Open Source
+*Description:* Nuxt module for the Fluree graph database, needs updating to match Fluree's new API.
+*Repository:* [https://github.com/totalperspective/nuxt-fluree](https://github.com/totalperspective/nuxt-fluree)
+
+- Developed Nuxt module for easy integration with Fluree.
+- Ensured compatibility with the latest Nuxt and Fluree versions.
+- Updated module to match Fluree's new API.
+- Added comprehensive documentation and examples for quick setup and usage.
+
+=== Bartfast
+*Status:* Work in Progress
+*Type:* Open Source
+*Description:* Bartfast is a design language builder inspired by Douglas Adams' character Slartibartfast, emphasizing clarity, modularity, and reusability in digital design.
+*Repository:* [https://github.com/totalperspective/bartfast](https://github.com/totalperspective/bartfast)
+
+- Created modular design components for reuse.
+- Adopted a declarative and incremental approach to design language definition.
+- Promoted composability, extensibility, and serializability.
+- Implemented the Slarti DSL for defining design tokens and principles.
+- Includes a Languim based language server for enhanced development experience.
+
+=== Groove Dojo
+*Status:* Work in Progress
+*Type:* Commercial
+*Description:* Groove.dojo is the ultimate AI-powered solution for creating the perfect soundtrack for any occasion. With seamless Spotify integration, customizable rules, and collaborative features, Groove.dojo ensures a personalized and engaging listening experience that adapts to your ever-changing moods and activities.
+*Site:* [https://www.groovedojo.app](https://www.groovedojo.app)
+
+- Created comprehensive Design System using Svelte, shadcn-svelte, and TailwindCSS.
+- Will integrate AI for personalized music recommendations.
+- Will develop collaborative features for shared playlists.
+- Will implement dynamic playlist creation.
+- Will integrate with Spotify for user login, permissions, and playlist control.
+- Will integrate FlureeDB for data storage.
+
 
 == Technical Skills
 
 **Programming Languages:** PHP, JavaScript (ES6), TypeScript, Node.js, C/C++, Clojure, ClojureScript, Perl, Java, Python, SQL, SPARQL, Datalog.
 
-**Web and Markup Technologies:** HTML, CSS, SVG, VoiceXML, CCXML, JSX, React, Redux, GraphQL, WebRTC, Pug, WebWorkers, Schema.org, Vue/Nuxt, Pinia, TailwindCSS, Vuetify.
+**Web and Markup Technologies:** HTML, CSS, SVG, VoiceXML, CCXML, JSX, React, Redux, GraphQL, WebRTC, Pug, WebWorkers, Schema.org, Vue/Nuxt, Pinia, TailwindCSS, Vuetify, Svelte 4, Next.js.
 
-**Databases and Data Management:** MySQL/MariaDB, Postgres, ElasticSearch, Datomic, MongoDB, FlureeDB.
+**Databases and Data Management:** MySQL/MariaDB, Postgres, ElasticSearch, Datomic, MongoDB, FlureeDB, Redis.
 
-**Development and Deployment Tools:** Storybook, NATS, Docker, Chromatic, AWS, AWS Cognito, N8N, RabbitMQ, Kafka, ZooKeeper, Langium, GitHub Actions, ESLint.
+**Development and Deployment Tools:** Storybook, NATS, Docker, Chromatic, AWS, AWS Cognito, N8N, RabbitMQ, Kafka, ZooKeeper, Langium, GitHub Actions, ESLint, Histoire, SST (Ion), Terraform.
 
-**Artificial Intelligence and Machine Learning:** Tensorflow, statistical methods, production-rule systems, AI planning, synthetic data generation, ChatGPT, Custom GPTs, GPT Agents, Vector Symbolic Architectures, Google Colab.
+**Artificial Intelligence and Machine Learning:** Tensorflow, statistical methods, production-rule systems, AI planning, synthetic data generation, ChatGPT, Custom GPTs, GPT Agents, Vector Symbolic Architectures, Google Colab, PyTorch.
 
 **Methodologies:** TDD, BDD, Domain-Driven Design, Scaled Agile, Lean, Scrum, Kanban, SAFe.
 
@@ -91,11 +170,10 @@ _ - _
 
 **Additional Tools:** Notion, Figma, PostHog.
 
-**Knowledge Engineering:** RDF, Semantic Web, JSON-LD, Schema.org.
+**Knowledge Engineering:** RDF, Semantic Web, JSON-LD, Schema.org, OWL.
 
 
 == Education
 
 **BSc in Physics**
 Imperial College London
-

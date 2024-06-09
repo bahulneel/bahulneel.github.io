@@ -31,6 +31,8 @@ function Page() {
                     repoLink={project.repoLink}
                     status={project.status}
                     type={project.type}
+                    link={project.link}
+                    highlights={project.highlights}
                   />
                 ))}
               </div>

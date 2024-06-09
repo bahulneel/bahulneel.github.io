@@ -148,42 +148,91 @@
       "description": "Functional effect system driven rules engine for Clojure/ClojureScript.",
       "repoLink": "https://github.com/totalperspective/pondermatic",
       "status": "Active",
-      "type": "Open Source"
+      "type": "Open Source",
+      "startDate": "2021-01",
+      "endDate": "2022-12",
+      "highlights": [
+        "Developed core engine using functional programming principles.",
+        "Integrated with Asami for efficient data storage and querying.",
+        "Extended support for JavaScript environments including NodeJS and browser.",
+        "Implemented rule-based logic using O'Doyle Rules.",
+        "Published the project on Clojars and npm for easy accessibility."
+      ]
     },
     {
       "title": "Oolon",
-      "description": "Bloom implementation for Clojure/ClojureScript leaning on Datomic datalog.",
+      "description": "Bloom implementation for Clojure/ClojureScript leaning on Datomic datalog. Superseded by Pondermatic.",
       "repoLink": "https://github.com/totalperspective/oolon",
       "status": "Superseded",
-      "type": "Open Source"
+      "type": "Open Source",
+      "startDate": "2020-05",
+      "endDate": "2021-04",
+      "highlights": [
+        "Developed Oolon, a purely declarative language for building systems that manage state over time.",
+        "Implemented modules and rules in Oolon to handle state and asynchrony in distributed systems.",
+        "Leveraged DataScript for internal state management within Oolon.",
+        "Utilized Oolon's data-oriented DSL to facilitate integration with Java and JavaScript environments."
+      ]
     },
     {
       "title": "JeltzJS",
       "description": "Unlock Vogonian Precision: Craft Fluent APIs with JeltzJS.",
       "repoLink": "https://github.com/totalperspective/jeltz-js",
       "status": "Work in Progress",
-      "type": "Open Source"
+      "type": "Open Source",
+      "startDate": "2022-03",
+      "endDate": "",
+      "highlights": [
+        "Documented JeltzJS usage and purpose."
+      ]
     },
     {
       "title": "Nuxt Fluree",
-      "description": "Nuxt module for the Fluree graph database.",
+      "description": "Nuxt module for the Fluree graph database, needs updating to match Fluree's new API.",
       "repoLink": "https://github.com/totalperspective/nuxt-fluree",
       "status": "Active",
-      "type": "Open Source"
+      "type": "Open Source",
+      "startDate": "2021-06",
+      "endDate": "",
+      "highlights": [
+        "Developed Nuxt module for easy integration with Fluree.",
+        "Ensured compatibility with the latest Nuxt and Fluree versions.",
+        "Updated module to match Fluree's new API.",
+        "Added comprehensive documentation and examples for quick setup and usage."
+      ]
     },
     {
       "title": "Bartfast",
-      "description": "Bartfast is a design language builder, emphasizing clarity, modularity, and reusability in digital design.",
+      "description": "Bartfast is a design language builder inspired by Douglas Adams' character Slartibartfast, emphasizing clarity, modularity, and reusability in digital design.",
       "repoLink": "https://github.com/totalperspective/bartfast",
       "status": "Work in Progress",
-      "type": "Open Source"
+      "type": "Open Source",
+      "startDate": "2023-01",
+      "endDate": "",
+      "highlights": [
+        "Created modular design components for reuse.",
+        "Adopted a declarative and incremental approach to design language definition.",
+        "Promoted composability, extensibility, and serializability.",
+        "Implemented the Slarti DSL for defining design tokens and principles.",
+        "Includes a Languim based language server for enhanced development experience."
+      ]
     },
     {
       "title": "Groove Dojo",
       "description": "Groove.dojo is the ultimate AI-powered solution for creating the perfect soundtrack for any occasion. With seamless Spotify integration, customizable rules, and collaborative features, Groove.dojo ensures a personalized and engaging listening experience that adapts to your ever-changing moods and activities.",
-      "repoLink": "https://www.groovedojo.app",
+      "link": "https://www.groovedojo.app",
       "status": "Work in Progress",
-      "type": "Commercial"
+      "type": "Commercial",
+      "startDate": "2022-09",
+      "endDate": "",
+      "highlights": [
+        "Created comprehensive Design System using Svelte, shadcn-svelte, and TailwindCSS.",
+        "Will integrate AI for personalized music recommendations.",
+        "Will develop collaborative features for shared playlists.",
+        "Will implement dynamic playlist creation.",
+        "Will integrate with Spotify for user login, permissions, and playlist control.",
+        "Will integrate FlureeDB for data storage."
+      ]
     }
   ],
   "education": [
