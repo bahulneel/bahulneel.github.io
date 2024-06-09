@@ -31,7 +31,7 @@ module.exports = {
             '--tw-prose-links': theme('colors.accent.lightBlue'),
             '--tw-prose-links-hover': theme('colors.accent.lightBlue', 'hover'),
             '--tw-prose-links-active': theme('colors.accent.lightBlue', 'active'),
-            '--tw-prose-bold': theme('colors.primary.darkBlue'),
+            '--tw-prose-bold': theme('colors.accent.white'), // Changed to white for better contrast
             '--tw-prose-counters': theme('colors.secondary.gray'),
             '--tw-prose-bullets': theme('colors.primary.teal'),
             '--tw-prose-hr': theme('colors.gradient.start'),

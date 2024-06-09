@@ -1,5 +1,4 @@
 // Home Page content
-import Head from 'next/head';
 import Person from '../components/Person';
 import cv from '../public/cv.json';
 

@@ -142,6 +142,50 @@
       ]
     }
   ],
+  "projects": [
+    {
+      "title": "Pondermatic",
+      "description": "Functional effect system driven rules engine for Clojure/ClojureScript.",
+      "repoLink": "https://github.com/totalperspective/pondermatic",
+      "status": "Active",
+      "type": "Open Source"
+    },
+    {
+      "title": "Oolon",
+      "description": "Bloom implementation for Clojure/ClojureScript leaning on Datomic datalog.",
+      "repoLink": "https://github.com/totalperspective/oolon",
+      "status": "Superseded",
+      "type": "Open Source"
+    },
+    {
+      "title": "JeltzJS",
+      "description": "Unlock Vogonian Precision: Craft Fluent APIs with JeltzJS.",
+      "repoLink": "https://github.com/totalperspective/jeltz-js",
+      "status": "Work in Progress",
+      "type": "Open Source"
+    },
+    {
+      "title": "Nuxt Fluree",
+      "description": "Nuxt module for the Fluree graph database.",
+      "repoLink": "https://github.com/totalperspective/nuxt-fluree",
+      "status": "Active",
+      "type": "Open Source"
+    },
+    {
+      "title": "Bartfast",
+      "description": "Bartfast is a design language builder, emphasizing clarity, modularity, and reusability in digital design.",
+      "repoLink": "https://github.com/totalperspective/bartfast",
+      "status": "Work in Progress",
+      "type": "Open Source"
+    },
+    {
+      "title": "Groove Dojo",
+      "description": "Groove.dojo is the ultimate AI-powered solution for creating the perfect soundtrack for any occasion. With seamless Spotify integration, customizable rules, and collaborative features, Groove.dojo ensures a personalized and engaging listening experience that adapts to your ever-changing moods and activities.",
+      "repoLink": "https://www.groovedojo.app",
+      "status": "Work in Progress",
+      "type": "Commercial"
+    }
+  ],
   "education": [
     {
       "institution": "Imperial College London",
