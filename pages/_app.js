@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:description" content={summary} />
         <meta name="twitter:image" content={image} />
       </Head>
-      <div className="prose mx-auto">
+      <div className="prose mx-auto sm:prose-base md:prose-md lg:prose-lg">
         <Header />
         <Component {...pageProps} />
         <Footer />

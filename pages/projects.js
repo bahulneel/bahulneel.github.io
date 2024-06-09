@@ -13,13 +13,13 @@ function Page() {
   }, {});
 
   return (
-    <div className="mx-auto p-4 bg-secondary-lightGray" itemscope itemType="http://schema.org/Person" itemID={`${cv.basics.name}`}>
+    <div className="mx-auto p-4 bg-secondary-lightGray" itemScope itemType="http://schema.org/Person" itemID={`${cv.basics.name}`}>
       <Head>
         <title>Projects</title>
       </Head>
       {['Commercial', 'Open Source'].map((type) => (
         <div key={type}>
-          <h1 className="text-3xl font-bold mb-4">{type} Projects</h1>
+          <h1 className="font-bold mb-4">{type} Projects</h1>
           {['Active', 'WIP', 'Others'].map((status) => (
             groupedProjects[type][status].length > 0 && (
               <div key={status}>
@@ -33,6 +33,9 @@ function Page() {
                     type={project.type}
                     link={project.link}
                     highlights={project.highlights}
+                    itemScope
+                    itemType="http://schema.org/CreativeWork"
+                    itemProp={{ title: 'name', subtitle: 'creativeWorkStatus', content: 'description' }}
                   />
                 ))}
               </div>

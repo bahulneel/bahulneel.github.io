@@ -6,7 +6,7 @@ import cv from '../public/cv.json';
 
 function Page() {
   return (
-    <div className="mx-auto p-4 bg-secondary-lightGray" itemscope itemType="http://schema.org/Person" itemID={`${cv.basics.name}`}>
+    <div className="mx-auto p-4 bg-secondary-lightGray" itemScope itemType="http://schema.org/Person" itemID={`${cv.basics.name}`}>
       <Head>
         <title>Experience</title>
       </Head>
