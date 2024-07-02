@@ -5,7 +5,7 @@ const ProjectEntry = ({ title, description, repoLink, status, type, link, highli
   return (
     <Card
       title={title}
-      subtitle={`Status: ${status} | Type: ${type}`}
+      subtitle={`Status: ${status}`}
       content={
         <>
           <p itemProp="description">{description}</p>
