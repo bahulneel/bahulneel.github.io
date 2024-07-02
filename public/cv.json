@@ -144,6 +144,54 @@
   ],
   "projects": [
     {
+      "title": "Linear Project Manager",
+      "description": "The Linear Project Manager is a Custom GPT designed to help users manage projects via the Linear platform's GraphQL API. It aids in constructing and executing queries and mutations for issues, projects, teams, and users. Providing guidance on type structures, ensuring schema adherence, and offering explanations and code examples, this Custom GPT leverages the latest Linear API documentation to streamline project management efficiently.",
+      "link": "https://chatgpt.com/g/g-BvCW2ngMb-linear-project-manager",
+      "status": "Active",
+      "type": "Commercial",
+      "startDate": "2023-06",
+      "endDate": "",
+      "highlights": [
+        "Manages projects using the Linear platform's GraphQL API.",
+        "Constructs and executes queries and mutations for issues, projects, teams, and users.",
+        "Ensures operations comply with the Linear schema.",
+        "Provides detailed information on type structures and fields with examples.",
+        "Leverages the latest Linear API documentation for efficient project management."
+      ]
+    },
+    {
+      "title": "Groove Dojo",
+      "description": "Groove.dojo is the ultimate AI-powered solution for creating the perfect soundtrack for any occasion. With seamless Spotify integration, customizable rules, and collaborative features, Groove.dojo ensures a personalized and engaging listening experience that adapts to your ever-changing moods and activities.",
+      "link": "https://www.groovedojo.app",
+      "status": "Work in Progress",
+      "type": "Commercial",
+      "startDate": "2022-09",
+      "endDate": "",
+      "highlights": [
+        "Created comprehensive Design System using Svelte, shadcn-svelte, and TailwindCSS.",
+        "Will integrate AI for personalized music recommendations.",
+        "Will develop collaborative features for shared playlists.",
+        "Will implement dynamic playlist creation.",
+        "Will integrate with Spotify for user login, permissions, and playlist control.",
+        "Will integrate FlureeDB for data storage."
+      ]
+    },
+    {
+      "title": "Nuxt Fluree",
+      "description": "Nuxt module for the Fluree graph database, needs updating to match Fluree's new API.",
+      "repoLink": "https://github.com/totalperspective/nuxt-fluree",
+      "status": "Active",
+      "type": "Open Source",
+      "startDate": "2021-06",
+      "endDate": "",
+      "highlights": [
+        "Developed Nuxt module for easy integration with Fluree.",
+        "Ensured compatibility with the latest Nuxt and Fluree versions.",
+        "Updated module to match Fluree's new API.",
+        "Added comprehensive documentation and examples for quick setup and usage."
+      ]
+    },
+    {
       "title": "Pondermatic",
       "description": "Functional effect system driven rules engine for Clojure/ClojureScript.",
       "repoLink": "https://github.com/totalperspective/pondermatic",
@@ -175,33 +223,6 @@
       ]
     },
     {
-      "title": "JeltzJS",
-      "description": "Unlock Vogonian Precision: Craft Fluent APIs with JeltzJS.",
-      "repoLink": "https://github.com/totalperspective/jeltz-js",
-      "status": "Work in Progress",
-      "type": "Open Source",
-      "startDate": "2022-03",
-      "endDate": "",
-      "highlights": [
-        "Documented JeltzJS usage and purpose."
-      ]
-    },
-    {
-      "title": "Nuxt Fluree",
-      "description": "Nuxt module for the Fluree graph database, needs updating to match Fluree's new API.",
-      "repoLink": "https://github.com/totalperspective/nuxt-fluree",
-      "status": "Active",
-      "type": "Open Source",
-      "startDate": "2021-06",
-      "endDate": "",
-      "highlights": [
-        "Developed Nuxt module for easy integration with Fluree.",
-        "Ensured compatibility with the latest Nuxt and Fluree versions.",
-        "Updated module to match Fluree's new API.",
-        "Added comprehensive documentation and examples for quick setup and usage."
-      ]
-    },
-    {
       "title": "Bartfast",
       "description": "Bartfast is a design language builder inspired by Douglas Adams' character Slartibartfast, emphasizing clarity, modularity, and reusability in digital design.",
       "repoLink": "https://github.com/totalperspective/bartfast",
@@ -218,36 +239,15 @@
       ]
     },
     {
-      "title": "Linear Project Manager",
-      "description": "The Linear Project Manager is a Custom GPT designed to help users manage projects via the Linear platform's GraphQL API. It aids in constructing and executing queries and mutations for issues, projects, teams, and users. Providing guidance on type structures, ensuring schema adherence, and offering explanations and code examples, this Custom GPT leverages the latest Linear API documentation to streamline project management efficiently.",
-      "link": "https://chatgpt.com/g/g-BvCW2ngMb-linear-project-manager",
-      "status": "Active",
-      "type": "Commercial",
-      "startDate": "2023-06",
-      "endDate": "",
-      "highlights": [
-        "Manages projects using the Linear platform's GraphQL API.",
-        "Constructs and executes queries and mutations for issues, projects, teams, and users.",
-        "Ensures operations comply with the Linear schema.",
-        "Provides detailed information on type structures and fields with examples.",
-        "Leverages the latest Linear API documentation for efficient project management."
-      ]
-    },
-    {
-      "title": "Groove Dojo",
-      "description": "Groove.dojo is the ultimate AI-powered solution for creating the perfect soundtrack for any occasion. With seamless Spotify integration, customizable rules, and collaborative features, Groove.dojo ensures a personalized and engaging listening experience that adapts to your ever-changing moods and activities.",
-      "link": "https://www.groovedojo.app",
+      "title": "JeltzJS",
+      "description": "Unlock Vogonian Precision: Craft Fluent APIs with JeltzJS.",
+      "repoLink": "https://github.com/totalperspective/jeltz-js",
       "status": "Work in Progress",
-      "type": "Commercial",
-      "startDate": "2022-09",
+      "type": "Open Source",
+      "startDate": "2022-03",
       "endDate": "",
       "highlights": [
-        "Created comprehensive Design System using Svelte, shadcn-svelte, and TailwindCSS.",
-        "Will integrate AI for personalized music recommendations.",
-        "Will develop collaborative features for shared playlists.",
-        "Will implement dynamic playlist creation.",
-        "Will integrate with Spotify for user login, permissions, and playlist control.",
-        "Will integrate FlureeDB for data storage."
+        "Documented JeltzJS usage and purpose."
       ]
     }
   ],
