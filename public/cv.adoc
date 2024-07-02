@@ -10,7 +10,7 @@ Seasoned software architect and developer with over 20 years of experience in bu
 
 === Hybr Ltd
 *Senior Full-stack Web Developer*
-_ - _
+_June 2023 - May 2024_
 
 - Developed and maintained the Hybr product and platform.
 - Introduced semantic web concepts.
@@ -18,61 +18,61 @@ _ - _
 
 === Contxt
 *Contract ML Architect and Senior Developer*
-_ - _
+_August 2022 - February 2023_
 
 - Conducted initial investigations and consultations on model and architecture options.
 - Developed a proprietary synthetic data generator to train models without sensitive customer data.
 
 === Elsevier (RELX)
 *Data Platform Architect*
-_ - _
+_September 2020 - August 2022_
 
 - Led architectural design and strategy for the Entellect data platform.
 - Mediated between product and engineering teams to enhance platform functionality, supporting trial customers and retaining internal users.
 
 === Honeybee Solutions (Synchronoss Technologies Inc.)
 *R&D Lead, Architecture Team / Senior Platform Architect*
-_ - _
+_August 2017 - June 2020_
 
 - Developed a rules-based solution for a product recommendation service using Datalog derivatives.
 - Integrated a domain-specific layer for a schemaless product catalog with a recommendation engine using JSON-LD and RDF.
 
 === Janrain Inc.
 *Independent Contractor*
-_ - _
+_April 2017 - July 2017_
 
 - Built a rule-based system with Clojure, ClojureScript, and Datomic, enabling runtime business logic modifications without core code changes.
 
 === Eckoh plc
 *Head of Research & Development*
-_ - _
+_September 2013 - November 2016_
 
 - Managed a small R&D team, exploring new technologies and advising on best practices.
 - Focused on data-driven architectures and industry-academic technology advancements.
 
 === BraveNewTalent
 *Senior Developer / Team Lead*
-_ - _
+_January 2012 - August 2013_
 
 - Led a scrum team, transitioning from a monolithic platform to discrete services.
 - Introduced new technologies including ElasticSearch, Jenkins, and Vagrant.
 
 === Eckoh plc
 *Senior Developer*
-_ - _
+_June 2005 - January 2012_
 
 - Developed and maintained the PHP/VoiceXML platform.
 - Implemented internal coding and security standards (PCI/DSS) and mentored development teams.
 
 === 365 Corporation plc / Eckoh plc
 *Developer*
-_ - _
+_October 1999 - June 2005_
 
 - Maintained and improved a C++ IVR platform, enhancing uptime and developing voice applications.
 
 === Total Perspective Tech
 *Founder & Lead Developer*
-_ - _
+_June 2024 - Present_
 
 - Founded Total Perspective Tech to provide cutting-edge software solutions.
 - Developed and maintained several open-source projects including 'oolon', 'megadodo', and 'pondermatic'.
@@ -160,6 +160,23 @@ Bartfast is a design language builder inspired by Douglas Adams' character Slart
 - Promoted composability, extensibility, and serializability.
 - Implemented the Slarti DSL for defining design tokens and principles.
 - Includes a Languim based language server for enhanced development experience.
+
+=== Linear Project Manager
+*Status:* Active
+
+*Type:* Commercial
+
+*Site:* https://chatgpt.com/g/g-BvCW2ngMb-linear-project-manager
+
+*Description:* 
+
+The Linear Project Manager is a Custom GPT designed to help users manage projects via the Linear platform's GraphQL API. It aids in constructing and executing queries and mutations for issues, projects, teams, and users. Providing guidance on type structures, ensuring schema adherence, and offering explanations and code examples, this Custom GPT leverages the latest Linear API documentation to streamline project management efficiently.
+
+- Manages projects using the Linear platform's GraphQL API.
+- Constructs and executes queries and mutations for issues, projects, teams, and users.
+- Ensures operations comply with the Linear schema.
+- Provides detailed information on type structures and fields with examples.
+- Leverages the latest Linear API documentation for efficient project management.
 
 === Groove Dojo
 *Status:* Work in Progress
