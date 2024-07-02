@@ -19,6 +19,20 @@ _{{formatDate startDate}} - {{formatDate endDate}}_
 
 {{/work}}
 
+== Technical Skills
+
+{{#skills}}
+**{{{name}}}:** {{#keywords}}{{{.}}}{{^@last}}, {{/@last}}{{#@last}}.{{/@last}}{{/keywords}}
+
+{{/skills}}
+
+== Education
+
+{{#education}}
+**{{{studyType}}} in {{{area}}}**
+{{{institution}}}
+{{/education}}
+
 == Projects
 
 {{#projects}}
@@ -38,17 +52,3 @@ _{{formatDate startDate}} - {{formatDate endDate}}_
 {{/highlights}}
 
 {{/projects}}
-
-== Technical Skills
-
-{{#skills}}
-**{{{name}}}:** {{#keywords}}{{{.}}}{{^@last}}, {{/@last}}{{#@last}}.{{/@last}}{{/keywords}}
-
-{{/skills}}
-
-== Education
-
-{{#education}}
-**{{{studyType}}} in {{{area}}}**
-{{{institution}}}
-{{/education}}
