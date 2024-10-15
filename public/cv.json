@@ -149,9 +149,8 @@
       "endDate": "",
       "summary": "Leading the development of innovative software solutions and open-source projects, focusing on functional programming and data-driven architectures.",
       "highlights": [
-        "Founded Total Perspective Tech to provide cutting-edge software solutions.",
-        "Developed and maintained several open-source projects including 'oolon', 'megadodo', and 'pondermatic'.",
-        "Implemented Bloom filters in Clojure/ClojureScript for efficient data querying.",
+        "Founded Total Perspective Tech to explore the intersection of emerging and forgotten concepts in software though implementation and publication of open-source projects.",
+        "Developed and maintained several open-source projects exploting data and model driven methods.",
         "Created a functional effect system driven rules engine for Clojure/ClojureScript."
       ]
     }
@@ -205,7 +204,7 @@
         "Provided comprehensive documentation and examples for quick setup and usage.",
         "Incorporated advanced concepts like UI Manifold and Component Gravity for intuitive interface design.",
         "Currently part of a closed source project as part of the design system for a new product.",
-        "Will be open sourcing the project in the future."
+        "Will be open sourcing the project when ready."
       ]
     },
     {
