@@ -193,16 +193,13 @@
       "title": "Nuxt Gravity",
       "description": "A Nuxt module for implementing Mouldable UI components in Nuxt applications, providing a flexible and adaptable approach to building user interfaces.",
       "status": "Work in Progress",
-      "repoLink": "https://levelup.gitconnected.com/from-atomic-design-to-relativistic-interfaces-0751b0b46832",
+      "link": "https://levelup.gitconnected.com/from-atomic-design-to-relativistic-interfaces-0751b0b46832",
       "type": "Proprietary",
       "startDate": "2024-09",
       "endDate": "",
       "highlights": [
-        "Developed a Nuxt module for creating Mouldable UI components.",
-        "Implemented key concepts such as Frames of Reference and Principles for adaptive UI design.",
-        "Integrated with Nuxt 3 and Vue.js ecosystem.",
-        "Provided comprehensive documentation and examples for quick setup and usage.",
-        "Incorporated advanced concepts like UI Manifold and Component Gravity for intuitive interface design.",
+        "Coined the concept of Relativistic Interfaces as an extension of Atomic Design.",
+        "Developed a Nuxt module for creating Mouldable UI components base on the Relativistic Interfaces design principles.",
         "Currently part of a closed source project as part of the design system for a new product.",
         "Will be open sourcing the project when ready."
       ]
@@ -213,8 +210,8 @@
       "repoLink": "https://github.com/totalperspective/pondermatic",
       "status": "Active",
       "type": "Open Source",
-      "startDate": "2021-01",
-      "endDate": "2022-12",
+      "startDate": "2023-11",
+      "endDate": "",
       "highlights": [
         "Developed core engine using functional programming principles.",
         "Integrated with Asami for efficient data storage and querying.",
@@ -242,28 +239,17 @@
       "title": "Bartfast",
       "description": "Bartfast is a design language builder inspired by Douglas Adams' character Slartibartfast, emphasizing clarity, modularity, and reusability in digital design.",
       "repoLink": "https://github.com/totalperspective/bartfast",
-      "status": "Work in Progress",
+      "status": "Superseded",
       "type": "Open Source",
-      "startDate": "2023-01",
-      "endDate": "",
+      "startDate": "2024-01",
+      "endDate": "2024-06",
       "highlights": [
+        "Superseded by Relativistic Interfaces.",
         "Created modular design components for reuse.",
         "Adopted a declarative and incremental approach to design language definition.",
         "Promoted composability, extensibility, and serializability.",
         "Implemented the Slarti DSL for defining design tokens and principles.",
         "Includes a Languim based language server for enhanced development experience."
-      ]
-    },
-    {
-      "title": "JeltzJS",
-      "description": "Unlock Vogonian Precision: Craft Fluent APIs with JeltzJS.",
-      "repoLink": "https://github.com/totalperspective/jeltz-js",
-      "status": "Work in Progress",
-      "type": "Open Source",
-      "startDate": "2022-03",
-      "endDate": "",
-      "highlights": [
-        "Documented JeltzJS usage and purpose."
       ]
     }
   ],
@@ -373,9 +359,12 @@
         "ChatGPT",
         "Custom GPTs",
         "GPT Agents",
+        "Claude.ai",
+        "WebLLM",
         "Vector Symbolic Architectures",
         "Google Colab",
-        "PyTorch"
+        "PyTorch",
+        "LLAMA"
       ]
     },
     {
@@ -388,7 +377,9 @@
         "Lean",
         "Scrum",
         "Kanban",
-        "SAFe"
+        "SAFe",
+        "Design Systems",
+        "Atomic Design"
       ]
     },
     {
