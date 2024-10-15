@@ -161,10 +161,10 @@
       "title": "Linear Project Manager",
       "description": "The Linear Project Manager is a Custom GPT designed to help users manage projects via the Linear platform's GraphQL API. It aids in constructing and executing queries and mutations for issues, projects, teams, and users. Providing guidance on type structures, ensuring schema adherence, and offering explanations and code examples, this Custom GPT leverages the latest Linear API documentation to streamline project management efficiently.",
       "link": "https://chatgpt.com/g/g-BvCW2ngMb-linear-project-manager",
-      "status": "Active",
+      "status": "Completed",
       "type": "Proprietary",
-      "startDate": "2023-06",
-      "endDate": "",
+      "startDate": "2024-06",
+      "endDate": "2024-07",
       "highlights": [
         "Manages projects using the Linear platform's GraphQL API.",
         "Constructs and executes queries and mutations for issues, projects, teams, and users.",
@@ -195,7 +195,7 @@
       "description": "A Nuxt module for implementing Mouldable UI components in Nuxt applications, providing a flexible and adaptable approach to building user interfaces.",
       "status": "Work in Progress",
       "repoLink": "https://levelup.gitconnected.com/from-atomic-design-to-relativistic-interfaces-0751b0b46832",
-      "type": "Closed Source",
+      "type": "Proprietary",
       "startDate": "2024-09",
       "endDate": "",
       "highlights": [
@@ -279,7 +279,7 @@
   ],
   "skills": [
     {
-      "name": "Programming Languages",
+      "name": "Programming/Domain Specific Languages",
       "keywords": [
         "PHP",
         "JavaScript (ES6)",
