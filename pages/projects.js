@@ -17,7 +17,7 @@ function Page() {
       <Head>
         <title>Projects</title>
       </Head>
-      {['Commercial', 'Open Source'].map((type) => (
+      {['Proprietary', 'Open Source'].map((type) => (
         <div key={type}>
           <h1 className="font-bold mb-4">{type} Projects</h1>
           {['Active', 'WIP', 'Others'].map((status) => (

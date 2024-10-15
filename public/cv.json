@@ -31,6 +31,19 @@
   },
   "work": [
     {
+      "company": "Undisclosed",
+      "postion": "Contract Developer/Architect",
+      "startDate": "2024-06",
+      "endDate": "",
+      "summary": "Developing a new product in the event planning industry.",
+      "highlights": [
+        "Sole developer and architect for the project.",
+        "Using the pondermatic rules engine to drive the application logic.",
+        "Using FlureeDB for the database.",
+        "Using AWS for the infrastructure."
+      ]
+    },
+    {
       "company": "Hybr Ltd",
       "position": "Senior Full-stack Web Developer",
       "startDate": "2023-06",
@@ -61,7 +74,8 @@
       "summary": "Led design and strategy for the Entellect data platform, enhancing functionality and supporting trial customers and internal users.",
       "highlights": [
         "Led architectural design and strategy for the Entellect data platform.",
-        "Mediated between product and engineering teams to enhance platform functionality, supporting trial customers and retaining internal users."
+        "Mediated between product and engineering teams to enhance platform functionality, supporting trial customers and retaining internal users.",
+        "Assisted a trial with a major pharmaceutical company to integrate the Entellect data platform with their existing data to discover novel drug targets."
       ]
     },
     {
@@ -148,7 +162,7 @@
       "description": "The Linear Project Manager is a Custom GPT designed to help users manage projects via the Linear platform's GraphQL API. It aids in constructing and executing queries and mutations for issues, projects, teams, and users. Providing guidance on type structures, ensuring schema adherence, and offering explanations and code examples, this Custom GPT leverages the latest Linear API documentation to streamline project management efficiently.",
       "link": "https://chatgpt.com/g/g-BvCW2ngMb-linear-project-manager",
       "status": "Active",
-      "type": "Commercial",
+      "type": "Proprietary",
       "startDate": "2023-06",
       "endDate": "",
       "highlights": [
@@ -164,7 +178,7 @@
       "description": "Groove.dojo is the ultimate AI-powered solution for creating the perfect soundtrack for any occasion. With seamless Spotify integration, customizable rules, and collaborative features, Groove.dojo ensures a personalized and engaging listening experience that adapts to your ever-changing moods and activities.",
       "link": "https://www.groovedojo.app",
       "status": "Work in Progress",
-      "type": "Commercial",
+      "type": "Proprietary",
       "startDate": "2022-09",
       "endDate": "",
       "highlights": [
@@ -177,18 +191,21 @@
       ]
     },
     {
-      "title": "Nuxt Fluree",
-      "description": "Nuxt module for the Fluree graph database, needs updating to match Fluree's new API.",
-      "repoLink": "https://github.com/totalperspective/nuxt-fluree",
-      "status": "Active",
-      "type": "Open Source",
-      "startDate": "2021-06",
+      "title": "Nuxt Gravity",
+      "description": "A Nuxt module for implementing Mouldable UI components in Nuxt applications, providing a flexible and adaptable approach to building user interfaces.",
+      "status": "Work in Progress",
+      "repoLink": "https://levelup.gitconnected.com/from-atomic-design-to-relativistic-interfaces-0751b0b46832",
+      "type": "Closed Source",
+      "startDate": "2024-09",
       "endDate": "",
       "highlights": [
-        "Developed Nuxt module for easy integration with Fluree.",
-        "Ensured compatibility with the latest Nuxt and Fluree versions.",
-        "Updated module to match Fluree's new API.",
-        "Added comprehensive documentation and examples for quick setup and usage."
+        "Developed a Nuxt module for creating Mouldable UI components.",
+        "Implemented key concepts such as Frames of Reference and Principles for adaptive UI design.",
+        "Integrated with Nuxt 3 and Vue.js ecosystem.",
+        "Provided comprehensive documentation and examples for quick setup and usage.",
+        "Incorporated advanced concepts like UI Manifold and Component Gravity for intuitive interface design.",
+        "Currently part of a closed source project as part of the design system for a new product.",
+        "Will be open sourcing the project in the future."
       ]
     },
     {
@@ -323,7 +340,17 @@
         "Docker",
         "Chromatic",
         "AWS",
+        "AWS ECS",
+        "AWS Fargate",
+        "AWS Lambda",
         "AWS Cognito",
+        "AWS API Gateway",
+        "AWS S3",
+        "AWS DynamoDB",
+        "AWS SQS",
+        "AWS SNS",
+        "AWS ECR",
+        "AWS EKS",
         "N8N",
         "RabbitMQ",
         "Kafka",

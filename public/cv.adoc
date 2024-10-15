@@ -164,7 +164,7 @@ Bartfast is a design language builder inspired by Douglas Adams' character Slart
 === Linear Project Manager
 *Status:* Active
 
-*Type:* Commercial
+*Type:* Proprietary
 
 *Site:* https://chatgpt.com/g/g-BvCW2ngMb-linear-project-manager
 
@@ -181,7 +181,7 @@ The Linear Project Manager is a Custom GPT designed to help users manage project
 === Groove Dojo
 *Status:* Work in Progress
 
-*Type:* Commercial
+*Type:* Proprietary
 
 *Site:* https://www.groovedojo.app
 
