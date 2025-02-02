@@ -5,7 +5,7 @@
     "email": "bahulneel@gmail.com",
     "phone": "+44 7771 603207",
     "url": "https://bahulneel.github.io",
-    "summary": "Seasoned software architect and developer with over 20 years of experience in building large-scale, innovative software solutions. Adept at data platform development, web systems, and enhancing team performance. Regularly engages with academic research and industry trends to stay at the cutting edge of technology. Open about living with ADHD and awaiting assessment for ASD, and committed to promoting neurodiversity in the workplace.",
+    "summary": "Technology leader with extensive experience in software architecture and engineering, focusing on enterprise-scale solutions that improve business operations. Combines technical expertise with business understanding to deliver practical, effective solutions. Experienced in building and leading technical teams. Advocates for workplace neurodiversity, bringing different perspectives (ADHD diagnosed and pending ASD assessment) to problem-solving and innovation.",
     "image": "profile.webp",
     "location": {
       "city": "London",
@@ -35,12 +35,13 @@
       "position": "Contract Developer/Architect",
       "startDate": "2024-06",
       "endDate": "",
-      "summary": "Developing a new product in the event planning industry.",
+      "summary": "Developing an event planning platform, responsible for technical architecture and implementation.",
       "highlights": [
-        "Sole developer and architect for the project.",
-        "Using the pondermatic rules engine to drive the application logic.",
-        "Using FlureeDB for the database.",
-        "Using AWS for the infrastructure."
+        "Implementing using AI-assisted development practices to improve delivery velocity",
+        "Underpinning rules-driven platform architecture using a homegrown rules engine",
+        "Implementing data architecture with FlureeDB for FAIRest data storage and JSON-LD support",
+        "Offline and mobile-first development strategy",
+        "Developing cloud infrastructure on AWS for scalability requirements"
       ]
     },
     {
@@ -48,11 +49,11 @@
       "position": "Senior Full-stack Web Developer",
       "startDate": "2023-06",
       "endDate": "2024-05",
-      "summary": "Developed and maintained the Hybr product and platform, introduced semantic web concepts, and led the design system effort.",
+      "summary": "Led technical improvements and platform modernization, including semantic web implementation and design system development.",
       "highlights": [
-        "Developed and maintained the Hybr product and platform.",
-        "Introduced semantic web concepts.",
-        "Led the effort to build a design system."
+        "Developed comprehensive design system to improve development consistency",
+        "Introduced semantic web architecture and knowledge engineering concepts to enhance internal modelling and data integration",
+        "Improved platform performance and user experience through targeted updates"
       ]
     },
     {
@@ -60,10 +61,11 @@
       "position": "Contract ML Architect and Senior Developer",
       "startDate": "2022-08",
       "endDate": "2023-02",
-      "summary": "Investigated model and architecture options and developed a synthetic data generator for model training without sensitive data.",
+      "summary": "Guided architectural evolution for API classification systems, combining ML solutions with platform modernization.",
       "highlights": [
-        "Conducted initial investigations and consultations on model and architecture options.",
-        "Developed a proprietary synthetic data generator to train models without sensitive customer data."
+        "Guided team's architectural evolution from monolithic to pluggable multi-layer design supporting cross-platform deployment",
+        "Developed synthetic data generation system for classifier testing",
+        "Investigated language model applications for API content classification"
       ]
     },
     {
@@ -71,11 +73,11 @@
       "position": "Data Platform Architect",
       "startDate": "2020-09",
       "endDate": "2022-08",
-      "summary": "Led design and strategy for the Entellect data platform, enhancing functionality and supporting trial customers and internal users.",
+      "summary": "Led architecture development for the Entellect data platform, supporting enterprise data integration initiatives.",
       "highlights": [
-        "Led architectural design and strategy for the Entellect data platform.",
-        "Mediated between product and engineering teams to enhance platform functionality, supporting trial customers and retaining internal users.",
-        "Assisted a trial with a major pharmaceutical company to integrate the Entellect data platform with their existing data to discover novel drug targets."
+        "Provided architectural guidance for platform development and integration",
+        "Facilitated collaboration between product and engineering teams to align technical capabilities with product strategy",
+        "Supported pharmaceutical company data-athon, enabling novel drug target discovery through platform integration"
       ]
     },
     {
@@ -158,97 +160,93 @@
   "projects": [
     {
       "title": "Linear Project Manager",
-      "description": "The Linear Project Manager is a Custom GPT designed to help users manage projects via the Linear platform's GraphQL API. It aids in constructing and executing queries and mutations for issues, projects, teams, and users. Providing guidance on type structures, ensuring schema adherence, and offering explanations and code examples, this Custom GPT leverages the latest Linear API documentation to streamline project management efficiently.",
+      "description": "Custom GPT designed to assist with Linear platform project management via GraphQL API. Provides guidance for query construction, schema validation, and API usage examples.",
       "link": "https://chatgpt.com/g/g-BvCW2ngMb-linear-project-manager",
       "status": "Completed",
       "type": "Proprietary",
       "startDate": "2024-06",
       "endDate": "2024-07",
       "highlights": [
-        "Manages projects using the Linear platform's GraphQL API.",
-        "Constructs and executes queries and mutations for issues, projects, teams, and users.",
-        "Ensures operations comply with the Linear schema.",
-        "Provides detailed information on type structures and fields with examples.",
-        "Leverages the latest Linear API documentation for efficient project management."
+        "Manages projects using the Linear platform's GraphQL API",
+        "Constructs and executes queries and mutations for issues, projects, teams, and users"
       ]
     },
     {
       "title": "Groove Dojo",
-      "description": "Groove.dojo is the ultimate AI-powered solution for creating the perfect soundtrack for any occasion. With seamless Spotify integration, customizable rules, and collaborative features, Groove.dojo ensures a personalized and engaging listening experience that adapts to your ever-changing moods and activities.",
+      "description": "AI-enhanced music playlist management system with Spotify integration. Focuses on personalized playlist creation based on user preferences and context.",
       "status": "Work in Progress",
       "type": "Proprietary",
       "startDate": "2022-09",
       "endDate": "",
       "highlights": [
-        "Created comprehensive Design System using Svelte, shadcn-svelte, and TailwindCSS.",
-        "Will integrate AI for personalized music recommendations.",
-        "Will develop collaborative features for shared playlists.",
-        "Will implement dynamic playlist creation.",
-        "Will integrate with Spotify for user login, permissions, and playlist control.",
-        "Will integrate FlureeDB for data storage."
+        "Developing Design System using Svelte, shadcn-svelte, and TailwindCSS",
+        "Planning AI integration for music recommendations",
+        "Implementing collaborative playlist features",
+        "Developing dynamic playlist generation",
+        "Integrating with Spotify API for user authentication and playlist management",
+        "Using linked data for data representation and FAIR data storage"
       ]
     },
     {
       "title": "Nuxt Gravity",
-      "description": "A Nuxt module for implementing Mouldable UI components in Nuxt applications, providing a flexible and adaptable approach to building user interfaces.",
+      "description": "Nuxt module implementing Mouldable UI components, based on an extension of Atomic Design principles for flexible interface development.",
       "status": "Work in Progress",
       "link": "https://levelup.gitconnected.com/from-atomic-design-to-relativistic-interfaces-0751b0b46832",
       "type": "Proprietary",
       "startDate": "2024-09",
       "endDate": "",
       "highlights": [
-        "Coined the concept of Relativistic Interfaces as an extension of Atomic Design.",
-        "Developed a Nuxt module for creating Mouldable UI components base on the Relativistic Interfaces design principles.",
-        "Currently part of a closed source project as part of the design system for a new product.",
-        "Will be open sourcing the project when ready."
+        "Developed Relativistic Interfaces concept extending Atomic Design a",
+        "Created Nuxt module for Mouldable UI components",
+        "Currently implemented in production design system",
+        "Open source version being implemented from lessons learned in a proprietary project"
       ]
     },
     {
       "title": "Pondermatic",
-      "description": "Functional effect system driven rules engine for Clojure/ClojureScript.",
+      "description": "Effect system based rules engine for Clojure/ClojureScript, focusing on functional programming principles.",
       "repoLink": "https://github.com/totalperspective/pondermatic",
       "status": "Active",
       "type": "Open Source",
       "startDate": "2023-11",
       "endDate": "",
       "highlights": [
-        "Developed core engine using functional programming principles.",
-        "Integrated with Asami for efficient data storage and querying.",
-        "Extended support for JavaScript environments including NodeJS and browser.",
-        "Implemented rule-based logic using O'Doyle Rules.",
-        "Published the project on Clojars and npm for easy accessibility."
+        "Developed an opinionated rules engine for Clojure/ClojureScript",
+        "Integrated with Asami for data storage and querying",
+        "Leans on the O'doyle rules-engine for RETE based rules execution",
+        "Added support for JavaScript environments",
+        "Published to Clojars and npm repositories (JS support out-of-the-box)"
       ]
     },
     {
       "title": "Oolon",
-      "description": "Bloom implementation for Clojure/ClojureScript leaning on Datomic datalog. Superseded by Pondermatic.",
+      "description": "Bloom implementation for Clojure/ClojureScript using Datomic datalog. Project concepts now incorporated into Pondermatic.",
       "repoLink": "https://github.com/totalperspective/oolon",
       "status": "Superseded",
       "type": "Open Source",
       "startDate": "2020-05",
       "endDate": "2021-04",
       "highlights": [
-        "Developed Oolon, a purely declarative language for building systems that manage state over time.",
-        "Implemented modules and rules in Oolon to handle state and asynchrony in distributed systems.",
-        "Leveraged DataScript for internal state management within Oolon.",
-        "Utilized Oolon's data-oriented DSL to facilitate integration with Java and JavaScript environments."
+        "Created declarative language for state management",
+        "Implemented modules for distributed system state handling",
+        "Used DataScript for internal state management",
+        "Developed data-oriented DSL for Java/JavaScript integration"
       ]
     },
     {
       "title": "Bartfast",
-      "description": "Bartfast is a design language builder inspired by Douglas Adams' character Slartibartfast, emphasizing clarity, modularity, and reusability in digital design.",
+      "description": "Design language development toolkit focusing on modularity and reusability in digital design. Concepts now part of Relativistic Interfaces.",
       "repoLink": "https://github.com/totalperspective/bartfast",
       "status": "Superseded",
       "type": "Open Source",
       "startDate": "2024-01",
       "endDate": "2024-06",
       "highlights": [
-        "Superseded by Relativistic Interfaces.",
-        "Created modular design components for reuse.",
-        "Adopted a declarative and incremental approach to design language definition.",
-        "Promoted composability, extensibility, and serializability.",
-        "Implemented the Slarti DSL for defining design tokens and principles.",
-        "Includes a Languim based language server for enhanced development experience."
+        "Developed modular design component system",
+        "Created declarative approach to design language definition",
+        "Implemented design token and principle definition system",
+        "Added language server for development support",
+        "Superseeded by work on Relativistic UI"
       ]
     }
   ],
@@ -265,156 +263,163 @@
     {
       "name": "Programming/Domain Specific Languages",
       "keywords": [
-        "PHP",
-        "JavaScript (ES6)",
-        "TypeScript",
-        "Node.js",
         "C/C++",
         "Clojure",
         "ClojureScript",
-        "Perl",
+        "Datalog",
         "Java",
+        "JavaScript (ES6)",
+        "Node.js",
+        "Perl",
+        "PHP",
         "Python",
-        "SQL",
         "SPARQL",
-        "Datalog"
+        "SQL",
+        "TypeScript"
       ]
     },
     {
       "name": "Web and Markup Technologies",
       "keywords": [
-        "HTML",
-        "CSS",
-        "SVG",
-        "VoiceXML",
         "CCXML",
+        "CSS",
+        "GraphQL",
+        "HTML",
         "JSX",
+        "Next.js",
+        "Pinia",
+        "Pug",
         "React",
         "Redux",
-        "GraphQL",
-        "WebRTC",
-        "Pug",
-        "WebWorkers",
         "Schema.org",
-        "Vue/Nuxt",
-        "Pinia",
-        "TailwindCSS",
-        "Vuetify",
         "Svelte 4",
-        "Next.js"
+        "SVG",
+        "TailwindCSS",
+        "VoiceXML",
+        "Vue/Nuxt",
+        "Vuetify",
+        "WebRTC",
+        "WebWorkers"
       ]
     },
     {
       "name": "Databases and Data Management",
       "keywords": [
+        "Datomic",
+        "ElasticSearch",
+        "FlureeDB",
+        "MongoDB",
         "MySQL/MariaDB",
         "Postgres",
-        "ElasticSearch",
-        "Datomic",
-        "MongoDB",
-        "FlureeDB",
         "Redis"
       ]
     },
     {
       "name": "Development and Deployment Tools",
       "keywords": [
-        "Storybook",
-        "NATS",
-        "Docker",
-        "Chromatic",
         "AWS",
+        "AWS API Gateway",
+        "AWS Cognito",
+        "AWS DynamoDB",
+        "AWS ECR",
         "AWS ECS",
+        "AWS EKS",
         "AWS Fargate",
         "AWS Lambda",
-        "AWS Cognito",
-        "AWS API Gateway",
         "AWS S3",
-        "AWS DynamoDB",
-        "AWS SQS",
         "AWS SNS",
-        "AWS ECR",
-        "AWS EKS",
-        "N8N",
-        "RabbitMQ",
-        "Kafka",
-        "ZooKeeper",
-        "Langium",
-        "GitHub Actions",
+        "AWS SQS",
+        "Chromatic",
+        "Docker",
         "ESLint",
+        "GitHub Actions",
         "Histoire",
+        "Kafka",
+        "Langium",
+        "N8N",
+        "NATS",
+        "RabbitMQ",
         "SST (Ion)",
-        "Terraform"
+        "Storybook",
+        "Terraform",
+        "ZooKeeper"
       ]
     },
     {
       "name": "Artificial Intelligence and Machine Learning",
       "keywords": [
-        "Tensorflow",
-        "statistical methods",
-        "production-rule systems",
-        "AI planning",
-        "synthetic data generation",
+        "Agentic AI/LLMs",
+        "AI planning (symbolic)",
         "ChatGPT",
-        "Custom GPTs",
-        "GPT Agents",
         "Claude.ai",
-        "WebLLM",
-        "Vector Symbolic Architectures",
+        "Cursor.sh",
+        "Custom GPTs",
+        "DeepSeek",
         "Google Colab",
+        "Google Gemini",
+        "NotebookLM",
+        "oLLAMA",
+        "OpenAI APIs",
+        "Perplexity",
+        "production-rule systems",
+        "Prompt Engineering",
         "PyTorch",
-        "LLAMA"
+        "statistical methods",
+        "synthetic data generation",
+        "Tensorflow",
+        "Vector Symbolic Architectures",
+        "WebLLM"
       ]
     },
     {
       "name": "Methodologies",
       "keywords": [
-        "TDD",
+        "Atomic Design",
         "BDD",
-        "Domain-Driven Design",
-        "Scaled Agile",
-        "Lean",
-        "Scrum",
-        "Kanban",
-        "SAFe",
         "Design Systems",
-        "Atomic Design"
+        "Domain-Driven Design",
+        "Kanban",
+        "Lean",
+        "SAFe",
+        "Scaled Agile",
+        "Scrum",
+        "TDD"
       ]
     },
     {
       "name": "Architectures",
       "keywords": [
-        "Distributed architectures",
-        "micro-service architectures",
-        "event/streaming architectures",
+        "C4",
         "data-driven architectures",
-        "serverless architectures",
-        "C4"
+        "Distributed architectures",
+        "event/streaming architectures",
+        "micro-service architectures",
+        "serverless architectures"
       ]
     },
     {
       "name": "Compliance",
       "keywords": [
-        "PCI DSS",
-        "GDPR"
+        "GDPR",
+        "PCI DSS"
       ]
     },
     {
       "name": "Additional Tools",
       "keywords": [
-        "Notion",
         "Figma",
+        "Notion",
         "PostHog"
       ]
     },
     {
       "name": "Knowledge Engineering",
       "keywords": [
-        "RDF",
-        "Semantic Web",
         "JSON-LD",
+        "OWL",
+        "RDF",
         "Schema.org",
-        "OWL"
+        "Semantic Web"
       ]
     }
   ]
