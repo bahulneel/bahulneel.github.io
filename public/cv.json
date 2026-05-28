@@ -36,14 +36,15 @@
       "position": "Contract Developer/Architect",
       "startDate": "2024-06",
       "endDate": "2026-05",
-      "summary": "Architected and delivered an event-planning platform from concept to launch-ready over a two-year engagement. The project is complete but unlaunched at the close of the engagement; product, client, and implementation details remain under NDA. The work served as the production crucible in which several of the patterns now published as open research and libraries under RelationalFabric — Howard's claims engine, Canon's lazy typing, and Suss / RaCSTS propagator networks — were tested, refined, and proved out at the scale of a real codebase.",
+      "summary": "Architected and delivered a confidential platform from concept to launch-ready over a two-year engagement. The project is complete but unlaunched at the close of the contract; product, client, and implementation details remain under NDA. The engagement was the production proving ground for a distributed offline-first graph store, semantic data modelling, mouldable interfaces, and planning-oriented interaction design — patterns now published openly through RelationalFabric and related writing.",
       "highlights": [
-        "Delivered the platform end-to-end using AI-assisted development practices, sustaining a high delivery velocity across the engagement",
-        "Underpinned the architecture with a rules-driven platform model built on a homegrown rules engine",
-        "Implemented a data architecture on FlureeDB for FAIR data storage with native JSON-LD support",
+        "Implemented a distributed, offline-first graph store (DCSGS-variant architecture) nearing production readiness",
+        "Pioneered early production exploration of relativistic UI/UX and mouldable interfaces — precursor to concepts published publicly",
+        "Modelled domain data with a Schema.org-derived semantic layer for knowledge-engineering-oriented integration",
+        "Replaced rigid sequential workflow gating with planning-based interaction chains: when a user attempts an action, the system surfaces prerequisite actions for completion rather than hard-blocking progress",
+        "Delivered end-to-end using AI-assisted development practices, sustaining high delivery velocity across the engagement",
         "Executed an offline- and mobile-first product strategy across web and mobile surfaces",
-        "Stood up cloud infrastructure on AWS sized for projected scalability requirements",
-        "Acted as the proving ground for the public RelationalFabric research track now visible in the Projects and Writing sections of this site"
+        "Stood up cloud infrastructure on AWS sized for projected scalability requirements"
       ]
     },
     {
@@ -162,97 +163,6 @@
   ],
   "projects": [
     {
-      "title": "Linear Project Manager",
-      "description": "Custom GPT designed to assist with Linear platform project management via GraphQL API. Provides guidance for query construction, schema validation, and API usage examples.",
-      "link": "https://chatgpt.com/g/g-BvCW2ngMb-linear-project-manager",
-      "status": "Completed",
-      "type": "Proprietary",
-      "startDate": "2024-06",
-      "endDate": "2024-07",
-      "highlights": [
-        "Manages projects using the Linear platform's GraphQL API",
-        "Constructs and executes queries and mutations for issues, projects, teams, and users"
-      ]
-    },
-    {
-      "title": "Groove Dojo",
-      "description": "AI-enhanced music playlist management system with Spotify integration. Focuses on personalized playlist creation based on user preferences and context.",
-      "status": "Work in Progress",
-      "type": "Proprietary",
-      "startDate": "2022-09",
-      "endDate": "",
-      "highlights": [
-        "Developing Design System using Svelte, shadcn-svelte, and TailwindCSS",
-        "Planning AI integration for music recommendations",
-        "Implementing collaborative playlist features",
-        "Developing dynamic playlist generation",
-        "Integrating with Spotify API for user authentication and playlist management",
-        "Using linked data for data representation and FAIR data storage"
-      ]
-    },
-    {
-      "title": "Nuxt Gravity",
-      "description": "Nuxt module implementing Mouldable UI components, based on an extension of Atomic Design principles for flexible interface development.",
-      "status": "Work in Progress",
-      "link": "https://levelup.gitconnected.com/from-atomic-design-to-relativistic-interfaces-0751b0b46832",
-      "type": "Proprietary",
-      "startDate": "2024-09",
-      "endDate": "",
-      "highlights": [
-        "Developed Relativistic Interfaces concept extending Atomic Design a",
-        "Created Nuxt module for Mouldable UI components",
-        "Currently implemented in production design system",
-        "Open source version being implemented from lessons learned in a proprietary project"
-      ]
-    },
-    {
-      "title": "Pondermatic",
-      "description": "Effect system based rules engine for Clojure/ClojureScript, focusing on functional programming principles.",
-      "repoLink": "https://github.com/totalperspective/pondermatic",
-      "status": "Active",
-      "type": "Open Source",
-      "startDate": "2023-11",
-      "endDate": "",
-      "highlights": [
-        "Developed an opinionated rules engine for Clojure/ClojureScript",
-        "Integrated with Asami for data storage and querying",
-        "Leans on the O'doyle rules-engine for RETE based rules execution",
-        "Added support for JavaScript environments",
-        "Published to Clojars and npm repositories (JS support out-of-the-box)"
-      ]
-    },
-    {
-      "title": "Oolon",
-      "description": "Bloom implementation for Clojure/ClojureScript using Datomic datalog. Project concepts now incorporated into Pondermatic.",
-      "repoLink": "https://github.com/totalperspective/oolon",
-      "status": "Superseded",
-      "type": "Open Source",
-      "startDate": "2020-05",
-      "endDate": "2021-04",
-      "highlights": [
-        "Created declarative language for state management",
-        "Implemented modules for distributed system state handling",
-        "Used DataScript for internal state management",
-        "Developed data-oriented DSL for Java/JavaScript integration"
-      ]
-    },
-    {
-      "title": "Bartfast",
-      "description": "Design language development toolkit focusing on modularity and reusability in digital design. Concepts now part of Relativistic Interfaces.",
-      "repoLink": "https://github.com/totalperspective/bartfast",
-      "status": "Superseded",
-      "type": "Open Source",
-      "startDate": "2024-01",
-      "endDate": "2024-06",
-      "highlights": [
-        "Developed modular design component system",
-        "Created declarative approach to design language definition",
-        "Implemented design token and principle definition system",
-        "Added language server for development support",
-        "Superseeded by work on Relativistic UI"
-      ]
-    },
-    {
       "title": "Agent Brain Trust",
       "description": "A reusable system of expert collectives ('trusts') that turns AI assistants into a room with friction — real named figures in plausible settings, a moderator who refuses to skip steps, and a synthesis that names what was traded away. Ships as Cursor and Claude Code plugins, per-skill zips, and a published MCP server (@bahulneel/brain-trust-mcp).",
       "repoLink": "https://github.com/bahulneel/agent-brain-trust",
@@ -285,8 +195,8 @@
       ]
     },
     {
-      "title": "Relational Fabric",
-      "description": "Foundational TypeScript libraries and published research for building truly relational, data-driven systems — providing the ontological foundations and construction primitives for systems where relationships carry semantic meaning, different representations interoperate, and code can reason about its data relationally.",
+      "title": "Relational Fabric — library platform",
+      "description": "The active library family and published research for truly relational, data-driven systems — lazy typing, claims, propagator networks, and construction primitives where relationships carry semantic meaning. Maintained under the RelationalFabric GitHub organisation (https://github.com/RelationalFabric); Canon, Howard, and Suss are the first shipped libraries, with Filament, Weft, Warp, and Shuttle as the broader platform surface.",
       "link": "https://github.com/RelationalFabric",
       "status": "Active",
       "type": "Open Source",
@@ -297,7 +207,7 @@
         "Weft — navigation and query construction primitives",
         "Warp — primitives for working with data at rest",
         "Shuttle — flow and coordination construction primitives",
-        "Published whitepapers: Relational Causal State Transition System (RaCSTS) — implemented by Suss; and Distributed Context-Sensitive Graph Store (DCSGS) — a peer-to-peer, semantically rich graph store combining an immutable Semantic Log with a Native Projection, audience-based stratification, and ownership-based conflict resolution"
+        "Published DCSGS whitepaper (Distributed Context-Sensitive Graph Store) — peer-to-peer distributed graph storage with immutable Semantic Log, Native Projection, and ownership-based conflict resolution"
       ]
     },
     {

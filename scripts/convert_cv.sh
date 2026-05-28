@@ -1,8 +1,15 @@
 #!/bin/bash
 #
-# Build both downloadable CV PDFs from public/cv.json:
-#   - public/cv.pdf          — full, long-form CV (legacy artifact)
-#   - public/cv-summary.pdf  — compressed, recruiter-friendly CV
+# Build CV artifacts from public/cv.json (source of truth) via
+# scripts/cv_template.mustache and scripts/cv_summary_template.mustache:
+#   - public/cv.adoc / public/cv-summary.adoc
+#   - public/cv.pdf / public/cv-summary.pdf
+# All four outputs are generated-only (gitignored); do not commit them.
+#
+# Edit public/cv.json (or templates), then run:  npm run build:cv
+# Commit only cv.json and script/template sources. CI (.github/workflows/nextjs.yml)
+# runs this script before next build on every deploy, so /cv.pdf and /cv-summary.pdf
+# are served from public/ without checking in the PDFs.
 #
 # The two asciidoctor-pdf invocations run in parallel because they are the
 # slow steps; the upstream .adoc generation is cheap and runs sequentially.
