@@ -1,6 +1,8 @@
 = Bahul Neel Upadhyaya
+
+[%hardbreaks]
 Software Architect & Engineer | London, United Kingdom
-bahulneel@gmail.com | +44 7771 603207 | https://bahulneel.github.io
+bahulneel@gmail.com | +44 77712 603207 | https://bahulneel.github.io
 GitHub: https://github.com/bahulneel | LinkedIn: https://www.linkedin.com/in/bahulneel/ | GitHub (Org): https://github.com/totalperspective
 
 == Professional Summary
@@ -20,7 +22,7 @@ Exploring the intersection of emerging and forgotten concepts in software throug
 - Built Agent Brain Trust — a reusable system of expert collectives that turns AI assistants into a room with friction, shipping as Cursor/Claude Code plugins and an MCP server.
 - Published a sustained body of long-form writing on Level Up Coding spanning platform thinking, knowledge engineering, type-level programming, and AI-assisted development.
 
-=== Confidential
+=== _Undisclosed Client (under NDA)_
 *Contract Developer/Architect*
 _June 2024 – May 2026_
 

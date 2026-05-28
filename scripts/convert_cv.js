@@ -62,6 +62,16 @@ Handlebars.registerHelper('formatDate', function (dateStr) {
   return format(parseISO(dateStr), 'MMMM yyyy');
 });
 
+// Wraps a work entry's company name in AsciiDoc italics when the entry is
+// marked confidential, so an NDA/placeholder label like "Undisclosed Client
+// (under NDA)" reads visually as a meta-label rather than a real org name.
+Handlebars.registerHelper('companyLabel', function (entry) {
+  const str = entry && entry.confidential
+    ? `_${entry.company}_`
+    : (entry ? entry.company : '');
+  return new Handlebars.SafeString(str);
+});
+
 function effectiveEndDate(entry) {
   return entry.endDate ? new Date(entry.endDate + '-01') : REFERENCE_DATE;
 }

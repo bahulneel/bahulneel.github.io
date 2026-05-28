@@ -1,6 +1,8 @@
 = {{{basics.name}}}
-Email: {{{basics.email}}} | GitHub: {{#basics.profiles}}{{#github}}{{{url}}}{{/github}}{{/basics.profiles}} | LinkedIn: {{#basics.profiles}}{{#linkedin}}{{{url}}}{{/linkedin}}{{/basics.profiles}} | Location: {{{basics.location.city}}}, {{{basics.location.country}}}
-Phone: {{{basics.phone}}}
+
+[%hardbreaks]
+Email: {{{basics.email}}} | Phone: {{{basics.phone}}} | Location: {{{basics.location.city}}}, {{{basics.location.country}}}
+{{#basics.profiles}}{{{network}}}: {{{url}}}{{#unless @last}} | {{/unless}}{{/basics.profiles}}
 
 == Professional Summary
 
@@ -9,7 +11,7 @@ Phone: {{{basics.phone}}}
 == Professional Experience
 
 {{#work}}
-=== {{{company}}}
+=== {{companyLabel this}}
 *{{{position}}}*
 _{{formatDate startDate}} - {{formatDate endDate}}_
 

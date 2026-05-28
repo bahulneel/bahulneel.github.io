@@ -1,6 +1,8 @@
 = Bahul Neel Upadhyaya
-Email: bahulneel@gmail.com | GitHub:  | LinkedIn:  | Location: London, United Kingdom
-Phone: +44 7771 603207
+
+[%hardbreaks]
+Email: bahulneel@gmail.com | Phone: +44 77712 603207 | Location: London, United Kingdom
+GitHub: https://github.com/bahulneel | LinkedIn: https://www.linkedin.com/in/bahulneel/ | GitHub (Org): https://github.com/totalperspective
 
 == Professional Summary
 
@@ -8,7 +10,7 @@ Technology leader with extensive experience in software architecture and enginee
 
 == Professional Experience
 
-=== Confidential
+=== _Undisclosed Client (under NDA)_
 *Contract Developer/Architect*
 _June 2024 - May 2026_
 

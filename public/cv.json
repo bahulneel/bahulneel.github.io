@@ -3,7 +3,7 @@
     "name": "Bahul Neel Upadhyaya",
     "label": "Software Architect & Engineer",
     "email": "bahulneel@gmail.com",
-    "phone": "+44 7771 603207",
+    "phone": "+44 77712 603207",
     "url": "https://bahulneel.github.io",
     "summary": "Technology leader with extensive experience in software architecture and engineering, focusing on enterprise-scale solutions that improve business operations. Combines technical expertise with business understanding to deliver practical, effective solutions. Experienced in building and leading technical teams. Advocates for workplace neurodiversity, bringing different perspectives (ADHD diagnosed and pending ASD assessment) to problem-solving and innovation.",
     "image": "profile.webp",
@@ -31,7 +31,8 @@
   },
   "work": [
     {
-      "company": "Confidential",
+      "company": "Undisclosed Client (under NDA)",
+      "confidential": true,
       "position": "Contract Developer/Architect",
       "startDate": "2024-06",
       "endDate": "2026-05",
