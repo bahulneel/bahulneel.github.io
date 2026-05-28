@@ -33,11 +33,11 @@ Architected and delivered an event-planning platform from concept to launch-read
 - Stood up cloud infrastructure on AWS sized for projected scalability requirements
 - Acted as the proving ground for the public RelationalFabric research track now visible in the Projects and Writing sections of this site
 
+== Recent Roles
+
 === Hybr Ltd
 *Senior Full-stack Web Developer*
 _June 2023 – May 2024_
-
-Led technical improvements and platform modernization, including semantic web implementation and design system development.
 
 - Developed comprehensive design system to improve development consistency
 - Introduced semantic web architecture and knowledge engineering concepts to enhance internal modelling and data integration
@@ -47,8 +47,6 @@ Led technical improvements and platform modernization, including semantic web im
 *Contract ML Architect and Senior Developer*
 _August 2022 – February 2023_
 
-Guided architectural evolution for API classification systems, combining ML solutions with platform modernization.
-
 - Guided team's architectural evolution from monolithic to pluggable multi-layer design supporting cross-platform deployment
 - Developed synthetic data generation system for classifier testing
 - Investigated language model applications for API content classification
@@ -57,28 +55,15 @@ Guided architectural evolution for API classification systems, combining ML solu
 *Data Platform Architect*
 _September 2020 – August 2022_
 
-Led architecture development for the Entellect data platform, supporting enterprise data integration initiatives.
-
 - Provided architectural guidance for platform development and integration
 - Facilitated collaboration between product and engineering teams to align technical capabilities with product strategy
 - Supported pharmaceutical company data-athon, enabling novel drug target discovery through platform integration
 
-=== Earlier Roles
+== Earlier Career
 
-*R&D Lead, Architecture Team / Senior Platform Architect* at *Honeybee Solutions (Synchronoss Technologies Inc.)* — _August 2017 – June 2020_
-
-Developed a rules-based product recommendation service and integrated a schemaless product catalog with a recommendation engine.
-
-*Independent Contractor* at *Janrain Inc.* — _April 2017 – July 2017_
-
-Built a rule-based system with Clojure, ClojureScript, and Datomic for runtime business logic modifications without core code changes.
-
-*Head of Research & Development* at *Eckoh plc* — _September 2013 – November 2016_
-
-Managed an R&D team, exploring new technologies and advising on best practices, focusing on data-driven architectures and technology advancements.
-
-=== Earlier Career
-
+- _August 2017 – June 2020_ — *R&D Lead, Architecture Team / Senior Platform Architect*, Honeybee Solutions (Synchronoss Technologies Inc.)
+- _April 2017 – July 2017_ — *Independent Contractor*, Janrain Inc.
+- _September 2013 – November 2016_ — *Head of Research & Development*, Eckoh plc
 - _January 2012 – August 2013_ — *Senior Developer / Team Lead*, BraveNewTalent
 - _June 2005 – January 2012_ — *Senior Developer*, Eckoh plc
 - _October 1999 – June 2005_ — *Developer*, 365 Corporation plc / Eckoh plc

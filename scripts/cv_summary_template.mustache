@@ -9,7 +9,7 @@
 
 == Professional Experience
 
-{{#workRecent}}
+{{#workFull}}
 === {{{company}}}
 *{{{position}}}*
 _{{formatDate startDate}} – {{formatDate endDate}}_
@@ -20,23 +20,27 @@ _{{formatDate startDate}} – {{formatDate endDate}}_
 - {{{.}}}
 {{/highlights}}
 
-{{/workRecent}}
-{{#if workMedium.length}}
-=== Earlier Roles
+{{/workFull}}
+{{#if workBullets.length}}
+== Recent Roles
 
-{{#workMedium}}
-*{{{position}}}* at *{{{company}}}* — _{{formatDate startDate}} – {{formatDate endDate}}_
+{{#workBullets}}
+=== {{{company}}}
+*{{{position}}}*
+_{{formatDate startDate}} – {{formatDate endDate}}_
 
-{{{summary}}}
+{{#highlights}}
+- {{{.}}}
+{{/highlights}}
 
-{{/workMedium}}
+{{/workBullets}}
 {{/if}}
-{{#if workOld.length}}
-=== Earlier Career
+{{#if workOneLiner.length}}
+== Earlier Career
 
-{{#workOld}}
+{{#workOneLiner}}
 - _{{formatDate startDate}} – {{formatDate endDate}}_ — *{{{position}}}*, {{{company}}}
-{{/workOld}}
+{{/workOneLiner}}
 
 {{/if}}
 == Technical Skills

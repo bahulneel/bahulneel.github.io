@@ -8,14 +8,16 @@
  *   node scripts/convert_cv.js --mode=full   --out=public/cv.adoc
  *   node scripts/convert_cv.js --mode=summary --out=public/cv-summary.adoc
  *
- * Horizon constants below control how the summary mode compresses experience:
- *   RECENT_HORIZON_YEARS   work that ended within this window is rendered in full
- *   SUMMARY_HORIZON_YEARS  work that ended within this window (but outside the
- *                          recent one) is rendered as a one-paragraph summary
- *   anything older         rendered as a single-line entry
+ * Slot constants below control how the summary mode compresses experience.
+ * Work entries are sorted by effective end date desc (ongoing roles count as
+ * ending "today"), then sliced into three tiers:
+ *   SUMMARY_FULL_SLOTS      top N: position, company, dates, summary, bullets
+ *   SUMMARY_BULLETS_SLOTS   next N: position, company, dates, bullets only
+ *   everything after        one-line entry: dates — position, company
  *
  * REFERENCE_DATE defaults to "now" (build time). For reproducible builds, set
- * the BUILD_REFERENCE_DATE env var to an ISO date, e.g. 2026-05-15.
+ * the BUILD_REFERENCE_DATE env var to an ISO date, e.g. 2026-05-15. It is
+ * only used to give ongoing engagements (no endDate) a sortable end date.
  */
 
 const fs = require('fs');
@@ -26,8 +28,8 @@ const { parseISO, format } = require('date-fns');
 // ---------------------------------------------------------------------------
 // Tunable constants (top-of-file by design — easy to dial in/out)
 // ---------------------------------------------------------------------------
-const RECENT_HORIZON_YEARS = 5;
-const SUMMARY_HORIZON_YEARS = 12;
+const SUMMARY_FULL_SLOTS = 2;
+const SUMMARY_BULLETS_SLOTS = 3;
 const REFERENCE_DATE = process.env.BUILD_REFERENCE_DATE
   ? new Date(process.env.BUILD_REFERENCE_DATE)
   : new Date();
@@ -64,17 +66,6 @@ function effectiveEndDate(entry) {
   return entry.endDate ? new Date(entry.endDate + '-01') : REFERENCE_DATE;
 }
 
-function yearsBetween(later, earlier) {
-  return (later - earlier) / (1000 * 60 * 60 * 24 * 365.25);
-}
-
-function bucketForEntry(entry) {
-  const y = yearsBetween(REFERENCE_DATE, effectiveEndDate(entry));
-  if (y <= RECENT_HORIZON_YEARS) return 'recent';
-  if (y <= SUMMARY_HORIZON_YEARS) return 'medium';
-  return 'old';
-}
-
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -84,50 +75,45 @@ const cvData = JSON.parse(fs.readFileSync('public/cv.json', 'utf8'));
 
 let renderData = cvData;
 if (mode === 'summary') {
-  // Annotate work entries with their bucket and sort by effective end date desc
-  // so each bucket renders in reverse-chronological order.
+  // Sort work entries by effective end date desc (ongoing roles end "today")
+  // and slice into three slot-based tiers. Sort is intentionally simple — no
+  // special-casing — so the natural recency order does the work.
   const annotatedWork = cvData.work
     .map((entry) => ({
       ...entry,
-      _bucket: bucketForEntry(entry),
       _effectiveEnd: effectiveEndDate(entry),
     }))
     .sort((a, b) => b._effectiveEnd - a._effectiveEnd);
 
-  const workRecent = annotatedWork.filter((w) => w._bucket === 'recent');
-  const workMedium = annotatedWork.filter((w) => w._bucket === 'medium');
-  const workOld = annotatedWork.filter((w) => w._bucket === 'old');
-
-  // Project compression: keep Active/WIP in their normal shape; collapse the rest.
-  const isCurrent = (p) => p.status === 'Active' || p.status === 'Work in Progress';
-  const projectsCurrent = (cvData.projects || []).filter(isCurrent);
-  const projectsOlder = (cvData.projects || []).filter((p) => !isCurrent(p));
+  const fullEnd = SUMMARY_FULL_SLOTS;
+  const bulletsEnd = SUMMARY_FULL_SLOTS + SUMMARY_BULLETS_SLOTS;
+  const workFull = annotatedWork.slice(0, fullEnd);
+  const workBullets = annotatedWork.slice(fullEnd, bulletsEnd);
+  const workOneLiner = annotatedWork.slice(bulletsEnd);
 
   renderData = {
     ...cvData,
-    workRecent,
-    workMedium,
-    workOld,
-    projectsCurrent,
-    projectsOlder,
+    workFull,
+    workBullets,
+    workOneLiner,
     _meta: {
       mode,
       referenceDate: REFERENCE_DATE.toISOString().slice(0, 10),
-      recentHorizonYears: RECENT_HORIZON_YEARS,
-      summaryHorizonYears: SUMMARY_HORIZON_YEARS,
+      summaryFullSlots: SUMMARY_FULL_SLOTS,
+      summaryBulletsSlots: SUMMARY_BULLETS_SLOTS,
       counts: {
-        recent: workRecent.length,
-        medium: workMedium.length,
-        old: workOld.length,
+        full: workFull.length,
+        bullets: workBullets.length,
+        oneLiner: workOneLiner.length,
       },
     },
   };
 
   console.log(
-    `[convert_cv] bucketing as of ${renderData._meta.referenceDate}: ` +
-      `recent=${workRecent.length} (≤${RECENT_HORIZON_YEARS}y), ` +
-      `medium=${workMedium.length} (≤${SUMMARY_HORIZON_YEARS}y), ` +
-      `old=${workOld.length}`,
+    `[convert_cv] slot tiers as of ${renderData._meta.referenceDate}: ` +
+      `full=${workFull.length} (cap ${SUMMARY_FULL_SLOTS}), ` +
+      `bullets=${workBullets.length} (cap ${SUMMARY_BULLETS_SLOTS}), ` +
+      `one-liner=${workOneLiner.length}`,
   );
 }
 
