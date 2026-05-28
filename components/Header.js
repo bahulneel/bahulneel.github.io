@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faBriefcase, faCode, faEnvelope, faBars, faTimes, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faBriefcase, faCode, faEnvelope, faBars, faTimes, faProjectDiagram, faPenNib } from '@fortawesome/free-solid-svg-icons';
 import cv from '../public/cv.json'; // Import cv.json to access data
 
 function Header() {
@@ -23,6 +23,7 @@ function Header() {
             <Link href="/experience" legacyBehavior><a className="hover:text-accent-white text-accent-lightBlue md:inline flex items-center no-underline text-center" itemProp="url"><FontAwesomeIcon icon={faBriefcase} className="mr-2" />Experience</a></Link>
             <Link href="/skills" legacyBehavior><a className="hover:text-accent-white text-accent-lightBlue md:inline flex items-center no-underline text-center" itemProp="url"><FontAwesomeIcon icon={faCode} className="mr-2" />Skills</a></Link>
             <Link href="/projects" legacyBehavior><a className="hover:text-accent-white text-accent-lightBlue md:inline flex items-center no-underline text-center" itemProp="url"><FontAwesomeIcon icon={faProjectDiagram} className="mr-2" />Projects</a></Link>
+            <Link href="/writing" legacyBehavior><a className="hover:text-accent-white text-accent-lightBlue md:inline flex items-center no-underline text-center" itemProp="url"><FontAwesomeIcon icon={faPenNib} className="mr-2" />Writing</a></Link>
             <Link href="/contact" legacyBehavior><a className="hover:text-accent-white text-accent-lightBlue md:inline flex items-center no-underline text-center" itemProp="url"><FontAwesomeIcon icon={faEnvelope} className="mr-2" />Contact</a></Link>
           </div>
         </div>

@@ -34,14 +34,15 @@
       "company": "Confidential",
       "position": "Contract Developer/Architect",
       "startDate": "2024-06",
-      "endDate": "",
-      "summary": "Developing an event planning platform, responsible for technical architecture and implementation.",
+      "endDate": "2026-05",
+      "summary": "Architected and delivered an event-planning platform from concept to launch-ready over a two-year engagement. The project is complete but unlaunched at the close of the engagement; product, client, and implementation details remain under NDA. The work served as the production crucible in which several of the patterns now published as open research and libraries under RelationalFabric — Howard's claims engine, Canon's lazy typing, and Suss / RaCSTS propagator networks — were tested, refined, and proved out at the scale of a real codebase.",
       "highlights": [
-        "Implementing using AI-assisted development practices to improve delivery velocity",
-        "Underpinning rules-driven platform architecture using a homegrown rules engine",
-        "Implementing data architecture with FlureeDB for FAIRest data storage and JSON-LD support",
-        "Offline and mobile-first development strategy",
-        "Developing cloud infrastructure on AWS for scalability requirements"
+        "Delivered the platform end-to-end using AI-assisted development practices, sustaining a high delivery velocity across the engagement",
+        "Underpinned the architecture with a rules-driven platform model built on a homegrown rules engine",
+        "Implemented a data architecture on FlureeDB for FAIR data storage with native JSON-LD support",
+        "Executed an offline- and mobile-first product strategy across web and mobile surfaces",
+        "Stood up cloud infrastructure on AWS sized for projected scalability requirements",
+        "Acted as the proving ground for the public RelationalFabric research track now visible in the Projects and Writing sections of this site"
       ]
     },
     {
@@ -149,11 +150,12 @@
       "position": "Founder & Lead Developer",
       "startDate": "2023-06",
       "endDate": "",
-      "summary": "Leading the development of innovative software solutions and open-source projects, focusing on functional programming and data-driven architectures.",
+      "summary": "Exploring the intersection of emerging and forgotten concepts in software through open-source projects and long-form writing. Recent threads include relational data systems, type-level programming, and agent-native development methodology.",
       "highlights": [
-        "Founded Total Perspective Tech to explore the intersection of emerging and forgotten concepts in software though implementation and publication of open-source projects.",
-        "Developed and maintained several open-source projects exploting data and model driven methods.",
-        "Created a functional effect system driven rules engine for Clojure/ClojureScript."
+        "Founded Total Perspective Tech as the home for open-source work and applied research.",
+        "Seeded the RelationalFabric collective (Canon, Howard, Suss) — foundational TypeScript libraries for truly relational, data-centric systems.",
+        "Built Agent Brain Trust — a reusable system of expert collectives that turns AI assistants into a room with friction, shipping as Cursor/Claude Code plugins and an MCP server.",
+        "Published a sustained body of long-form writing on Level Up Coding spanning platform thinking, knowledge engineering, type-level programming, and AI-assisted development."
       ]
     }
   ],
@@ -248,6 +250,229 @@
         "Added language server for development support",
         "Superseeded by work on Relativistic UI"
       ]
+    },
+    {
+      "title": "Agent Brain Trust",
+      "description": "A reusable system of expert collectives ('trusts') that turns AI assistants into a room with friction — real named figures in plausible settings, a moderator who refuses to skip steps, and a synthesis that names what was traded away. Ships as Cursor and Claude Code plugins, per-skill zips, and a published MCP server (@bahulneel/brain-trust-mcp).",
+      "repoLink": "https://github.com/bahulneel/agent-brain-trust",
+      "status": "Active",
+      "type": "Open Source",
+      "startDate": "2026-03",
+      "endDate": "",
+      "highlights": [
+        "Composable Agent Skills following the agentskills.io specification: expert-opinion, draft-experts, and ten bt-* workshops and editorials (software systems, codebase tactics, prompt engineering, design patterns, product strategy, organisation design, frontend UX, visual communication, technical writing, science explanation)",
+        "Bounded guest drafting via an MCP-served persona taxonomy of ~80 named figures — closes off invented authority and lets one room draft a witness from another's domain",
+        "Shared protocol fragments (readings, synthesis, persona fidelity) reused across rooms; a new room is one YAML stanza and a paragraph of framing",
+        "Monorepo of brain-trust-core, brain-trust-db, brain-trust-mcp (published as @bahulneel/brain-trust-mcp on npm) and repo-tooling, with releases producing Cursor and Claude Code plugin zips and standalone RPL.md / LRPL.md prompt artifacts",
+        "Spawned RPL (Relational Prompt Language) as a separate, reusable artifact — see the RPL project entry"
+      ]
+    },
+    {
+      "title": "RPL — Relational Prompt Language",
+      "description": "A Markdown-embedded reasoning framework with associated logic for structuring how an LLM reasons about a user's request. Instead of relying on highly tuned prose and guessing what the model inferred, RPL lets you declare explicit relations, goals, and constraints so reasoning state becomes inspectable, queryable, and continuable across context boundaries. Spawned out of Agent Brain Trust and published as a standalone artifact.",
+      "repoLink": "https://github.com/bahulneel/agent-brain-trust/tree/main/docs/rpl",
+      "status": "Active",
+      "type": "Open Source",
+      "startDate": "2026-04",
+      "endDate": "",
+      "highlights": [
+        "Stratified relational reasoning — each conversation turn is a stratum, the trace is the continuity mechanism between strata and across sessions",
+        "Grounded in Bloom and the CALM theorem (Hellerstein; Ameloot, Neven & Van den Bussche): the monotonic core needs no coordination, with non-monotonic operations made explicit as agent-judgment points",
+        "Base RPL (eager) and LRPL (lazy extension with memos, satisfactory quiescence, and a small stdlib including $json, $write, $index)",
+        "Prose-first authoring: Markdown is materialised into relations on encounter; relation heads attach to headings only where prose drifts",
+        "Distributed as published RPL.md / LRPL.md artifacts inside the Agent Brain Trust releases, with a normative base specification and tutorials"
+      ]
+    },
+    {
+      "title": "Relational Fabric",
+      "description": "Foundational TypeScript libraries and published research for building truly relational, data-driven systems — providing the ontological foundations and construction primitives for systems where relationships carry semantic meaning, different representations interoperate, and code can reason about its data relationally.",
+      "link": "https://github.com/RelationalFabric",
+      "status": "Active",
+      "type": "Open Source",
+      "startDate": "2025-11",
+      "endDate": "",
+      "highlights": [
+        "Filament — meta-level primitives for building domain-specific abstractions",
+        "Weft — navigation and query construction primitives",
+        "Warp — primitives for working with data at rest",
+        "Shuttle — flow and coordination construction primitives",
+        "Published whitepapers: Relational Causal State Transition System (RaCSTS) — implemented by Suss; and Distributed Context-Sensitive Graph Store (DCSGS) — a peer-to-peer, semantically rich graph store combining an immutable Semantic Log with a Native Projection, audience-based stratification, and ownership-based conflict resolution"
+      ]
+    },
+    {
+      "title": "Canon (@relational-fabric/canon)",
+      "description": "Universal type primitives and axiomatic systems for TypeScript. Implements the Lazy Typing pattern: write type-safe code against semantic concepts (axioms) while deferring shape-specific implementations (canons) to runtime configuration, exposed through universal APIs.",
+      "repoLink": "https://github.com/RelationalFabric/canon",
+      "status": "Active",
+      "type": "Open Source",
+      "startDate": "2025-12",
+      "endDate": "",
+      "highlights": [
+        "Axioms / Canons / Universal APIs — semantic concepts decoupled from data shape",
+        "Zero-runtime-cost compile-time type assertions (Expect<A, B>, IsTrue, IsFalse)",
+        "Bundled tsconfig, ESLint config and a CLI scaffold (`npx canon init`)",
+        "Transparent ADRs and a public technology radar"
+      ]
+    },
+    {
+      "title": "Howard",
+      "description": "A self-contained logical primitive for building truly relational data systems — a computable truth engine that turns ad-hoc boolean validation into first-class, composable propositions, in the spirit of the Curry–Howard correspondence.",
+      "repoLink": "https://github.com/RelationalFabric/howard",
+      "status": "Active",
+      "type": "Open Source",
+      "startDate": "2025-12",
+      "endDate": "",
+      "highlights": [
+        "Value semantics and verifiable equality for arbitrary data",
+        "Claims backed by pure, deterministic predicates",
+        "Compositional propositions mirroring domain relationships",
+        "Decouples what is claimed from how it is proved, for a flexible and extensible architecture"
+      ]
+    },
+    {
+      "title": "Suss",
+      "description": "Reference TypeScript implementation of RaCSTS (Relational and Causal State Transition System) — serialisable propagator networks that can be paused, inspected, versioned and transmitted across boundaries as first-class values.",
+      "repoLink": "https://github.com/RelationalFabric/suss",
+      "status": "Active",
+      "type": "Open Source",
+      "startDate": "2026-01",
+      "endDate": "",
+      "highlights": [
+        "Bidirectional constraints with automatic reconciliation",
+        "Leader-free consensus via Sync; causal ordering via a Hybrid Epoch Clock",
+        "Six standard higher-order relations (mark, linear, map, constrain, reduce, join)",
+        "Full pack/unpack of networks as values for portability and replay"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "From the Dialectic Prompt to Agent Brain Trust",
+      "subtitle": "Real people, plausible settings, and a protocol that refuses to skip the useful steps",
+      "date": "2026-04-20",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/from-the-dialectic-prompt-to-agent-brain-trust-5532583f6221",
+      "tags": ["AI-assisted development", "Agent Brain Trust"]
+    },
+    {
+      "title": "The Day the TypeScript Compiler Exploded",
+      "subtitle": "When a Nuxt 4 refactor turns your type checker into a crime scene",
+      "date": "2026-03-09",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/the-day-the-typescript-compiler-exploded-0b4b45bc6768",
+      "tags": ["TypeScript", "Debugging"]
+    },
+    {
+      "title": "Towards a Tactical Solution to a General Problem",
+      "subtitle": "Strategies compose tactics — and the Military Pattern that emerges when you let the abstraction lead",
+      "date": "2026-03-02",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/towards-a-tactical-solution-to-a-general-problem-8341730bb690",
+      "tags": ["Design Patterns"]
+    },
+    {
+      "title": "The Dialectic Prompt: When Friction Helped Turn my AI from Coding Assistant to my Software Brain Trust",
+      "subtitle": "How I stopped asking AI for answers and started asking it to argue with itself",
+      "date": "2026-03-02",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/the-dialectic-prompt-when-friction-helped-turn-my-ai-from-coding-assistant-to-my-software-brain-151ccc62b0e3",
+      "tags": ["AI-assisted development", "Agent Brain Trust"]
+    },
+    {
+      "title": "When Your Abstraction Escapes",
+      "subtitle": "The dangerous art of following ideas where they lead — from fast value hashing to serialisable propagator networks",
+      "date": "2026-01-03",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/when-your-abstraction-escapes-fed44f9fea42",
+      "tags": ["Relational Fabric", "Suss"]
+    },
+    {
+      "title": "The Return to Canon: Why Your Code is Too Structure-Aware",
+      "subtitle": "Moving from \"Infrastructures of Suspicion\" to the Universal API",
+      "date": "2026-01-01",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/the-return-to-canon-why-your-code-is-too-structure-aware-41a55f44f390",
+      "tags": ["Relational Fabric", "Canon", "TypeScript"]
+    },
+    {
+      "title": "The Logic of Claims: Why Validation Is Broken, and What Replaces It",
+      "subtitle": "From ad-hoc boolean checks to first-class propositions — how Howard transforms the foundation of software architecture",
+      "date": "2025-12-30",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/the-logic-of-claims-why-validation-is-broken-and-what-replaces-it-dd16464a4f0c",
+      "tags": ["Relational Fabric", "Howard"]
+    },
+    {
+      "title": "The End of Disposable Code: How I Built Universal APIs in TypeScript",
+      "subtitle": "Lazy Types for late-binding data shapes, and Type Testing for zero-cost assertions that stay",
+      "date": "2025-12-05",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/the-end-of-disposable-code-how-i-built-universal-apis-in-typescript-618b3ed38302",
+      "tags": ["Relational Fabric", "Canon", "TypeScript"]
+    },
+    {
+      "title": "Semantic Front-End Design: A Practical Guide to Visual Priority and Intent-Driven Mouldable UI",
+      "subtitle": "How the \"Set High, Act Low\" pattern solves prop hell for design systems",
+      "date": "2025-11-30",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/semantic-front-end-design-a-practical-guide-to-visual-priority-and-intent-driven-mouldable-0fdd4f57e58a",
+      "tags": ["Design Systems", "Frontend"]
+    },
+    {
+      "title": "How I Felt My Way Through the Tailwind 4 Migration and Fixed Dark Mode Forever",
+      "subtitle": "How recognising design semantics transformed my colour system",
+      "date": "2025-11-10",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/how-i-felt-my-way-through-the-tailwind-4-migration-and-fixed-dark-mode-forever-9de9ace8f9d8",
+      "tags": ["Frontend", "Design Systems"]
+    },
+    {
+      "title": "When Your Strategy Needs a Strategy: Tactical Error or Unfinished Business",
+      "subtitle": "In the real world, strategies are composed of tactics. The Strategy Pattern just displaces complexity — what if we finished the job?",
+      "date": "2025-08-04",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/when-your-strategy-needs-a-strategy-tactical-error-or-unfinished-business-e42129792032",
+      "tags": ["Design Patterns"]
+    },
+    {
+      "title": "From Atomic Design to Relativistic Interfaces",
+      "subtitle": "Extending Atomic Design with Mouldable UI, Principles, and Frames of Reference",
+      "date": "2024-10-15",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/from-atomic-design-to-relativistic-interfaces-0751b0b46832",
+      "tags": ["Design Systems", "Frontend"]
+    },
+    {
+      "title": "Understanding Abstractions",
+      "subtitle": "Abstractions as the UI of Ideas",
+      "date": "2024-05-14",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/understanding-abstractions-baa3d5347b0d",
+      "tags": ["Software Architecture"]
+    },
+    {
+      "title": "Rethinking Data with Knowledge Engineering",
+      "subtitle": "From data and information to knowledge graphs and reasoning",
+      "date": "2024-03-24",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/rethinking-data-with-knowledge-engineering-46f1c9d4012e",
+      "tags": ["Knowledge Engineering", "Semantic Web"]
+    },
+    {
+      "title": "Building SecondPelt",
+      "subtitle": "A journey from systems thinking to platform building",
+      "date": "2023-05-09",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/building-secondpelt-76bcd0d87f6b",
+      "tags": ["Platform Thinking"]
+    },
+    {
+      "title": "The Platform Advantage",
+      "subtitle": "How to stay ahead of the curve in today's fast-paced business environment",
+      "date": "2023-03-19",
+      "publisher": "Medium",
+      "link": "https://medium.com/@bahulneel/the-platform-advantage-dd604d87425f",
+      "tags": ["Platform Thinking"]
     }
   ],
   "education": [
@@ -348,15 +573,20 @@
     {
       "name": "Artificial Intelligence and Machine Learning",
       "keywords": [
+        "Agent Brain Trust",
+        "Agent-native architecture",
         "Agentic AI/LLMs",
         "AI planning (symbolic)",
         "ChatGPT",
         "Claude.ai",
+        "Claude Code",
         "Cursor.sh",
         "Custom GPTs",
         "DeepSeek",
+        "Dialectic prompting",
         "Google Colab",
         "Google Gemini",
+        "MCP (Model Context Protocol)",
         "NotebookLM",
         "oLLAMA",
         "OpenAI APIs",
@@ -389,12 +619,21 @@
     {
       "name": "Architectures",
       "keywords": [
+        "Bloom / CALM",
         "C4",
+        "Curry–Howard correspondence",
         "data-driven architectures",
         "Distributed architectures",
         "event/streaming architectures",
+        "Lazy typing",
         "micro-service architectures",
-        "serverless architectures"
+        "Monotonic reasoning",
+        "propagator networks",
+        "Relational programming",
+        "serverless architectures",
+        "Stratified reasoning",
+        "Type-level programming",
+        "Value semantics"
       ]
     },
     {

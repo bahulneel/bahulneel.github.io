@@ -1,0 +1,53 @@
+= {{{basics.name}}}
+{{{basics.label}}} | {{{basics.location.city}}}, {{{basics.location.country}}}
+{{{basics.email}}} | {{{basics.phone}}} | {{{basics.url}}}
+{{#basics.profiles}}{{{network}}}: {{{url}}}{{#unless @last}} | {{/unless}}{{/basics.profiles}}
+
+== Professional Summary
+
+{{{basics.summary}}}
+
+== Professional Experience
+
+{{#workRecent}}
+=== {{{company}}}
+*{{{position}}}*
+_{{formatDate startDate}} – {{formatDate endDate}}_
+
+{{{summary}}}
+
+{{#highlights}}
+- {{{.}}}
+{{/highlights}}
+
+{{/workRecent}}
+{{#if workMedium.length}}
+=== Earlier Roles
+
+{{#workMedium}}
+*{{{position}}}* at *{{{company}}}* — _{{formatDate startDate}} – {{formatDate endDate}}_
+
+{{{summary}}}
+
+{{/workMedium}}
+{{/if}}
+{{#if workOld.length}}
+=== Earlier Career
+
+{{#workOld}}
+- _{{formatDate startDate}} – {{formatDate endDate}}_ — *{{{position}}}*, {{{company}}}
+{{/workOld}}
+
+{{/if}}
+== Technical Skills
+
+{{#skills}}
+*{{{name}}}:* {{#keywords}}{{{.}}}{{^@last}}, {{/@last}}{{#@last}}.{{/@last}}{{/keywords}}
+
+{{/skills}}
+
+== Education
+
+{{#education}}
+*{{{studyType}}} in {{{area}}}* — {{{institution}}}
+{{/education}}

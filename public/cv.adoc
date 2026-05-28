@@ -4,35 +4,58 @@ Phone: +44 7771 603207
 
 == Professional Summary
 
-Seasoned software architect and developer with over 20 years of experience in building large-scale, innovative software solutions. Adept at data platform development, web systems, and enhancing team performance. Regularly engages with academic research and industry trends to stay at the cutting edge of technology. Open about living with ADHD and awaiting assessment for ASD, and committed to promoting neurodiversity in the workplace.
+Technology leader with extensive experience in software architecture and engineering, focusing on enterprise-scale solutions that improve business operations. Combines technical expertise with business understanding to deliver practical, effective solutions. Experienced in building and leading technical teams. Advocates for workplace neurodiversity, bringing different perspectives (ADHD diagnosed and pending ASD assessment) to problem-solving and innovation.
 
 == Professional Experience
+
+=== Confidential
+*Contract Developer/Architect*
+_June 2024 - May 2026_
+
+Architected and delivered an event-planning platform from concept to launch-ready over a two-year engagement. The project is complete but unlaunched at the close of the engagement; product, client, and implementation details remain under NDA. The work served as the production crucible in which several of the patterns now published as open research and libraries under RelationalFabric — Howard's claims engine, Canon's lazy typing, and Suss / RaCSTS propagator networks — were tested, refined, and proved out at the scale of a real codebase.
+
+- Delivered the platform end-to-end using AI-assisted development practices, sustaining a high delivery velocity across the engagement
+- Underpinned the architecture with a rules-driven platform model built on a homegrown rules engine
+- Implemented a data architecture on FlureeDB for FAIR data storage with native JSON-LD support
+- Executed an offline- and mobile-first product strategy across web and mobile surfaces
+- Stood up cloud infrastructure on AWS sized for projected scalability requirements
+- Acted as the proving ground for the public RelationalFabric research track now visible in the Projects and Writing sections of this site
 
 === Hybr Ltd
 *Senior Full-stack Web Developer*
 _June 2023 - May 2024_
 
-- Developed and maintained the Hybr product and platform.
-- Introduced semantic web concepts.
-- Led the effort to build a design system.
+Led technical improvements and platform modernization, including semantic web implementation and design system development.
+
+- Developed comprehensive design system to improve development consistency
+- Introduced semantic web architecture and knowledge engineering concepts to enhance internal modelling and data integration
+- Improved platform performance and user experience through targeted updates
 
 === Contxt
 *Contract ML Architect and Senior Developer*
 _August 2022 - February 2023_
 
-- Conducted initial investigations and consultations on model and architecture options.
-- Developed a proprietary synthetic data generator to train models without sensitive customer data.
+Guided architectural evolution for API classification systems, combining ML solutions with platform modernization.
+
+- Guided team's architectural evolution from monolithic to pluggable multi-layer design supporting cross-platform deployment
+- Developed synthetic data generation system for classifier testing
+- Investigated language model applications for API content classification
 
 === Elsevier (RELX)
 *Data Platform Architect*
 _September 2020 - August 2022_
 
-- Led architectural design and strategy for the Entellect data platform.
-- Mediated between product and engineering teams to enhance platform functionality, supporting trial customers and retaining internal users.
+Led architecture development for the Entellect data platform, supporting enterprise data integration initiatives.
+
+- Provided architectural guidance for platform development and integration
+- Facilitated collaboration between product and engineering teams to align technical capabilities with product strategy
+- Supported pharmaceutical company data-athon, enabling novel drug target discovery through platform integration
 
 === Honeybee Solutions (Synchronoss Technologies Inc.)
 *R&D Lead, Architecture Team / Senior Platform Architect*
 _August 2017 - June 2020_
+
+Developed a rules-based product recommendation service and integrated a schemaless product catalog with a recommendation engine.
 
 - Developed a rules-based solution for a product recommendation service using Datalog derivatives.
 - Integrated a domain-specific layer for a schemaless product catalog with a recommendation engine using JSON-LD and RDF.
@@ -41,11 +64,15 @@ _August 2017 - June 2020_
 *Independent Contractor*
 _April 2017 - July 2017_
 
+Built a rule-based system with Clojure, ClojureScript, and Datomic for runtime business logic modifications without core code changes.
+
 - Built a rule-based system with Clojure, ClojureScript, and Datomic, enabling runtime business logic modifications without core code changes.
 
 === Eckoh plc
 *Head of Research & Development*
 _September 2013 - November 2016_
+
+Managed an R&D team, exploring new technologies and advising on best practices, focusing on data-driven architectures and technology advancements.
 
 - Managed a small R&D team, exploring new technologies and advising on best practices.
 - Focused on data-driven architectures and industry-academic technology advancements.
@@ -54,12 +81,16 @@ _September 2013 - November 2016_
 *Senior Developer / Team Lead*
 _January 2012 - August 2013_
 
+Led a scrum team transitioning from a monolithic platform to discrete services, introducing technologies like ElasticSearch, Jenkins, and Vagrant.
+
 - Led a scrum team, transitioning from a monolithic platform to discrete services.
 - Introduced new technologies including ElasticSearch, Jenkins, and Vagrant.
 
 === Eckoh plc
 *Senior Developer*
 _June 2005 - January 2012_
+
+Developed and maintained the PHP/VoiceXML platform, implemented coding and security standards (PCI/DSS), and mentored development teams.
 
 - Developed and maintained the PHP/VoiceXML platform.
 - Implemented internal coding and security standards (PCI/DSS) and mentored development teams.
@@ -68,19 +99,99 @@ _June 2005 - January 2012_
 *Developer*
 _October 1999 - June 2005_
 
+Maintained and improved a C++ IVR platform, enhancing uptime and developing voice applications.
+
 - Maintained and improved a C++ IVR platform, enhancing uptime and developing voice applications.
 
 === Total Perspective Tech
 *Founder & Lead Developer*
-_June 2024 - Present_
+_June 2023 - Present_
 
-- Founded Total Perspective Tech to provide cutting-edge software solutions.
-- Developed and maintained several open-source projects including 'oolon', 'megadodo', and 'pondermatic'.
-- Implemented Bloom filters in Clojure/ClojureScript for efficient data querying.
-- Created a functional effect system driven rules engine for Clojure/ClojureScript.
+Exploring the intersection of emerging and forgotten concepts in software through open-source projects and long-form writing. Recent threads include relational data systems, type-level programming, and agent-native development methodology.
 
+- Founded Total Perspective Tech as the home for open-source work and applied research.
+- Seeded the RelationalFabric collective (Canon, Howard, Suss) — foundational TypeScript libraries for truly relational, data-centric systems.
+- Built Agent Brain Trust — a reusable system of expert collectives that turns AI assistants into a room with friction, shipping as Cursor/Claude Code plugins and an MCP server.
+- Published a sustained body of long-form writing on Level Up Coding spanning platform thinking, knowledge engineering, type-level programming, and AI-assisted development.
+
+
+== Technical Skills
+
+**Programming/Domain Specific Languages:** C/C++, Clojure, ClojureScript, Datalog, Java, JavaScript (ES6), Node.js, Perl, PHP, Python, SPARQL, SQL, TypeScript.
+
+**Web and Markup Technologies:** CCXML, CSS, GraphQL, HTML, JSX, Next.js, Pinia, Pug, React, Redux, Schema.org, Svelte 4, SVG, TailwindCSS, VoiceXML, Vue/Nuxt, Vuetify, WebRTC, WebWorkers.
+
+**Databases and Data Management:** Datomic, ElasticSearch, FlureeDB, MongoDB, MySQL/MariaDB, Postgres, Redis.
+
+**Development and Deployment Tools:** AWS, AWS API Gateway, AWS Cognito, AWS DynamoDB, AWS ECR, AWS ECS, AWS EKS, AWS Fargate, AWS Lambda, AWS S3, AWS SNS, AWS SQS, Chromatic, Docker, ESLint, GitHub Actions, Histoire, Kafka, Langium, N8N, NATS, RabbitMQ, SST (Ion), Storybook, Terraform, ZooKeeper.
+
+**Artificial Intelligence and Machine Learning:** Agent Brain Trust, Agent-native architecture, Agentic AI/LLMs, AI planning (symbolic), ChatGPT, Claude.ai, Claude Code, Cursor.sh, Custom GPTs, DeepSeek, Dialectic prompting, Google Colab, Google Gemini, MCP (Model Context Protocol), NotebookLM, oLLAMA, OpenAI APIs, Perplexity, production-rule systems, Prompt Engineering, PyTorch, statistical methods, synthetic data generation, Tensorflow, Vector Symbolic Architectures, WebLLM.
+
+**Methodologies:** Atomic Design, BDD, Design Systems, Domain-Driven Design, Kanban, Lean, SAFe, Scaled Agile, Scrum, TDD.
+
+**Architectures:** Bloom / CALM, C4, Curry–Howard correspondence, data-driven architectures, Distributed architectures, event/streaming architectures, Lazy typing, micro-service architectures, Monotonic reasoning, propagator networks, Relational programming, serverless architectures, Stratified reasoning, Type-level programming, Value semantics.
+
+**Compliance:** GDPR, PCI DSS.
+
+**Additional Tools:** Figma, Notion, PostHog.
+
+**Knowledge Engineering:** JSON-LD, OWL, RDF, Schema.org, Semantic Web.
+
+
+== Education
+
+**BSc in Physics**
+Imperial College London
 
 == Projects
+
+=== Linear Project Manager
+*Status:* Completed
+
+*Type:* Proprietary
+
+*Site:* https://chatgpt.com/g/g-BvCW2ngMb-linear-project-manager
+
+*Description:* 
+
+Custom GPT designed to assist with Linear platform project management via GraphQL API. Provides guidance for query construction, schema validation, and API usage examples.
+
+- Manages projects using the Linear platform's GraphQL API
+- Constructs and executes queries and mutations for issues, projects, teams, and users
+
+=== Groove Dojo
+*Status:* Work in Progress
+
+*Type:* Proprietary
+
+
+
+*Description:* 
+
+AI-enhanced music playlist management system with Spotify integration. Focuses on personalized playlist creation based on user preferences and context.
+
+- Developing Design System using Svelte, shadcn-svelte, and TailwindCSS
+- Planning AI integration for music recommendations
+- Implementing collaborative playlist features
+- Developing dynamic playlist generation
+- Integrating with Spotify API for user authentication and playlist management
+- Using linked data for data representation and FAIR data storage
+
+=== Nuxt Gravity
+*Status:* Work in Progress
+
+*Type:* Proprietary
+
+*Site:* https://levelup.gitconnected.com/from-atomic-design-to-relativistic-interfaces-0751b0b46832
+
+*Description:* 
+
+Nuxt module implementing Mouldable UI components, based on an extension of Atomic Design principles for flexible interface development.
+
+- Developed Relativistic Interfaces concept extending Atomic Design a
+- Created Nuxt module for Mouldable UI components
+- Currently implemented in production design system
+- Open source version being implemented from lessons learned in a proprietary project
 
 === Pondermatic
 *Status:* Active
@@ -91,13 +202,13 @@ _June 2024 - Present_
 
 *Description:* 
 
-Functional effect system driven rules engine for Clojure/ClojureScript.
+Effect system based rules engine for Clojure/ClojureScript, focusing on functional programming principles.
 
-- Developed core engine using functional programming principles.
-- Integrated with Asami for efficient data storage and querying.
-- Extended support for JavaScript environments including NodeJS and browser.
-- Implemented rule-based logic using O'Doyle Rules.
-- Published the project on Clojars and npm for easy accessibility.
+- Developed an opinionated rules engine for Clojure/ClojureScript
+- Integrated with Asami for data storage and querying
+- Leans on the O'doyle rules-engine for RETE based rules execution
+- Added support for JavaScript environments
+- Published to Clojars and npm repositories (JS support out-of-the-box)
 
 === Oolon
 *Status:* Superseded
@@ -108,44 +219,15 @@ Functional effect system driven rules engine for Clojure/ClojureScript.
 
 *Description:* 
 
-Bloom implementation for Clojure/ClojureScript leaning on Datomic datalog. Superseded by Pondermatic.
+Bloom implementation for Clojure/ClojureScript using Datomic datalog. Project concepts now incorporated into Pondermatic.
 
-- Developed Oolon, a purely declarative language for building systems that manage state over time.
-- Implemented modules and rules in Oolon to handle state and asynchrony in distributed systems.
-- Leveraged DataScript for internal state management within Oolon.
-- Utilized Oolon's data-oriented DSL to facilitate integration with Java and JavaScript environments.
-
-=== JeltzJS
-*Status:* Work in Progress
-
-*Type:* Open Source
-
-*Repository:* https://github.com/totalperspective/jeltz-js
-
-*Description:* 
-
-Unlock Vogonian Precision: Craft Fluent APIs with JeltzJS.
-
-- Documented JeltzJS usage and purpose.
-
-=== Nuxt Fluree
-*Status:* Active
-
-*Type:* Open Source
-
-*Repository:* https://github.com/totalperspective/nuxt-fluree
-
-*Description:* 
-
-Nuxt module for the Fluree graph database, needs updating to match Fluree's new API.
-
-- Developed Nuxt module for easy integration with Fluree.
-- Ensured compatibility with the latest Nuxt and Fluree versions.
-- Updated module to match Fluree's new API.
-- Added comprehensive documentation and examples for quick setup and usage.
+- Created declarative language for state management
+- Implemented modules for distributed system state handling
+- Used DataScript for internal state management
+- Developed data-oriented DSL for Java/JavaScript integration
 
 === Bartfast
-*Status:* Work in Progress
+*Status:* Superseded
 
 *Type:* Open Source
 
@@ -153,74 +235,110 @@ Nuxt module for the Fluree graph database, needs updating to match Fluree's new 
 
 *Description:* 
 
-Bartfast is a design language builder inspired by Douglas Adams' character Slartibartfast, emphasizing clarity, modularity, and reusability in digital design.
+Design language development toolkit focusing on modularity and reusability in digital design. Concepts now part of Relativistic Interfaces.
 
-- Created modular design components for reuse.
-- Adopted a declarative and incremental approach to design language definition.
-- Promoted composability, extensibility, and serializability.
-- Implemented the Slarti DSL for defining design tokens and principles.
-- Includes a Languim based language server for enhanced development experience.
+- Developed modular design component system
+- Created declarative approach to design language definition
+- Implemented design token and principle definition system
+- Added language server for development support
+- Superseeded by work on Relativistic UI
 
-=== Linear Project Manager
+=== Agent Brain Trust
 *Status:* Active
 
-*Type:* Proprietary
+*Type:* Open Source
 
-*Site:* https://chatgpt.com/g/g-BvCW2ngMb-linear-project-manager
-
-*Description:* 
-
-The Linear Project Manager is a Custom GPT designed to help users manage projects via the Linear platform's GraphQL API. It aids in constructing and executing queries and mutations for issues, projects, teams, and users. Providing guidance on type structures, ensuring schema adherence, and offering explanations and code examples, this Custom GPT leverages the latest Linear API documentation to streamline project management efficiently.
-
-- Manages projects using the Linear platform's GraphQL API.
-- Constructs and executes queries and mutations for issues, projects, teams, and users.
-- Ensures operations comply with the Linear schema.
-- Provides detailed information on type structures and fields with examples.
-- Leverages the latest Linear API documentation for efficient project management.
-
-=== Groove Dojo
-*Status:* Work in Progress
-
-*Type:* Proprietary
-
-*Site:* https://www.groovedojo.app
+*Repository:* https://github.com/bahulneel/agent-brain-trust
 
 *Description:* 
 
-Groove.dojo is the ultimate AI-powered solution for creating the perfect soundtrack for any occasion. With seamless Spotify integration, customizable rules, and collaborative features, Groove.dojo ensures a personalized and engaging listening experience that adapts to your ever-changing moods and activities.
+A reusable system of expert collectives ('trusts') that turns AI assistants into a room with friction — real named figures in plausible settings, a moderator who refuses to skip steps, and a synthesis that names what was traded away. Ships as Cursor and Claude Code plugins, per-skill zips, and a published MCP server (@bahulneel/brain-trust-mcp).
 
-- Created comprehensive Design System using Svelte, shadcn-svelte, and TailwindCSS.
-- Will integrate AI for personalized music recommendations.
-- Will develop collaborative features for shared playlists.
-- Will implement dynamic playlist creation.
-- Will integrate with Spotify for user login, permissions, and playlist control.
-- Will integrate FlureeDB for data storage.
+- Composable Agent Skills following the agentskills.io specification: expert-opinion, draft-experts, and ten bt-* workshops and editorials (software systems, codebase tactics, prompt engineering, design patterns, product strategy, organisation design, frontend UX, visual communication, technical writing, science explanation)
+- Bounded guest drafting via an MCP-served persona taxonomy of ~80 named figures — closes off invented authority and lets one room draft a witness from another's domain
+- Shared protocol fragments (readings, synthesis, persona fidelity) reused across rooms; a new room is one YAML stanza and a paragraph of framing
+- Monorepo of brain-trust-core, brain-trust-db, brain-trust-mcp (published as @bahulneel/brain-trust-mcp on npm) and repo-tooling, with releases producing Cursor and Claude Code plugin zips and standalone RPL.md / LRPL.md prompt artifacts
+- Spawned RPL (Relational Prompt Language) as a separate, reusable artifact — see the RPL project entry
 
+=== RPL — Relational Prompt Language
+*Status:* Active
 
-== Technical Skills
+*Type:* Open Source
 
-**Programming Languages:** PHP, JavaScript (ES6), TypeScript, Node.js, C/C++, Clojure, ClojureScript, Perl, Java, Python, SQL, SPARQL, Datalog.
+*Repository:* https://github.com/bahulneel/agent-brain-trust/tree/main/docs/rpl
 
-**Web and Markup Technologies:** HTML, CSS, SVG, VoiceXML, CCXML, JSX, React, Redux, GraphQL, WebRTC, Pug, WebWorkers, Schema.org, Vue/Nuxt, Pinia, TailwindCSS, Vuetify, Svelte 4, Next.js.
+*Description:* 
 
-**Databases and Data Management:** MySQL/MariaDB, Postgres, ElasticSearch, Datomic, MongoDB, FlureeDB, Redis.
+A Markdown-embedded reasoning framework with associated logic for structuring how an LLM reasons about a user's request. Instead of relying on highly tuned prose and guessing what the model inferred, RPL lets you declare explicit relations, goals, and constraints so reasoning state becomes inspectable, queryable, and continuable across context boundaries. Spawned out of Agent Brain Trust and published as a standalone artifact.
 
-**Development and Deployment Tools:** Storybook, NATS, Docker, Chromatic, AWS, AWS Cognito, N8N, RabbitMQ, Kafka, ZooKeeper, Langium, GitHub Actions, ESLint, Histoire, SST (Ion), Terraform.
+- Stratified relational reasoning — each conversation turn is a stratum, the trace is the continuity mechanism between strata and across sessions
+- Grounded in Bloom and the CALM theorem (Hellerstein; Ameloot, Neven & Van den Bussche): the monotonic core needs no coordination, with non-monotonic operations made explicit as agent-judgment points
+- Base RPL (eager) and LRPL (lazy extension with memos, satisfactory quiescence, and a small stdlib including $json, $write, $index)
+- Prose-first authoring: Markdown is materialised into relations on encounter; relation heads attach to headings only where prose drifts
+- Distributed as published RPL.md / LRPL.md artifacts inside the Agent Brain Trust releases, with a normative base specification and tutorials
 
-**Artificial Intelligence and Machine Learning:** Tensorflow, statistical methods, production-rule systems, AI planning, synthetic data generation, ChatGPT, Custom GPTs, GPT Agents, Vector Symbolic Architectures, Google Colab, PyTorch.
+=== Relational Fabric
+*Status:* Active
 
-**Methodologies:** TDD, BDD, Domain-Driven Design, Scaled Agile, Lean, Scrum, Kanban, SAFe.
+*Type:* Open Source
 
-**Architectures:** Distributed architectures, micro-service architectures, event/streaming architectures, data-driven architectures, serverless architectures, C4.
+*Site:* https://github.com/RelationalFabric
 
-**Compliance:** PCI DSS, GDPR.
+*Description:* 
 
-**Additional Tools:** Notion, Figma, PostHog.
+Foundational TypeScript libraries and published research for building truly relational, data-driven systems — providing the ontological foundations and construction primitives for systems where relationships carry semantic meaning, different representations interoperate, and code can reason about its data relationally.
 
-**Knowledge Engineering:** RDF, Semantic Web, JSON-LD, Schema.org, OWL.
+- Filament — meta-level primitives for building domain-specific abstractions
+- Weft — navigation and query construction primitives
+- Warp — primitives for working with data at rest
+- Shuttle — flow and coordination construction primitives
+- Published whitepapers: Relational Causal State Transition System (RaCSTS) — implemented by Suss; and Distributed Context-Sensitive Graph Store (DCSGS) — a peer-to-peer, semantically rich graph store combining an immutable Semantic Log with a Native Projection, audience-based stratification, and ownership-based conflict resolution
 
+=== Canon (@relational-fabric/canon)
+*Status:* Active
 
-== Education
+*Type:* Open Source
 
-**BSc in Physics**
-Imperial College London
+*Repository:* https://github.com/RelationalFabric/canon
+
+*Description:* 
+
+Universal type primitives and axiomatic systems for TypeScript. Implements the Lazy Typing pattern: write type-safe code against semantic concepts (axioms) while deferring shape-specific implementations (canons) to runtime configuration, exposed through universal APIs.
+
+- Axioms / Canons / Universal APIs — semantic concepts decoupled from data shape
+- Zero-runtime-cost compile-time type assertions (Expect<A, B>, IsTrue, IsFalse)
+- Bundled tsconfig, ESLint config and a CLI scaffold (`npx canon init`)
+- Transparent ADRs and a public technology radar
+
+=== Howard
+*Status:* Active
+
+*Type:* Open Source
+
+*Repository:* https://github.com/RelationalFabric/howard
+
+*Description:* 
+
+A self-contained logical primitive for building truly relational data systems — a computable truth engine that turns ad-hoc boolean validation into first-class, composable propositions, in the spirit of the Curry–Howard correspondence.
+
+- Value semantics and verifiable equality for arbitrary data
+- Claims backed by pure, deterministic predicates
+- Compositional propositions mirroring domain relationships
+- Decouples what is claimed from how it is proved, for a flexible and extensible architecture
+
+=== Suss
+*Status:* Active
+
+*Type:* Open Source
+
+*Repository:* https://github.com/RelationalFabric/suss
+
+*Description:* 
+
+Reference TypeScript implementation of RaCSTS (Relational and Causal State Transition System) — serialisable propagator networks that can be paused, inspected, versioned and transmitted across boundaries as first-class values.
+
+- Bidirectional constraints with automatic reconciliation
+- Leader-free consensus via Sync; causal ordering via a Hybrid Epoch Clock
+- Six standard higher-order relations (mark, linear, map, constrain, reduce, join)
+- Full pack/unpack of networks as values for portability and replay
+

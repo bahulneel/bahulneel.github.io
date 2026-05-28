@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:cv": "bash scripts/convert_cv.sh",
     "start": "next start",
     "export": "next export",
     "test": "echo \"Error: no test specified\" && exit 1"

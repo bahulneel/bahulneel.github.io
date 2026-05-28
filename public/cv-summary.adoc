@@ -1,0 +1,111 @@
+= Bahul Neel Upadhyaya
+Software Architect & Engineer | London, United Kingdom
+bahulneel@gmail.com | +44 7771 603207 | https://bahulneel.github.io
+GitHub: https://github.com/bahulneel | LinkedIn: https://www.linkedin.com/in/bahulneel/ | GitHub (Org): https://github.com/totalperspective
+
+== Professional Summary
+
+Technology leader with extensive experience in software architecture and engineering, focusing on enterprise-scale solutions that improve business operations. Combines technical expertise with business understanding to deliver practical, effective solutions. Experienced in building and leading technical teams. Advocates for workplace neurodiversity, bringing different perspectives (ADHD diagnosed and pending ASD assessment) to problem-solving and innovation.
+
+== Professional Experience
+
+=== Total Perspective Tech
+*Founder & Lead Developer*
+_June 2023 – Present_
+
+Exploring the intersection of emerging and forgotten concepts in software through open-source projects and long-form writing. Recent threads include relational data systems, type-level programming, and agent-native development methodology.
+
+- Founded Total Perspective Tech as the home for open-source work and applied research.
+- Seeded the RelationalFabric collective (Canon, Howard, Suss) — foundational TypeScript libraries for truly relational, data-centric systems.
+- Built Agent Brain Trust — a reusable system of expert collectives that turns AI assistants into a room with friction, shipping as Cursor/Claude Code plugins and an MCP server.
+- Published a sustained body of long-form writing on Level Up Coding spanning platform thinking, knowledge engineering, type-level programming, and AI-assisted development.
+
+=== Confidential
+*Contract Developer/Architect*
+_June 2024 – May 2026_
+
+Architected and delivered an event-planning platform from concept to launch-ready over a two-year engagement. The project is complete but unlaunched at the close of the engagement; product, client, and implementation details remain under NDA. The work served as the production crucible in which several of the patterns now published as open research and libraries under RelationalFabric — Howard's claims engine, Canon's lazy typing, and Suss / RaCSTS propagator networks — were tested, refined, and proved out at the scale of a real codebase.
+
+- Delivered the platform end-to-end using AI-assisted development practices, sustaining a high delivery velocity across the engagement
+- Underpinned the architecture with a rules-driven platform model built on a homegrown rules engine
+- Implemented a data architecture on FlureeDB for FAIR data storage with native JSON-LD support
+- Executed an offline- and mobile-first product strategy across web and mobile surfaces
+- Stood up cloud infrastructure on AWS sized for projected scalability requirements
+- Acted as the proving ground for the public RelationalFabric research track now visible in the Projects and Writing sections of this site
+
+=== Hybr Ltd
+*Senior Full-stack Web Developer*
+_June 2023 – May 2024_
+
+Led technical improvements and platform modernization, including semantic web implementation and design system development.
+
+- Developed comprehensive design system to improve development consistency
+- Introduced semantic web architecture and knowledge engineering concepts to enhance internal modelling and data integration
+- Improved platform performance and user experience through targeted updates
+
+=== Contxt
+*Contract ML Architect and Senior Developer*
+_August 2022 – February 2023_
+
+Guided architectural evolution for API classification systems, combining ML solutions with platform modernization.
+
+- Guided team's architectural evolution from monolithic to pluggable multi-layer design supporting cross-platform deployment
+- Developed synthetic data generation system for classifier testing
+- Investigated language model applications for API content classification
+
+=== Elsevier (RELX)
+*Data Platform Architect*
+_September 2020 – August 2022_
+
+Led architecture development for the Entellect data platform, supporting enterprise data integration initiatives.
+
+- Provided architectural guidance for platform development and integration
+- Facilitated collaboration between product and engineering teams to align technical capabilities with product strategy
+- Supported pharmaceutical company data-athon, enabling novel drug target discovery through platform integration
+
+=== Earlier Roles
+
+*R&D Lead, Architecture Team / Senior Platform Architect* at *Honeybee Solutions (Synchronoss Technologies Inc.)* — _August 2017 – June 2020_
+
+Developed a rules-based product recommendation service and integrated a schemaless product catalog with a recommendation engine.
+
+*Independent Contractor* at *Janrain Inc.* — _April 2017 – July 2017_
+
+Built a rule-based system with Clojure, ClojureScript, and Datomic for runtime business logic modifications without core code changes.
+
+*Head of Research & Development* at *Eckoh plc* — _September 2013 – November 2016_
+
+Managed an R&D team, exploring new technologies and advising on best practices, focusing on data-driven architectures and technology advancements.
+
+=== Earlier Career
+
+- _January 2012 – August 2013_ — *Senior Developer / Team Lead*, BraveNewTalent
+- _June 2005 – January 2012_ — *Senior Developer*, Eckoh plc
+- _October 1999 – June 2005_ — *Developer*, 365 Corporation plc / Eckoh plc
+
+== Technical Skills
+
+*Programming/Domain Specific Languages:* C/C++, Clojure, ClojureScript, Datalog, Java, JavaScript (ES6), Node.js, Perl, PHP, Python, SPARQL, SQL, TypeScript.
+
+*Web and Markup Technologies:* CCXML, CSS, GraphQL, HTML, JSX, Next.js, Pinia, Pug, React, Redux, Schema.org, Svelte 4, SVG, TailwindCSS, VoiceXML, Vue/Nuxt, Vuetify, WebRTC, WebWorkers.
+
+*Databases and Data Management:* Datomic, ElasticSearch, FlureeDB, MongoDB, MySQL/MariaDB, Postgres, Redis.
+
+*Development and Deployment Tools:* AWS, AWS API Gateway, AWS Cognito, AWS DynamoDB, AWS ECR, AWS ECS, AWS EKS, AWS Fargate, AWS Lambda, AWS S3, AWS SNS, AWS SQS, Chromatic, Docker, ESLint, GitHub Actions, Histoire, Kafka, Langium, N8N, NATS, RabbitMQ, SST (Ion), Storybook, Terraform, ZooKeeper.
+
+*Artificial Intelligence and Machine Learning:* Agent Brain Trust, Agent-native architecture, Agentic AI/LLMs, AI planning (symbolic), ChatGPT, Claude.ai, Claude Code, Cursor.sh, Custom GPTs, DeepSeek, Dialectic prompting, Google Colab, Google Gemini, MCP (Model Context Protocol), NotebookLM, oLLAMA, OpenAI APIs, Perplexity, production-rule systems, Prompt Engineering, PyTorch, statistical methods, synthetic data generation, Tensorflow, Vector Symbolic Architectures, WebLLM.
+
+*Methodologies:* Atomic Design, BDD, Design Systems, Domain-Driven Design, Kanban, Lean, SAFe, Scaled Agile, Scrum, TDD.
+
+*Architectures:* Bloom / CALM, C4, Curry–Howard correspondence, data-driven architectures, Distributed architectures, event/streaming architectures, Lazy typing, micro-service architectures, Monotonic reasoning, propagator networks, Relational programming, serverless architectures, Stratified reasoning, Type-level programming, Value semantics.
+
+*Compliance:* GDPR, PCI DSS.
+
+*Additional Tools:* Figma, Notion, PostHog.
+
+*Knowledge Engineering:* JSON-LD, OWL, RDF, Schema.org, Semantic Web.
+
+
+== Education
+
+*BSc in Physics* — Imperial College London

@@ -1,7 +1,41 @@
 #!/bin/bash
+#
+# Build both downloadable CV PDFs from public/cv.json:
+#   - public/cv.pdf          — full, long-form CV (legacy artifact)
+#   - public/cv-summary.pdf  — compressed, recruiter-friendly CV
+#
+# The two asciidoctor-pdf invocations run in parallel because they are the
+# slow steps; the upstream .adoc generation is cheap and runs sequentially.
+#
+# Prereqs:
+#   - node (for the converter)
+#   - asciidoctor-pdf available on PATH (gem install asciidoctor-pdf)
+#
+# Env:
+#   BUILD_REFERENCE_DATE  ISO date (YYYY-MM-DD) — passed through to the
+#                         converter for reproducible bucketing of experience.
 
-# Convert cv.json to cv.adoc using Node.js and Mustache
-node scripts/convert_cv.js || exit 1
+set -u
 
-# Convert cv.adoc to cv.pdf using asciidoctor-pdf with a sans-serif font
-asciidoctor-pdf --theme themes/cv-theme.yml -a pdf-fontsdir=fonts public/cv.adoc -o public/cv.pdf || exit 1
+# 1. Generate both .adoc files.
+node scripts/convert_cv.js --mode=full    --out=public/cv.adoc         || exit 1
+node scripts/convert_cv.js --mode=summary --out=public/cv-summary.adoc || exit 1
+
+THEME_ARGS=(--theme themes/cv-theme.yml -a pdf-fontsdir=fonts)
+
+# 2. Build the two PDFs concurrently. Capture each background job's exit code
+#    explicitly via `wait <pid>` so a failure in either propagates.
+asciidoctor-pdf "${THEME_ARGS[@]}" public/cv.adoc         -o public/cv.pdf         &
+PID_FULL=$!
+asciidoctor-pdf "${THEME_ARGS[@]}" public/cv-summary.adoc -o public/cv-summary.pdf &
+PID_SUMMARY=$!
+
+wait "$PID_FULL";    STATUS_FULL=$?
+wait "$PID_SUMMARY"; STATUS_SUMMARY=$?
+
+if [ "$STATUS_FULL" -ne 0 ] || [ "$STATUS_SUMMARY" -ne 0 ]; then
+  echo "PDF build failed: full=$STATUS_FULL summary=$STATUS_SUMMARY" >&2
+  exit 1
+fi
+
+echo "Built public/cv.pdf and public/cv-summary.pdf"

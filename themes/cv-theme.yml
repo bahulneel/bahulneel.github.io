@@ -14,6 +14,12 @@ base:
   font_size: 10
   line_height: 1.2
 
+# Inline `code` spans — Courier is a built-in Prawn font so no font file
+# is required, and the proportional theme stays NotoSans for everything else.
+codespan:
+  font_family: Courier
+  font_color: 333333
+
 heading:
   h1:
     font_size: 24

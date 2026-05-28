@@ -13,7 +13,9 @@ function Footer() {
         <span className="mx-2">|</span>
         <a href="/cv.adoc" className="text-accent-lightBlue hover:underline">CV (ADOC)</a>
         <span className="mx-2">|</span>
-        <a href="/cv.pdf" className="text-accent-lightBlue hover:underline">CV (PDF)</a>
+        <a href="/cv.pdf" className="text-accent-lightBlue hover:underline">CV (Full PDF)</a>
+        <span className="mx-2">|</span>
+        <a href="/cv-summary.pdf" className="text-accent-lightBlue hover:underline">CV (Summary PDF)</a>
       </div>
     </footer>
   );

@@ -33,13 +33,17 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
         <Footer />
       </div>
-      {/* Right ribbon - hidden on mobile */}
-      <a href="https://github.com/bahulneel/bahulneel.github.io" className="hidden md:block">
-        <img style={{ position: 'absolute', top: 0, right: 0, border: 0 }} src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
-      </a>
-      {/* Left ribbon - shown only on mobile */}
-      <a href="https://github.com/bahulneel/bahulneel.github.io" className="block md:hidden">
-        <img style={{ position: 'absolute', top: 0, left: 0, border: 0, transform: 'scaleX(-1)' }} src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+      {/* "Fork me on GitHub" ribbon — desktop only; hidden on small viewports where it overlaps the mobile header/menu. */}
+      <a
+        href="https://github.com/bahulneel/bahulneel.github.io"
+        aria-label="Fork me on GitHub"
+        className="hidden md:block absolute top-0 right-0 z-10"
+      >
+        <img
+          className="border-0"
+          src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png"
+          alt="Fork me on GitHub"
+        />
       </a>
     </>
   );
