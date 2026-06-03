@@ -7,6 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "build:cv": "bash scripts/convert_cv.sh",
+    "sync:medium": "node scripts/sync_medium_publications.js",
     "start": "next start",
     "export": "next export",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,6 +31,7 @@
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
+    "rss-parser": "^3.13.0",
     "tailwindcss": "^3.4.3"
   }
 }

@@ -1,0 +1,64 @@
+name: Sync Medium publications
+
+on:
+  schedule:
+    # 06:00 UTC daily
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync Medium feed into cv.json
+        id: sync
+        run: |
+          set +e
+          node scripts/sync_medium_publications.js
+          code=$?
+          set -e
+          if [ "$code" -eq 2 ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif [ "$code" -eq 0 ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            exit "$code"
+          fi
+
+      - name: Open pull request
+        if: steps.sync.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/medium-publications
+          delete-branch: true
+          title: 'chore: sync Medium publications in cv.json'
+          commit-message: 'chore: sync Medium publications from RSS feed'
+          body: |
+            Automated daily sync of `@bahulneel` Medium articles into `public/cv.json`.
+
+            - Recent feed items update titles, dates, and links
+            - Existing subtitles and tags are preserved when URLs match
+            - Older publications not in the RSS window are kept unchanged
+            - Review new entries and add tags/subtitles where the feed excerpt is thin
+
+            Triggered by: ${{ github.event_name }}
+          labels: |
+            automation
+            publications
