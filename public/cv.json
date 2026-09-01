@@ -13,8 +13,8 @@
     "email": "bahulneel@gmail.com",
     "phone": "+44 77712 603207",
     "url": "https://bahulneel.github.io",
-    "intro": "I look for the abstractions that make the right thing easier, then give them away. Right now that means distributed graph stores, relational type systems, and AI collaborators built to argue back rather than agree. Most of it is public, and most of it started as something a client needed.",
-    "summary": "Software architect and engineer working across data platforms, web systems, and team leadership since 1999. Most recently delivered a confidential client platform from concept to launch ready, built on a distributed offline first graph store and semantic domain modelling. That work now continues in the open through RelationalFabric, alongside research on relational data systems and agent native development. Advocates for workplace neurodiversity and the perspectives it brings.",
+    "intro": "I publish the argument first: specifications, patterns, and long form pieces on what software ought to do and why. When the thinking holds up, I turn it into architecture and code others can use. The public writing, the RelationalFabric libraries, and Agent Brain Trust are the same habit at different depths.",
+    "summary": "Publishes specifications and long form technical writing, then implements the ideas as open source libraries and tools. Software architect and engineer since 1999, across data platforms, web systems, and team leadership. A confidential platform engagement (complete, under NDA) informed the DCSGS specification and RelationalFabric direction. Ships usable open source including Agent Brain Trust and Canon. Advocates for workplace neurodiversity.",
     "image": "profile.webp",
     "location": {
       "city": "London",
@@ -210,43 +210,82 @@
     },
     {
       "title": "Relational Fabric — library platform",
-      "description": "The active library family and published research for truly relational, data driven systems: lazy typing, claims, propagator networks, and construction primitives where relationships carry semantic meaning. Maintained under the RelationalFabric GitHub organisation (https://github.com/RelationalFabric); Canon, Howard, and Suss are the first shipped libraries, with Filament, Weft, Warp, and Shuttle as the broader platform surface.",
-      "link": "https://github.com/RelationalFabric",
-      "status": "Active",
+      "description": "Planned platform surface for truly relational, data driven systems: construction primitives where relationships carry semantic meaning. The ecosystem is taking shape first through Canon, Howard, and Suss; the meta repository and named platform libraries (Filament, Weft, Warp, Shuttle) follow once those foundations stabilise and selected patterns from a confidential client engagement can be ported.",
+      "link": "https://github.com/RelationalFabric/relational-fabric",
+      "status": "Planned",
       "type": "Open Source",
       "startDate": "2025-11",
       "endDate": "",
       "highlights": [
-        "Filament: meta level primitives for building domain specific abstractions",
-        "Weft: navigation and query construction primitives",
-        "Warp: primitives for working with data at rest",
-        "Shuttle: flow and coordination construction primitives",
-        "Published DCSGS whitepaper (Distributed Context Sensitive Graph Store): peer to peer distributed graph storage with immutable Semantic Log, Native Projection, and ownership based conflict resolution"
+        "Active development lives in Canon, Howard, and Suss rather than this umbrella repo",
+        "DCSGS whitepaper published; implementation detail remains under NDA pending extraction",
+        "Filament, Weft, Warp, and Shuttle name the intended platform surface, not shipped libraries yet"
+      ]
+    },
+    {
+      "title": "Canon (@relational-fabric/canon)",
+      "description": "Universal type primitives and axiomatic systems for TypeScript. Implements lazy typing: write type safe code against semantic axioms while deferring shape specific canon implementations to runtime registration. Published and usable; still evolving as the RelationalFabric ecosystem matures.",
+      "repoLink": "https://github.com/RelationalFabric/canon",
+      "status": "Active",
+      "type": "Open Source",
+      "startDate": "2025-12",
+      "endDate": "",
+      "highlights": [
+        "Axioms, Canons, and Universal APIs: semantic concepts decoupled from data shape",
+        "Published on npm (@relational-fabric/canon) with CLI scaffold and bundled toolchain",
+        "Transparent ADRs and a public technology radar"
+      ]
+    },
+    {
+      "title": "Howard",
+      "description": "A logical primitive for truly relational data systems: composable propositions backed by deterministic predicates, in the spirit of the Curry–Howard correspondence. Early library; depends on patterns still landing in Canon and Suss, as set out in the writing on claims and validation.",
+      "repoLink": "https://github.com/RelationalFabric/howard",
+      "status": "Early",
+      "type": "Open Source",
+      "startDate": "2025-12",
+      "endDate": "",
+      "highlights": [
+        "Value semantics and verifiable equality for arbitrary data",
+        "Claims backed by pure, deterministic predicates",
+        "Compositional propositions mirroring domain relationships"
+      ]
+    },
+    {
+      "title": "Suss",
+      "description": "Reference TypeScript implementation of RaCSTS (Relational and Causal State Transition System): serialisable propagator networks as first class values. Early reference code alongside the published specification.",
+      "repoLink": "https://github.com/RelationalFabric/suss",
+      "status": "Early",
+      "type": "Open Source",
+      "startDate": "2026-01",
+      "endDate": "",
+      "highlights": [
+        "Bidirectional constraints with automatic reconciliation",
+        "Leader free consensus via Sync; causal ordering via a Hybrid Epoch Clock",
+        "Full pack/unpack of networks as values for portability and replay"
       ]
     },
     {
       "title": "Gravity — Relativistic UI framework",
-      "description": "Vue and Nuxt framework for Relativistic UI: frames, fields, intent queries, and variant assembly without prop drilling semantic context. Mouldable components consume graph level visual intent set higher in the tree.",
+      "description": "Vue and Nuxt framework for Relativistic UI: frames, fields, intent queries, and variant assembly without prop drilling semantic context. Paused until RelationalFabric reaches a stable base and a retrospective pass on the confidential client front end (under NDA) is complete.",
       "repoLink": "https://github.com/relativistic-ui/gravity",
-      "status": "Work in Progress",
+      "status": "Paused",
       "type": "Open Source",
       "startDate": "2024-10",
       "endDate": "",
       "highlights": [
-        "Frames of reference and fields that carry semantic context without prop drilling",
-        "Intent queries and variant assembly for mouldable UI components",
-        "Set High, Act Low pattern for visual priority annotations",
-        "Planning based interaction chains instead of rigid workflow gating"
+        "Substantial codebase; patterns published separately (Relativistic UI, Set High Act Low)",
+        "Mouldable components and planning based interaction chains",
+        "Resumes against a stable RelationalFabric foundation"
       ]
     }
   ],
   "researchDesign": [
     {
       "name": "DCSGS",
-      "summary": "Distributed Context Sensitive Graph Store: peer to peer graph storage with an immutable Semantic Log, Native Projection, audience based stratification, and ownership based conflict resolution. Production proving ground under NDA; published as the RelationalFabric whitepaper.",
+      "summary": "Distributed Context Sensitive Graph Store: peer to peer graph storage with an immutable Semantic Log, Native Projection, audience based stratification, and ownership based conflict resolution. Whitepaper published; a bespoke implementation exists under NDA, to be extracted as RelationalFabric stabilises.",
       "org": "RelationalFabric",
       "kind": "Specification",
-      "status": "Active",
+      "status": "Published",
       "references": {
         "spec": "https://github.com/RelationalFabric/relational-fabric/blob/main/docs/whitepapers/Distributed%20Context-Sensitive%20Graph%20Store.md",
         "repo": "https://github.com/RelationalFabric/DCSGS"
@@ -264,7 +303,7 @@
         "repo": "https://github.com/RelationalFabric/suss",
         "article": "https://levelup.gitconnected.com/when-your-abstraction-escapes-fed44f9fea42"
       },
-      "relatedProject": "Relational Fabric — library platform"
+      "relatedProject": "Suss"
     },
     {
       "name": "Lazy Typing",
@@ -277,7 +316,7 @@
         "docs": "https://relationalfabric.github.io/canon/docs/axioms.html",
         "article": "https://levelup.gitconnected.com/the-end-of-disposable-code-how-i-built-universal-apis-in-typescript-618b3ed38302"
       },
-      "relatedProject": "Relational Fabric — library platform"
+      "relatedProject": "Canon (@relational-fabric/canon)"
     },
     {
       "name": "Claims",
@@ -301,7 +340,7 @@
         "repo": "https://github.com/RelationalFabric/canon",
         "article": "https://levelup.gitconnected.com/the-return-to-canon-why-your-code-is-too-structure-aware-41a55f44f390"
       },
-      "relatedProject": "Relational Fabric — library platform"
+      "relatedProject": "Canon (@relational-fabric/canon)"
     },
     {
       "name": "Infrastructures of Suspicion",
@@ -437,10 +476,10 @@
     },
     {
       "name": "Gravity",
-      "summary": "Vue/Nuxt framework implementing Relativistic UI: frames, fields, intent queries, and variant assembly without prop drilling semantic context.",
+      "summary": "Vue/Nuxt framework implementing Relativistic UI: frames, fields, intent queries, and variant assembly without prop drilling semantic context. Paused pending a stable RelationalFabric base and retrospective on the confidential client front end.",
       "org": "relativistic-ui",
       "kind": "Framework",
-      "status": "Active",
+      "status": "Paused",
       "references": {
         "repo": "https://github.com/relativistic-ui/gravity",
         "docs": "https://github.com/relativistic-ui/gravity/tree/develop/docs"

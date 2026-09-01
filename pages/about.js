@@ -10,29 +10,28 @@ function Page() {
       </Head>
       <h1 className="text-3xl font-bold mb-4">About Me</h1>
       <p className="mb-4">
-        I have been building software since 1999, long enough to have watched several good ideas get
-        forgotten and then rediscovered under new names. My work sits where data platforms, web systems,
-        and team leadership meet. The part that holds my attention is narrower: the recurring cost of code
-        that has to interrogate the shape of its data at every boundary, and what becomes possible once it
-        does not.
+        I have been building software since 1999, long enough to watch good ideas get forgotten and
+        rediscovered under new names. What keeps me interested is narrower: the cost of code that must
+        interrogate data shape at every boundary, and what becomes possible when it does not. I tend to
+        write the specification and the argument first, then build the architecture and libraries that
+        make the argument testable.
       </p>
       <p className="mb-4">
-        From June 2024 to May 2026 I led architecture and delivery of a client platform, from concept to
-        launch ready. The engagement closed complete but unlaunched, and the specifics stay under NDA.
-        What I can say is what it forced me to build: a distributed offline first graph store, Schema.org
-        oriented semantic modelling, early production work on mouldable interfaces, and planning based
-        interaction chains that surface the prerequisite actions instead of blocking the user.
+        From June 2024 to May 2026 I led architecture and delivery of a confidential client platform, from
+        concept to launch ready. The engagement closed complete but unlaunched; the specifics stay under
+        NDA. What is public is the thinking it produced: a distributed graph store specification (DCSGS),
+        semantic modelling, mouldable interfaces, and planning based interaction chains that surface
+        prerequisite actions instead of blocking the user.
       </p>
       <p className="mb-4">
-        Those ideas are public now.{' '}
-        <a href="https://github.com/RelationalFabric">RelationalFabric</a> carries the DCSGS whitepaper on
-        distributed graph storage and the libraries that came out of the same thinking: <em>Canon</em> for
-        lazy typing, <em>Howard</em> for claims in the Curry–Howard tradition, and <em>Suss</em> as the
-        reference implementation of RaCSTS for propagator networks. Alongside them sits{' '}
-        <a href="https://github.com/bahulneel/agent-brain-trust">Agent Brain Trust</a>, a set of expert
-        collectives that turn an AI assistant into a room with friction, and <em>RPL</em>, a Markdown
-        embedded reasoning framework that makes a model's reasoning inspectable rather than inferred. Most
-        recently I have been arguing that technical debt has no recorded artefact form, and drafting one.
+        The open source side of that work runs through{' '}
+        <a href="https://github.com/RelationalFabric">RelationalFabric</a>. Canon is the usable library
+        for lazy typing, still evolving. Howard and Suss carry the claims and propagator network ideas at
+        an earlier stage, in the order the writing describes. The Relational Fabric platform name covers a
+        wider surface not yet assembled.{' '}
+        <a href="https://github.com/bahulneel/agent-brain-trust">Agent Brain Trust</a> and{' '}
+        <em>RPL</em> sit on a parallel track: inspectable reasoning and AI rooms that refuse to skip the
+        useful steps.
       </p>
       <p className="mb-4">
         The thread through all of it is a long standing interest in workplace neurodiversity. I am ADHD
@@ -41,8 +40,8 @@ function Page() {
         incidental to the work. They are most of the method.
       </p>
       <p>
-        I write the long form version of all this on Level Up Coding and Medium. If you want the argument
-        rather than the summary, start with <a href="/writing">Writing</a>.
+        The long form version lives on Level Up Coding and Medium. If you want the argument rather than
+        the summary, start with <a href="/writing">Writing</a>.
       </p>
       <ProfileLinks className="mt-6" />
     </div>

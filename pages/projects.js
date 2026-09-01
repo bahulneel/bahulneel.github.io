@@ -3,14 +3,30 @@ import Head from 'next/head';
 import ProjectEntry from '../components/ProjectEntry';
 import cv from '../public/cv.json';
 
+const ACTIVE_STATUSES = new Set(['Active']);
+const WIP_STATUSES = new Set(['Work in Progress']);
+const OTHER_STATUS_ORDER = ['Early', 'Planned', 'Paused'];
+
+function projectBucket(status) {
+  if (ACTIVE_STATUSES.has(status)) return 'Active';
+  if (WIP_STATUSES.has(status)) return 'WIP';
+  return 'Others';
+}
+
 function Page() {
-  // Group projects by type and status, with active projects first
   const groupedProjects = cv.projects.reduce((acc, project) => {
     const { type, status } = project;
+    const bucket = projectBucket(status);
     if (!acc[type]) acc[type] = { Active: [], WIP: [], Others: [] };
-    acc[type][status === 'Active' ? 'Active' : status === 'Work in Progress' ? 'WIP' : 'Others'].push(project);
+    acc[type][bucket].push(project);
     return acc;
   }, {});
+
+  Object.values(groupedProjects).forEach((byBucket) => {
+    byBucket.Others.sort(
+      (a, b) => OTHER_STATUS_ORDER.indexOf(a.status) - OTHER_STATUS_ORDER.indexOf(b.status),
+    );
+  });
 
   return (
     <div className="mx-auto p-4 bg-secondary-lightGray" itemScope itemType="http://schema.org/Person" itemID={`${cv.basics.name}`}>
@@ -18,8 +34,8 @@ function Page() {
         <title>Projects</title>
       </Head>
       <p className="mb-6">
-        Open source work in flight and in production: agent rooms with friction, relational libraries,
-        and front end frameworks. Research names and specifications live under{' '}
+        Open source artefacts at different stages of maturity: shipped tools, early libraries, planned
+        platform surfaces, and paused frameworks. Specifications and named patterns live under{' '}
         <a href="/research-design" className="content-link">Research &amp; Design</a>
         ; the longer argument is in{' '}
         <a href="/writing" className="content-link">Writing</a>.
