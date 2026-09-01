@@ -45,11 +45,11 @@ function Page() {
       </Head>
       <h1 className="text-3xl font-bold mb-2">Research &amp; Design</h1>
       <p className="mb-6">
-        Named concepts, specifications, and patterns — distinct from general skills and
+        Named concepts, specifications, and patterns, distinct from general skills and
         shippable repos. Each entry links to its specification, repository, or article
         where published. Implementations are listed under{' '}
         <Link href="/projects"><a className="text-primary-teal hover:underline">Projects</a></Link>
-        ; long-form exposition under{' '}
+        ; long form exposition under{' '}
         <Link href="/writing"><a className="text-primary-teal hover:underline">Writing</a></Link>.
       </p>
       {groups.map(({ org, label, items }) => (

@@ -9,8 +9,8 @@ const formatDate = (date) => {
   return new Date(date).toLocaleDateString('en-GB', options);
 };
 
-function PublicationCard({ pub, featured = false }) {
-  const card = (
+function PublicationCard({ pub }) {
+  return (
     <Card
       title={pub.title}
       link={pub.link}
@@ -39,9 +39,43 @@ function PublicationCard({ pub, featured = false }) {
       itemProp={{ title: 'headline', subtitle: 'datePublished', content: 'description' }}
     />
   );
+}
 
-  if (featured) return card;
-  return <div className="opacity-80">{card}</div>;
+function ArchiveList({ archiveByYear }) {
+  if (archiveByYear.length === 0) return null;
+
+  const total = archiveByYear.reduce((count, { items }) => count + items.length, 0);
+
+  return (
+    <details className="mt-6 text-secondary-gray">
+      <summary className="cursor-pointer font-semibold text-sm hover:text-primary-teal">
+        Archive ({total} posts)
+      </summary>
+      <ul className="mt-3 pl-5 list-disc text-sm space-y-3">
+        {archiveByYear.map(({ year, items }) => (
+          <li key={year}>
+            <span className="font-medium">{year}</span>
+            <ul className="mt-1 pl-5 list-disc space-y-1">
+              {items.map((pub, index) => (
+                <li key={`${year}-${index}`} itemScope itemType="http://schema.org/Article">
+                  <a
+                    href={pub.link}
+                    className="text-primary-teal hover:underline"
+                    itemProp="url"
+                  >
+                    <span itemProp="headline">{pub.title}</span>
+                  </a>
+                  <span className="text-secondary-lightGray">
+                    {' '}({formatDate(pub.date)}{pub.publisher ? ` · ${pub.publisher}` : ''})
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+    </details>
+  );
 }
 
 function Page() {
@@ -76,9 +110,9 @@ function Page() {
       </Head>
       <h1 className="text-3xl font-bold mb-2">Writing</h1>
       <p className="mb-4">
-        Long-form pieces on Level Up Coding and Medium — a running thread from
-        platform thinking and knowledge engineering through type-level
-        programming and AI-assisted development. Each piece links to the
+        Long form pieces on Level Up Coding and Medium: a running thread from
+        platform thinking and knowledge engineering through type level
+        programming and AI assisted development. Each piece links to the
         original post.
       </p>
       <ProfileLinks className="mb-6" linkClassName="text-primary-teal hover:underline" />
@@ -86,23 +120,11 @@ function Page() {
         <section className="mb-8">
           <h2 className="font-bold text-primary-darkBlue mb-2">Featured</h2>
           {boosted.map((pub, index) => (
-            <PublicationCard key={`featured-${index}`} pub={pub} featured />
+            <PublicationCard key={`featured-${index}`} pub={pub} />
           ))}
         </section>
       )}
-      {archiveByYear.length > 0 && (
-        <section>
-          <h2 className="font-bold text-secondary-gray mb-2">Archive</h2>
-          {archiveByYear.map(({ year, items }) => (
-            <div key={year}>
-              <h3 className="font-semibold text-secondary-gray mt-4 mb-2">{year}</h3>
-              {items.map((pub, index) => (
-                <PublicationCard key={`${year}-${index}`} pub={pub} />
-              ))}
-            </div>
-          ))}
-        </section>
-      )}
+      <ArchiveList archiveByYear={archiveByYear} />
     </div>
   );
 }

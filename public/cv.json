@@ -13,7 +13,7 @@
     "email": "bahulneel@gmail.com",
     "phone": "+44 77712 603207",
     "url": "https://bahulneel.github.io",
-    "summary": "Technology leader with extensive experience in software architecture and engineering, focusing on enterprise-scale solutions that improve business operations. Combines technical expertise with business understanding to deliver practical, effective solutions. Experienced in building and leading technical teams. Advocates for workplace neurodiversity, bringing different perspectives (ADHD diagnosed and pending ASD assessment) to problem-solving and innovation.",
+    "summary": "Software architect and engineer with twenty years across data platforms, web systems, and team leadership. Drawn to problems where the right abstractions make the right thing easier, and to the patient work of finding those abstractions and giving them away. Builds and leads technical teams. Advocates for workplace neurodiversity (ADHD diagnosed, ASD assessment pending) and for the perspectives that brings to problem solving and innovation.",
     "image": "profile.webp",
     "location": {
       "city": "London",
@@ -49,23 +49,23 @@
       "position": "Contract Developer/Architect",
       "startDate": "2024-06",
       "endDate": "2026-05",
-      "summary": "Architected and delivered a confidential platform from concept to launch-ready over a two-year engagement. The project is complete but unlaunched at the close of the contract; product, client, and implementation details remain under NDA. The engagement was the production proving ground for a distributed offline-first graph store, semantic data modelling, mouldable interfaces, and planning-oriented interaction design — patterns now published openly through RelationalFabric and related writing.",
+      "summary": "Architected and delivered a confidential platform from concept to launch ready over a two year engagement. The project is complete but unlaunched at the close of the contract; product, client, and implementation details remain under NDA. The engagement was the production proving ground for a distributed offline first graph store, semantic data modelling, mouldable interfaces, and planning oriented interaction design, now published openly through RelationalFabric and related writing.",
       "highlights": [
-        "Implemented a distributed, offline-first graph store (DCSGS-variant architecture) nearing production readiness",
-        "Pioneered early production exploration of relativistic UI/UX and mouldable interfaces — precursor to concepts published publicly",
-        "Modelled domain data with a Schema.org-derived semantic layer for knowledge-engineering-oriented integration",
-        "Replaced rigid sequential workflow gating with planning-based interaction chains: when a user attempts an action, the system surfaces prerequisite actions for completion rather than hard-blocking progress",
-        "Delivered end-to-end using AI-assisted development practices, sustaining high delivery velocity across the engagement",
-        "Executed an offline- and mobile-first product strategy across web and mobile surfaces",
+        "Implemented a distributed, offline first graph store (DCSGS variant architecture) nearing production readiness",
+        "Pioneered early production exploration of relativistic UI/UX and mouldable interfaces, a precursor to concepts published publicly",
+        "Modelled domain data with a Schema.org derived semantic layer for knowledge engineering oriented integration",
+        "Replaced rigid sequential workflow gating with planning based interaction chains: when a user attempts an action, the system surfaces prerequisite actions for completion rather than hard blocking progress",
+        "Delivered end to end using AI assisted development practices, sustaining high delivery velocity across the engagement",
+        "Executed an offline and mobile first product strategy across web and mobile surfaces",
         "Stood up cloud infrastructure on AWS sized for projected scalability requirements"
       ]
     },
     {
       "company": "Hybr Ltd",
-      "position": "Senior Full-stack Web Developer",
+      "position": "Senior Full stack Web Developer",
       "startDate": "2023-06",
       "endDate": "2024-05",
-      "summary": "Led technical improvements and platform modernization, including semantic web implementation and design system development.",
+      "summary": "Led technical improvements and platform modernisation, including semantic web implementation and design system development.",
       "highlights": [
         "Developed comprehensive design system to improve development consistency",
         "Introduced semantic web architecture and knowledge engineering concepts to enhance internal modelling and data integration",
@@ -77,9 +77,9 @@
       "position": "Contract ML Architect and Senior Developer",
       "startDate": "2022-08",
       "endDate": "2023-02",
-      "summary": "Guided architectural evolution for API classification systems, combining ML solutions with platform modernization.",
+      "summary": "Guided architectural evolution for API classification systems, combining ML solutions with platform modernisation.",
       "highlights": [
-        "Guided team's architectural evolution from monolithic to pluggable multi-layer design supporting cross-platform deployment",
+        "Guided team's architectural evolution from monolithic to pluggable multi layer design supporting cross platform deployment",
         "Developed synthetic data generation system for classifier testing",
         "Investigated language model applications for API content classification"
       ]
@@ -93,7 +93,7 @@
       "highlights": [
         "Provided architectural guidance for platform development and integration",
         "Facilitated collaboration between product and engineering teams to align technical capabilities with product strategy",
-        "Supported pharmaceutical company data-athon, enabling novel drug target discovery through platform integration"
+        "Supported pharmaceutical company data athon, enabling novel drug target discovery through platform integration"
       ]
     },
     {
@@ -101,10 +101,10 @@
       "position": "R&D Lead, Architecture Team / Senior Platform Architect",
       "startDate": "2017-08",
       "endDate": "2020-06",
-      "summary": "Developed a rules-based product recommendation service and integrated a schemaless product catalog with a recommendation engine.",
+      "summary": "Developed a rules based product recommendation service and integrated a schemaless product catalog with a recommendation engine.",
       "highlights": [
-        "Developed a rules-based solution for a product recommendation service using Datalog derivatives.",
-        "Integrated a domain-specific layer for a schemaless product catalog with a recommendation engine using JSON-LD and RDF."
+        "Developed a rules based solution for a product recommendation service using Datalog derivatives.",
+        "Integrated a domain specific layer for a schemaless product catalog with a recommendation engine using JSON-LD and RDF."
       ]
     },
     {
@@ -112,9 +112,9 @@
       "position": "Independent Contractor",
       "startDate": "2017-04",
       "endDate": "2017-07",
-      "summary": "Built a rule-based system with Clojure, ClojureScript, and Datomic for runtime business logic modifications without core code changes.",
+      "summary": "Built a rule based system with Clojure, ClojureScript, and Datomic for runtime business logic modifications without core code changes.",
       "highlights": [
-        "Built a rule-based system with Clojure, ClojureScript, and Datomic, enabling runtime business logic modifications without core code changes."
+        "Built a rule based system with Clojure, ClojureScript, and Datomic, enabling runtime business logic modifications without core code changes."
       ]
     },
     {
@@ -122,10 +122,10 @@
       "position": "Head of Research & Development",
       "startDate": "2013-09",
       "endDate": "2016-11",
-      "summary": "Managed an R&D team, exploring new technologies and advising on best practices, focusing on data-driven architectures and technology advancements.",
+      "summary": "Managed an R&D team, exploring new technologies and advising on best practices, focusing on data driven architectures and technology advancements.",
       "highlights": [
         "Managed a small R&D team, exploring new technologies and advising on best practices.",
-        "Focused on data-driven architectures and industry-academic technology advancements."
+        "Focused on data driven architectures and industry academic technology advancements."
       ]
     },
     {
@@ -165,114 +165,84 @@
       "position": "Founder & Lead Developer",
       "startDate": "2023-06",
       "endDate": "",
-      "summary": "Exploring the intersection of emerging and forgotten concepts in software through open-source projects and long-form writing. Recent threads include relational data systems, type-level programming, and agent-native development methodology.",
+      "summary": "Exploring the intersection of emerging and forgotten concepts in software through open source projects and long form writing. Recent threads include relational data systems, type level programming, and agent native development methodology.",
       "highlights": [
-        "Founded Total Perspective Tech as the home for open-source work and applied research.",
-        "Seeded the RelationalFabric collective (Canon, Howard, Suss) — foundational TypeScript libraries for truly relational, data-centric systems.",
-        "Built Agent Brain Trust — a reusable system of expert collectives that turns AI assistants into a room with friction, shipping as Cursor/Claude Code plugins and an MCP server.",
-        "Published a sustained body of long-form writing on Level Up Coding spanning platform thinking, knowledge engineering, type-level programming, and AI-assisted development."
+        "Founded Total Perspective Tech as the home for open source work and applied research.",
+        "Seeded the RelationalFabric collective (Canon, Howard, Suss): foundational TypeScript libraries for truly relational, data centric systems.",
+        "Built Agent Brain Trust, a reusable system of expert collectives that turns AI assistants into a room with friction, shipping as Cursor and Claude Code plugins and an MCP server.",
+        "Published a sustained body of long form writing on Level Up Coding spanning platform thinking, knowledge engineering, type level programming, and AI assisted development."
       ]
     }
   ],
   "projects": [
     {
       "title": "Agent Brain Trust",
-      "description": "A reusable system of expert collectives ('trusts') that turns AI assistants into a room with friction — real named figures in plausible settings, a moderator who refuses to skip steps, and a synthesis that names what was traded away. Ships as Cursor and Claude Code plugins, per-skill zips, and a published MCP server (@bahulneel/brain-trust-mcp).",
+      "description": "A reusable system of expert collectives ('trusts') that turns AI assistants into a room with friction: real named figures in plausible settings, a moderator who refuses to skip steps, and a synthesis that names what was traded away. Ships as Cursor and Claude Code plugins, per skill zips, and a published MCP server (@bahulneel/brain-trust-mcp).",
       "repoLink": "https://github.com/bahulneel/agent-brain-trust",
       "status": "Active",
       "type": "Open Source",
       "startDate": "2026-03",
       "endDate": "",
       "highlights": [
-        "Composable Agent Skills following the agentskills.io specification: expert-opinion, draft-experts, and ten bt-* workshops and editorials (software systems, codebase tactics, prompt engineering, design patterns, product strategy, organisation design, frontend UX, visual communication, technical writing, science explanation)",
-        "Bounded guest drafting via an MCP-served persona taxonomy of ~80 named figures — closes off invented authority and lets one room draft a witness from another's domain",
+        "Composable Agent Skills following the agentskills.io specification: expert opinion, draft experts, and ten bt-* workshops and editorials (software systems, codebase tactics, prompt engineering, design patterns, product strategy, organisation design, frontend UX, visual communication, technical writing, science explanation)",
+        "Bounded guest drafting via an MCP served persona taxonomy of ~80 named figures: closes off invented authority and lets one room draft a witness from another's domain",
         "Shared protocol fragments (readings, synthesis, persona fidelity) reused across rooms; a new room is one YAML stanza and a paragraph of framing",
         "Monorepo of brain-trust-core, brain-trust-db, brain-trust-mcp (published as @bahulneel/brain-trust-mcp on npm) and repo-tooling, with releases producing Cursor and Claude Code plugin zips and standalone RPL.md / LRPL.md prompt artifacts",
-        "Spawned RPL (Relational Prompt Language) as a separate, reusable artifact — see the RPL project entry"
+        "Spawned RPL (Relational Prompt Language) as a separate, reusable artifact; see the RPL project entry"
       ]
     },
     {
       "title": "RPL — Relational Prompt Language",
-      "description": "A Markdown-embedded reasoning framework with associated logic for structuring how an LLM reasons about a user's request. Instead of relying on highly tuned prose and guessing what the model inferred, RPL lets you declare explicit relations, goals, and constraints so reasoning state becomes inspectable, queryable, and continuable across context boundaries. Spawned out of Agent Brain Trust and published as a standalone artifact.",
+      "description": "A Markdown embedded reasoning framework with associated logic for structuring how an LLM reasons about a user's request. Instead of relying on highly tuned prose and guessing what the model inferred, RPL lets you declare explicit relations, goals, and constraints so reasoning state becomes inspectable, queryable, and continuable across context boundaries. Spawned out of Agent Brain Trust and published as a standalone artifact.",
       "repoLink": "https://github.com/bahulneel/agent-brain-trust/tree/main/docs/rpl",
       "status": "Active",
       "type": "Open Source",
       "startDate": "2026-04",
       "endDate": "",
       "highlights": [
-        "Stratified relational reasoning — each conversation turn is a stratum, the trace is the continuity mechanism between strata and across sessions",
-        "Grounded in Bloom and the CALM theorem (Hellerstein; Ameloot, Neven & Van den Bussche): the monotonic core needs no coordination, with non-monotonic operations made explicit as agent-judgment points",
+        "Stratified relational reasoning: each conversation turn is a stratum, the trace is the continuity mechanism between strata and across sessions",
+        "Grounded in Bloom and the CALM theorem (Hellerstein; Ameloot, Neven & Van den Bussche): the monotonic core needs no coordination, with non monotonic operations made explicit as agent judgment points",
         "Base RPL (eager) and LRPL (lazy extension with memos, satisfactory quiescence, and a small stdlib including $json, $write, $index)",
-        "Prose-first authoring: Markdown is materialised into relations on encounter; relation heads attach to headings only where prose drifts",
+        "Prose first authoring: Markdown is materialised into relations on encounter; relation heads attach to headings only where prose drifts",
         "Distributed as published RPL.md / LRPL.md artifacts inside the Agent Brain Trust releases, with a normative base specification and tutorials"
       ]
     },
     {
       "title": "Relational Fabric — library platform",
-      "description": "The active library family and published research for truly relational, data-driven systems — lazy typing, claims, propagator networks, and construction primitives where relationships carry semantic meaning. Maintained under the RelationalFabric GitHub organisation (https://github.com/RelationalFabric); Canon, Howard, and Suss are the first shipped libraries, with Filament, Weft, Warp, and Shuttle as the broader platform surface.",
+      "description": "The active library family and published research for truly relational, data driven systems: lazy typing, claims, propagator networks, and construction primitives where relationships carry semantic meaning. Maintained under the RelationalFabric GitHub organisation (https://github.com/RelationalFabric); Canon, Howard, and Suss are the first shipped libraries, with Filament, Weft, Warp, and Shuttle as the broader platform surface.",
       "link": "https://github.com/RelationalFabric",
       "status": "Active",
       "type": "Open Source",
       "startDate": "2025-11",
       "endDate": "",
       "highlights": [
-        "Filament — meta-level primitives for building domain-specific abstractions",
-        "Weft — navigation and query construction primitives",
-        "Warp — primitives for working with data at rest",
-        "Shuttle — flow and coordination construction primitives",
-        "Published DCSGS whitepaper (Distributed Context-Sensitive Graph Store) — peer-to-peer distributed graph storage with immutable Semantic Log, Native Projection, and ownership-based conflict resolution"
+        "Filament: meta level primitives for building domain specific abstractions",
+        "Weft: navigation and query construction primitives",
+        "Warp: primitives for working with data at rest",
+        "Shuttle: flow and coordination construction primitives",
+        "Published DCSGS whitepaper (Distributed Context Sensitive Graph Store): peer to peer distributed graph storage with immutable Semantic Log, Native Projection, and ownership based conflict resolution"
       ]
     },
     {
-      "title": "Canon (@relational-fabric/canon)",
-      "description": "Universal type primitives and axiomatic systems for TypeScript. Implements the Lazy Typing pattern: write type-safe code against semantic concepts (axioms) while deferring shape-specific implementations (canons) to runtime configuration, exposed through universal APIs.",
-      "repoLink": "https://github.com/RelationalFabric/canon",
-      "status": "Active",
+      "title": "Gravity — Relativistic UI framework",
+      "description": "Vue and Nuxt framework for Relativistic UI: frames, fields, intent queries, and variant assembly without prop drilling semantic context. Mouldable components consume graph level visual intent set higher in the tree.",
+      "repoLink": "https://github.com/relativistic-ui/gravity",
+      "status": "Work in Progress",
       "type": "Open Source",
-      "startDate": "2025-12",
+      "startDate": "2024-10",
       "endDate": "",
       "highlights": [
-        "Axioms / Canons / Universal APIs — semantic concepts decoupled from data shape",
-        "Zero-runtime-cost compile-time type assertions (Expect<A, B>, IsTrue, IsFalse)",
-        "Bundled tsconfig, ESLint config and a CLI scaffold (`npx canon init`)",
-        "Transparent ADRs and a public technology radar"
-      ]
-    },
-    {
-      "title": "Howard",
-      "description": "A self-contained logical primitive for building truly relational data systems — a computable truth engine that turns ad-hoc boolean validation into first-class, composable propositions, in the spirit of the Curry–Howard correspondence.",
-      "repoLink": "https://github.com/RelationalFabric/howard",
-      "status": "Active",
-      "type": "Open Source",
-      "startDate": "2025-12",
-      "endDate": "",
-      "highlights": [
-        "Value semantics and verifiable equality for arbitrary data",
-        "Claims backed by pure, deterministic predicates",
-        "Compositional propositions mirroring domain relationships",
-        "Decouples what is claimed from how it is proved, for a flexible and extensible architecture"
-      ]
-    },
-    {
-      "title": "Suss",
-      "description": "Reference TypeScript implementation of RaCSTS (Relational and Causal State Transition System) — serialisable propagator networks that can be paused, inspected, versioned and transmitted across boundaries as first-class values.",
-      "repoLink": "https://github.com/RelationalFabric/suss",
-      "status": "Active",
-      "type": "Open Source",
-      "startDate": "2026-01",
-      "endDate": "",
-      "highlights": [
-        "Bidirectional constraints with automatic reconciliation",
-        "Leader-free consensus via Sync; causal ordering via a Hybrid Epoch Clock",
-        "Six standard higher-order relations (mark, linear, map, constrain, reduce, join)",
-        "Full pack/unpack of networks as values for portability and replay"
+        "Frames of reference and fields that carry semantic context without prop drilling",
+        "Intent queries and variant assembly for mouldable UI components",
+        "Set High, Act Low pattern for visual priority annotations",
+        "Planning based interaction chains instead of rigid workflow gating"
       ]
     }
   ],
   "researchDesign": [
     {
       "name": "DCSGS",
-      "summary": "Distributed Context-Sensitive Graph Store — peer-to-peer graph storage with an immutable Semantic Log, Native Projection, audience-based stratification, and ownership-based conflict resolution. Production proving ground under NDA; published as the RelationalFabric whitepaper.",
+      "summary": "Distributed Context Sensitive Graph Store: peer to peer graph storage with an immutable Semantic Log, Native Projection, audience based stratification, and ownership based conflict resolution. Production proving ground under NDA; published as the RelationalFabric whitepaper.",
       "org": "RelationalFabric",
       "kind": "Specification",
       "status": "Active",
@@ -284,7 +254,7 @@
     },
     {
       "name": "RaCSTS",
-      "summary": "Relational and Causal State Transition System — a specification for serialisable propagator networks as first-class values: logic, topology, and causal history frozen into portable artefacts ('Rackets').",
+      "summary": "Relational and Causal State Transition System: a specification for serialisable propagator networks as first class values. Logic, topology, and causal history frozen into portable artefacts ('Rackets').",
       "org": "RelationalFabric",
       "kind": "Specification",
       "status": "Active",
@@ -293,11 +263,11 @@
         "repo": "https://github.com/RelationalFabric/suss",
         "article": "https://levelup.gitconnected.com/when-your-abstraction-escapes-fed44f9fea42"
       },
-      "relatedProject": "Suss"
+      "relatedProject": "Relational Fabric — library platform"
     },
     {
       "name": "Lazy Typing",
-      "summary": "Write type-safe code against semantic axioms while deferring shape-specific canon implementations to runtime registration — late-bound types without sacrificing compile-time safety.",
+      "summary": "Write type safe code against semantic axioms while deferring shape specific canon implementations to runtime registration: late bound types without sacrificing compile time safety.",
       "org": "RelationalFabric",
       "kind": "Pattern",
       "status": "Active",
@@ -306,11 +276,11 @@
         "docs": "https://relationalfabric.github.io/canon/docs/axioms.html",
         "article": "https://levelup.gitconnected.com/the-end-of-disposable-code-how-i-built-universal-apis-in-typescript-618b3ed38302"
       },
-      "relatedProject": "Canon (@relational-fabric/canon)"
+      "relatedProject": "Relational Fabric — library platform"
     },
     {
       "name": "Claims",
-      "summary": "First-class composable propositions backed by deterministic predicates — replacing ad-hoc boolean validation with verifiable, cacheable proofs in the Curry–Howard tradition.",
+      "summary": "First class composable propositions backed by deterministic predicates, replacing ad hoc boolean validation with verifiable, cacheable proofs in the Curry–Howard tradition.",
       "org": "RelationalFabric",
       "kind": "Pattern",
       "status": "Active",
@@ -322,7 +292,7 @@
     },
     {
       "name": "Universal APIs",
-      "summary": "Single semantic API surface that works across all registered canons — code against concepts, not container shapes.",
+      "summary": "Single semantic API surface that works across all registered canons: code against concepts, not container shapes.",
       "org": "RelationalFabric",
       "kind": "Pattern",
       "status": "Active",
@@ -330,13 +300,13 @@
         "repo": "https://github.com/RelationalFabric/canon",
         "article": "https://levelup.gitconnected.com/the-return-to-canon-why-your-code-is-too-structure-aware-41a55f44f390"
       },
-      "relatedProject": "Canon (@relational-fabric/canon)"
+      "relatedProject": "Relational Fabric — library platform"
     },
     {
       "name": "Infrastructures of Suspicion",
-      "summary": "Anti-pattern: code that must interrogate data shape at every boundary instead of trusting semantic axioms — the structure-aware debt Universal APIs and Lazy Typing aim to eliminate.",
+      "summary": "Anti pattern: code that must interrogate data shape at every boundary instead of trusting semantic axioms. The structure aware debt Universal APIs and Lazy Typing aim to eliminate.",
       "org": "RelationalFabric",
-      "kind": "Anti-pattern",
+      "kind": "Anti pattern",
       "status": "Published",
       "references": {
         "article": "https://levelup.gitconnected.com/the-return-to-canon-why-your-code-is-too-structure-aware-41a55f44f390"
@@ -344,7 +314,7 @@
     },
     {
       "name": "Semantic Hashing",
-      "summary": "Hash propositions and relationships, not container structure — `{foo:1}` and `[{key:'foo',value:1}]` must be semantically equivalent for persistent proofs.",
+      "summary": "Hash propositions and relationships, not container structure. `{foo:1}` and `[{key:'foo',value:1}]` must be semantically equivalent for persistent proofs.",
       "org": "RelationalFabric",
       "kind": "Pattern",
       "status": "Active",
@@ -355,7 +325,7 @@
     },
     {
       "name": "Logical Tax",
-      "summary": "The recurring cost of re-verifying claims at every boundary without persistent proofs — the problem Semantic Hashing and Howard's proof cache aim to eliminate architecturally.",
+      "summary": "The recurring cost of re verifying claims at every boundary without persistent proofs. The problem Semantic Hashing and Howard's proof cache aim to eliminate architecturally.",
       "org": "RelationalFabric",
       "kind": "Concept",
       "status": "Published",
@@ -365,7 +335,7 @@
     },
     {
       "name": "Agent Brain Trust",
-      "summary": "Reusable expert collectives with friction by design — named figures, plausible settings, a moderator who refuses to skip steps, and synthesis that names what was traded away.",
+      "summary": "Reusable expert collectives with friction by design: named figures, plausible settings, a moderator who refuses to skip steps, and synthesis that names what was traded away.",
       "org": "bahulneel",
       "kind": "Framework",
       "status": "Active",
@@ -378,7 +348,7 @@
     },
     {
       "name": "Dialectic Prompt",
-      "summary": "Multi-voice AI debate protocol — real named experts, tension axes, designated challenger, and moderator-led synthesis. Precursor to Agent Brain Trust.",
+      "summary": "Multi voice AI debate protocol: real named experts, tension axes, designated challenger, and moderator led synthesis. Precursor to Agent Brain Trust.",
       "org": "bahulneel",
       "kind": "Methodology",
       "status": "Active",
@@ -389,7 +359,7 @@
     },
     {
       "name": "RPL",
-      "summary": "Relational Prompt Language — Markdown-embedded reasoning with explicit relations, goals, and constraints; reasoning state inspectable and continuable across strata and sessions.",
+      "summary": "Relational Prompt Language: Markdown embedded reasoning with explicit relations, goals, and constraints. Reasoning state inspectable and continuable across strata and sessions.",
       "org": "bahulneel",
       "kind": "Specification",
       "status": "Active",
@@ -402,7 +372,7 @@
     },
     {
       "name": "LRPL",
-      "summary": "Lazy extension of RPL — memos, satisfactory quiescence, and a small stdlib ($json, $write, $index) for deferred relational evaluation.",
+      "summary": "Lazy extension of RPL: memos, satisfactory quiescence, and a small stdlib ($json, $write, $index) for deferred relational evaluation.",
       "org": "bahulneel",
       "kind": "Specification",
       "status": "Active",
@@ -414,7 +384,7 @@
     },
     {
       "name": "Remediation Record (RR)",
-      "summary": "Version-controlled artefact form for technical debt — explicit schema for drift, compromises, and remediation intent (distinct from ADRs and generic TDR formats).",
+      "summary": "Version controlled artefact form for technical debt: explicit schema for drift, compromises, and remediation intent (distinct from ADRs and generic TDR formats).",
       "org": "bahulneel",
       "kind": "Specification",
       "status": "Published",
@@ -424,7 +394,7 @@
     },
     {
       "name": "Military Pattern",
-      "summary": "Complete strategy–tactics–operations hierarchy isolating each category of conditional logic to a specific architectural boundary — emerged from finishing what the Strategy Pattern leaves unfinished.",
+      "summary": "Complete strategy, tactics, and operations hierarchy isolating each category of conditional logic to a specific architectural boundary. Emerged from finishing what the Strategy Pattern leaves unfinished.",
       "org": "bahulneel",
       "kind": "Pattern",
       "status": "Published",
@@ -434,7 +404,7 @@
     },
     {
       "name": "Tactic Pattern",
-      "summary": "Strategies compose tactics; each tactic encapsulates applicability and execution — the compositional unit the Military Pattern builds on.",
+      "summary": "Strategies compose tactics; each tactic encapsulates applicability and execution. The compositional unit the Military Pattern builds on.",
       "org": "bahulneel",
       "kind": "Pattern",
       "status": "Published",
@@ -444,7 +414,7 @@
     },
     {
       "name": "Abstractions as the UI of Ideas",
-      "summary": "Data abstractions should work like good UI — making complex systems understandable and actionable without exposing unnecessary structure.",
+      "summary": "Data abstractions should work like good UI: making complex systems understandable and actionable without exposing unnecessary structure.",
       "org": "bahulneel",
       "kind": "Concept",
       "status": "Published",
@@ -454,7 +424,7 @@
     },
     {
       "name": "Relativistic UI",
-      "summary": "Paradigm extending Atomic Design with physics-inspired context awareness — frames of reference, principles, and mouldable components that adapt to local UI state.",
+      "summary": "Paradigm extending Atomic Design with physics inspired context awareness: frames of reference, principles, and mouldable components that adapt to local UI state.",
       "org": "relativistic-ui",
       "kind": "Framework",
       "status": "Active",
@@ -466,18 +436,19 @@
     },
     {
       "name": "Gravity",
-      "summary": "Vue/Nuxt framework implementing Relativistic UI — frames, fields, intent queries, and variant assembly without prop-drilling semantic context.",
+      "summary": "Vue/Nuxt framework implementing Relativistic UI: frames, fields, intent queries, and variant assembly without prop drilling semantic context.",
       "org": "relativistic-ui",
       "kind": "Framework",
       "status": "Active",
       "references": {
         "repo": "https://github.com/relativistic-ui/gravity",
         "docs": "https://github.com/relativistic-ui/gravity/tree/develop/docs"
-      }
+      },
+      "relatedProject": "Gravity — Relativistic UI framework"
     },
     {
       "name": "Set High, Act Low",
-      "summary": "Semantic front-end pattern — graph-level visual intent and priority annotations set high in the tree, consumed by mouldable components lower down.",
+      "summary": "Semantic front end pattern: graph level visual intent and priority annotations set high in the tree, consumed by mouldable components lower down.",
       "org": "relativistic-ui",
       "kind": "Pattern",
       "status": "Published",
@@ -487,8 +458,8 @@
       }
     },
     {
-      "name": "Planning-based interaction chains",
-      "summary": "Replace rigid workflow gating with planning-oriented chains — when a user attempts an action, surface prerequisite actions for completion rather than hard-blocking progress.",
+      "name": "Planning based interaction chains",
+      "summary": "Replace rigid workflow gating with planning oriented chains: when a user attempts an action, surface prerequisite actions for completion rather than hard blocking progress.",
       "org": "relativistic-ui",
       "kind": "Pattern",
       "status": "Active",
@@ -496,7 +467,7 @@
     },
     {
       "name": "Pondermatic",
-      "summary": "Functional effect-system rules engine (Clojure/ClojureScript). Early rules-based product work; superseded by Howard, RPL, and RelationalFabric direction.",
+      "summary": "Functional effect system rules engine (Clojure/ClojureScript). Early rules based product work; superseded by Howard, RPL, and RelationalFabric direction.",
       "org": "TotalPerspective",
       "kind": "Framework",
       "status": "Superseded",
@@ -506,7 +477,7 @@
     },
     {
       "name": "Bistromath",
-      "summary": "EQL/Meander-inspired data transformation library extending ES6 destructuring. Legacy TotalPerspective experiment.",
+      "summary": "EQL/Meander inspired data transformation library extending ES6 destructuring. Legacy TotalPerspective experiment.",
       "org": "TotalPerspective",
       "kind": "Library",
       "status": "Superseded",
@@ -516,7 +487,7 @@
     },
     {
       "name": "Krikkit",
-      "summary": "Key-based object processing meta-language with frame state and macro expansion. Legacy TotalPerspective DSL work.",
+      "summary": "Key based object processing meta language with frame state and macro expansion. Legacy TotalPerspective DSL work.",
       "org": "TotalPerspective",
       "kind": "Language",
       "status": "Superseded",
@@ -544,7 +515,7 @@
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/from-the-dialectic-prompt-to-agent-brain-trust-5532583f6221",
       "tags": [
-        "AI-assisted development",
+        "AI assisted development",
         "Agent Brain Trust"
       ]
     },
@@ -566,7 +537,7 @@
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/the-dialectic-prompt-when-friction-helped-turn-my-ai-from-coding-assistant-to-my-software-brain-151ccc62b0e3",
       "tags": [
-        "AI-assisted development",
+        "AI assisted development",
         "Agent Brain Trust"
       ]
     },
@@ -705,7 +676,7 @@
     },
     {
       "title": "The Platform Advantage",
-      "subtitle": "How to stay ahead of the curve in today's fast-paced business environment",
+      "subtitle": "Why platform thinking beats product thinking when the game is compounding advantage",
       "date": "2023-03-19",
       "publisher": "Medium",
       "link": "https://medium.com/@bahulneel/the-platform-advantage-dd604d87425f",
@@ -813,7 +784,7 @@
       "name": "AI Theory and Symbolic Methods",
       "keywords": [
         "AI planning (symbolic)",
-        "production-rule systems",
+        "production rule systems",
         "statistical methods",
         "synthetic data generation",
         "Vector Symbolic Architectures"
@@ -830,7 +801,7 @@
     {
       "name": "AI-Assisted Development",
       "keywords": [
-        "Agent-native architecture",
+        "Agent native architecture",
         "Agentic AI/LLMs",
         "ChatGPT",
         "Claude.ai",
@@ -866,10 +837,10 @@
       "name": "System Architectures",
       "keywords": [
         "C4",
-        "data-driven architectures",
+        "data driven architectures",
         "Distributed architectures",
         "event/streaming architectures",
-        "micro-service architectures",
+        "micro service architectures",
         "serverless architectures"
       ]
     },
@@ -881,7 +852,7 @@
         "Monotonic reasoning",
         "propagator networks",
         "Relational programming",
-        "Type-level programming",
+        "Type level programming",
         "Value semantics"
       ]
     },
