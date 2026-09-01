@@ -62,6 +62,11 @@ Handlebars.registerHelper('formatDate', function (dateStr) {
   return format(parseISO(dateStr), 'MMMM yyyy');
 });
 
+Handlebars.registerHelper('formatPubDate', function (dateStr) {
+  if (!dateStr) return '';
+  return format(parseISO(dateStr), 'd MMMM yyyy');
+});
+
 // Wraps a work entry's company name in AsciiDoc italics when the entry is
 // marked confidential, so an NDA/placeholder label like "Undisclosed Client
 // (under NDA)" reads visually as a meta-label rather than a real org name.
@@ -83,7 +88,27 @@ console.log(`[convert_cv] mode=${mode} -> ${outPath}`);
 
 const cvData = JSON.parse(fs.readFileSync('public/cv.json', 'utf8'));
 
-let renderData = cvData;
+const canonicalSchemaUrl = cvData.canonicalSchema || 'https://bahulneel.github.io/cv.json';
+const docKeywords = 'Curry-Howard, DCSGS, RelationalFabric, Canon, Howard, Suss, Relativistic UI, RaCSTS, Agent Brain Trust, RPL';
+const docDescription = `Canonical JSON-LD profile and architectural schema: ${canonicalSchemaUrl}`;
+
+function partitionPublications(publications) {
+  const sorted = publications
+    .slice()
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
+  return {
+    publicationsBoosted: sorted.filter((pub) => pub.boosted),
+    publicationsArchive: sorted.filter((pub) => !pub.boosted),
+  };
+}
+
+let renderData = {
+  ...cvData,
+  canonicalSchemaUrl,
+  docKeywords,
+  docDescription,
+  ...partitionPublications(cvData.publications || []),
+};
 if (mode === 'summary') {
   // Sort work entries by effective end date desc (ongoing roles end "today")
   // and slice into three slot-based tiers. Sort is intentionally simple — no
@@ -103,6 +128,10 @@ if (mode === 'summary') {
 
   renderData = {
     ...cvData,
+    canonicalSchemaUrl,
+    docKeywords,
+    docDescription,
+    ...partitionPublications(cvData.publications || []),
     workFull,
     workBullets,
     workOneLiner,

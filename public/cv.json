@@ -1,4 +1,17 @@
 {
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "boosted": {
+      "@id": "https://schema.org/featured",
+      "@type": "@id"
+    },
+    "canonicalSchema": {
+      "@id": "https://schema.org/url",
+      "@type": "@id"
+    }
+  },
+  "@type": "Person",
+  "canonicalSchema": "https://bahulneel.github.io/cv.json",
   "basics": {
     "name": "Bahul Neel Upadhyaya",
     "label": "Software Architect & Engineer",
@@ -258,12 +271,26 @@
   ],
   "publications": [
     {
+      "title": "Technical Debt Has No Recorded Artefact Form",
+      "subtitle": "Your architecture plan outlines the ideal path forward, yet leaves you blind when code inevitably drifts into chaos.",
+      "date": "2026-08-12",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/technical-debt-has-no-recorded-artefact-form-395f37e3f0dd",
+      "tags": [
+        "Software Architecture",
+        "Technical Debt"
+      ]
+    },
+    {
       "title": "From the Dialectic Prompt to Agent Brain Trust",
       "subtitle": "Real people, plausible settings, and a protocol that refuses to skip the useful steps",
       "date": "2026-04-20",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/from-the-dialectic-prompt-to-agent-brain-trust-5532583f6221",
-      "tags": ["AI-assisted development", "Agent Brain Trust"]
+      "tags": [
+        "AI-assisted development",
+        "Agent Brain Trust"
+      ]
     },
     {
       "title": "The Day the TypeScript Compiler Exploded",
@@ -271,15 +298,10 @@
       "date": "2026-03-09",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/the-day-the-typescript-compiler-exploded-0b4b45bc6768",
-      "tags": ["TypeScript", "Debugging"]
-    },
-    {
-      "title": "Towards a Tactical Solution to a General Problem",
-      "subtitle": "Strategies compose tactics — and the Military Pattern that emerges when you let the abstraction lead",
-      "date": "2026-03-02",
-      "publisher": "Level Up Coding",
-      "link": "https://levelup.gitconnected.com/towards-a-tactical-solution-to-a-general-problem-8341730bb690",
-      "tags": ["Design Patterns"]
+      "tags": [
+        "TypeScript",
+        "Debugging"
+      ]
     },
     {
       "title": "The Dialectic Prompt: When Friction Helped Turn my AI from Coding Assistant to my Software Brain Trust",
@@ -287,7 +309,20 @@
       "date": "2026-03-02",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/the-dialectic-prompt-when-friction-helped-turn-my-ai-from-coding-assistant-to-my-software-brain-151ccc62b0e3",
-      "tags": ["AI-assisted development", "Agent Brain Trust"]
+      "tags": [
+        "AI-assisted development",
+        "Agent Brain Trust"
+      ]
+    },
+    {
+      "title": "Towards a Tactical Solution to a General Problem",
+      "subtitle": "Strategies compose tactics — and the Military Pattern that emerges when you let the abstraction lead",
+      "date": "2026-03-02",
+      "publisher": "Level Up Coding",
+      "link": "https://levelup.gitconnected.com/towards-a-tactical-solution-to-a-general-problem-8341730bb690",
+      "tags": [
+        "Design Patterns"
+      ]
     },
     {
       "title": "When Your Abstraction Escapes",
@@ -295,7 +330,10 @@
       "date": "2026-01-03",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/when-your-abstraction-escapes-fed44f9fea42",
-      "tags": ["Relational Fabric", "Suss"]
+      "tags": [
+        "Relational Fabric",
+        "Suss"
+      ]
     },
     {
       "title": "The Return to Canon: Why Your Code is Too Structure-Aware",
@@ -303,7 +341,11 @@
       "date": "2026-01-01",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/the-return-to-canon-why-your-code-is-too-structure-aware-41a55f44f390",
-      "tags": ["Relational Fabric", "Canon", "TypeScript"]
+      "tags": [
+        "Relational Fabric",
+        "Canon",
+        "TypeScript"
+      ]
     },
     {
       "title": "The Logic of Claims: Why Validation Is Broken, and What Replaces It",
@@ -311,7 +353,10 @@
       "date": "2025-12-30",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/the-logic-of-claims-why-validation-is-broken-and-what-replaces-it-dd16464a4f0c",
-      "tags": ["Relational Fabric", "Howard"]
+      "tags": [
+        "Relational Fabric",
+        "Howard"
+      ]
     },
     {
       "title": "The End of Disposable Code: How I Built Universal APIs in TypeScript",
@@ -319,7 +364,11 @@
       "date": "2025-12-05",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/the-end-of-disposable-code-how-i-built-universal-apis-in-typescript-618b3ed38302",
-      "tags": ["Relational Fabric", "Canon", "TypeScript"]
+      "tags": [
+        "Relational Fabric",
+        "Canon",
+        "TypeScript"
+      ]
     },
     {
       "title": "Semantic Front-End Design: A Practical Guide to Visual Priority and Intent-Driven Mouldable UI",
@@ -327,7 +376,10 @@
       "date": "2025-11-30",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/semantic-front-end-design-a-practical-guide-to-visual-priority-and-intent-driven-mouldable-0fdd4f57e58a",
-      "tags": ["Design Systems", "Frontend"]
+      "tags": [
+        "Design Systems",
+        "Frontend"
+      ]
     },
     {
       "title": "How I Felt My Way Through the Tailwind 4 Migration and Fixed Dark Mode Forever",
@@ -335,7 +387,11 @@
       "date": "2025-11-10",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/how-i-felt-my-way-through-the-tailwind-4-migration-and-fixed-dark-mode-forever-9de9ace8f9d8",
-      "tags": ["Frontend", "Design Systems"]
+      "tags": [
+        "Frontend",
+        "Design Systems"
+      ],
+      "boosted": true
     },
     {
       "title": "When Your Strategy Needs a Strategy: Tactical Error or Unfinished Business",
@@ -343,7 +399,9 @@
       "date": "2025-08-04",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/when-your-strategy-needs-a-strategy-tactical-error-or-unfinished-business-e42129792032",
-      "tags": ["Design Patterns"]
+      "tags": [
+        "Design Patterns"
+      ]
     },
     {
       "title": "From Atomic Design to Relativistic Interfaces",
@@ -351,7 +409,11 @@
       "date": "2024-10-15",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/from-atomic-design-to-relativistic-interfaces-0751b0b46832",
-      "tags": ["Design Systems", "Frontend"]
+      "tags": [
+        "Design Systems",
+        "Frontend"
+      ],
+      "boosted": true
     },
     {
       "title": "Understanding Abstractions",
@@ -359,7 +421,9 @@
       "date": "2024-05-14",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/understanding-abstractions-baa3d5347b0d",
-      "tags": ["Software Architecture"]
+      "tags": [
+        "Software Architecture"
+      ]
     },
     {
       "title": "Rethinking Data with Knowledge Engineering",
@@ -367,7 +431,10 @@
       "date": "2024-03-24",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/rethinking-data-with-knowledge-engineering-46f1c9d4012e",
-      "tags": ["Knowledge Engineering", "Semantic Web"]
+      "tags": [
+        "Knowledge Engineering",
+        "Semantic Web"
+      ]
     },
     {
       "title": "Building SecondPelt",
@@ -375,7 +442,9 @@
       "date": "2023-05-09",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/building-secondpelt-76bcd0d87f6b",
-      "tags": ["Platform Thinking"]
+      "tags": [
+        "Platform Thinking"
+      ]
     },
     {
       "title": "The Platform Advantage",
@@ -383,7 +452,9 @@
       "date": "2023-03-19",
       "publisher": "Medium",
       "link": "https://medium.com/@bahulneel/the-platform-advantage-dd604d87425f",
-      "tags": ["Platform Thinking"]
+      "tags": [
+        "Platform Thinking"
+      ]
     }
   ],
   "education": [
@@ -504,6 +575,7 @@
         "Perplexity",
         "production-rule systems",
         "Prompt Engineering",
+        "RPL (Relational Prompt Language)",
         "PyTorch",
         "statistical methods",
         "synthetic data generation",
@@ -521,6 +593,8 @@
         "Domain-Driven Design",
         "Kanban",
         "Lean",
+        "Mouldable UI",
+        "Relativistic UI",
         "SAFe",
         "Scaled Agile",
         "Scrum",
@@ -528,20 +602,28 @@
       ]
     },
     {
-      "name": "Architectures",
+      "name": "System Architectures",
       "keywords": [
-        "Bloom / CALM",
         "C4",
-        "Curry–Howard correspondence",
         "data-driven architectures",
+        "DCSGS",
         "Distributed architectures",
         "event/streaming architectures",
-        "Lazy typing",
         "micro-service architectures",
+        "serverless architectures"
+      ]
+    },
+    {
+      "name": "Type-Level and Theoretical Architectures",
+      "keywords": [
+        "Bloom / CALM",
+        "Curry–Howard correspondence",
+        "Lazy typing",
         "Monotonic reasoning",
         "propagator networks",
+        "RaCSTS",
         "Relational programming",
-        "serverless architectures",
+        "RelationalFabric",
         "Stratified reasoning",
         "Type-level programming",
         "Value semantics"

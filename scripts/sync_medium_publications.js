@@ -1,14 +1,18 @@
 #!/usr/bin/env node
 /*
- * Sync cv.json publications from the @bahulneel Medium RSS feed.
+ * Sync cv.json publications from local Medium feed markdown or RSS.
  *
- * Matched entries keep curated titles, subtitles, and tags. New feed items
- * get title/subtitle from RSS (subtitle from first H2 when available).
+ * Local feed (preferred when present):
+ *   ../bahulneel/medium/feed/*.md — frontmatter supplies title, date, link, boosted
+ *
+ * Matched entries keep curated titles, subtitles, and tags from cv.json.
+ * New feed items get title/subtitle from the markdown (subtitle from body when needed).
  *
  * Usage:
  *   node scripts/sync_medium_publications.js
  *   node scripts/sync_medium_publications.js --dry-run
- *   node scripts/sync_medium_publications.js --username=bahulneel
+ *   node scripts/sync_medium_publications.js --source=rss --username=bahulneel
+ *   node scripts/sync_medium_publications.js --feed-dir=../bahulneel/medium/feed
  *
  * Exit codes:
  *   0 — no changes (or dry-run with no changes)
@@ -21,6 +25,7 @@ const path = require('path');
 const Parser = require('rss-parser');
 
 const CV_PATH = path.join(__dirname, '..', 'public', 'cv.json');
+const DEFAULT_FEED_DIR = path.join(__dirname, '..', '..', 'bahulneel', 'medium', 'feed');
 const DEFAULT_USERNAME = 'bahulneel';
 
 const parser = new Parser({
@@ -31,11 +36,13 @@ const parser = new Parser({
 
 function parseArgs(argv) {
   const dryRun = argv.includes('--dry-run');
+  const sourceArg = argv.find((a) => a.startsWith('--source='));
+  const feedDirArg = argv.find((a) => a.startsWith('--feed-dir='));
   const usernameArg = argv.find((a) => a.startsWith('--username='));
-  const username = usernameArg
-    ? usernameArg.split('=')[1]
-    : DEFAULT_USERNAME;
-  return { dryRun, username };
+  const source = sourceArg ? sourceArg.split('=')[1] : 'auto';
+  const feedDir = feedDirArg ? feedDirArg.split('=')[1] : DEFAULT_FEED_DIR;
+  const username = usernameArg ? usernameArg.split('=')[1] : DEFAULT_USERNAME;
+  return { dryRun, source, feedDir, username };
 }
 
 /** Strip tracking query params; keep canonical article URL. */
@@ -72,12 +79,51 @@ function publisherFromLink(link) {
   return 'Medium';
 }
 
-function formatDate(pubDate) {
-  return new Date(pubDate).toISOString().slice(0, 10);
+function formatDate(rawDate) {
+  return new Date(rawDate).toISOString().slice(0, 10);
+}
+
+function parseFrontmatter(content) {
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (!match) return {};
+
+  const frontmatter = {};
+  for (const line of match[1].split('\n')) {
+    const kv = line.match(/^(\w+):\s*(.*)$/);
+    if (!kv) continue;
+    const [, key, rawValue] = kv;
+    let value = rawValue.trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+    if (value === 'true') frontmatter[key] = true;
+    else if (value === 'false') frontmatter[key] = false;
+    else frontmatter[key] = value;
+  }
+  return frontmatter;
+}
+
+/** First non-heading line after the title, or first ## heading. */
+function extractSubtitleFromMarkdown(content) {
+  const body = content.replace(/^---[\s\S]*?---\r?\n/, '');
+  const h2Match = body.match(/^##\s+(.+)$/m);
+  if (h2Match) {
+    return h2Match[1].replace(/\s+/g, ' ').trim();
+  }
+
+  const lines = body.split('\n').map((l) => l.trim()).filter(Boolean);
+  for (const line of lines) {
+    if (line.startsWith('#')) continue;
+    if (line.startsWith('![') || line.startsWith('[![')) continue;
+    if (line.startsWith('[') && line.includes('Continue reading')) continue;
+    const plain = line.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_]/g, '').trim();
+    if (plain.length > 0 && plain.length <= 200) return plain;
+  }
+  return '';
 }
 
 /** First ## heading from HTML, or first line of contentSnippet. */
-function extractSubtitle(item) {
+function extractSubtitleFromRss(item) {
   const html = item['content:encoded'] || item.content || '';
   const h2Match = html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
   if (h2Match) {
@@ -106,13 +152,14 @@ function indexExisting(publications) {
   return bySlug;
 }
 
-function buildPublication({ title, subtitle, date, publisher, link, tags }) {
+function buildPublication({ title, subtitle, date, publisher, link, tags, boosted }) {
   const pub = { title };
   if (subtitle) pub.subtitle = subtitle;
   pub.date = date;
   pub.publisher = publisher;
   pub.link = link;
   if (tags?.length) pub.tags = tags;
+  if (boosted) pub.boosted = true;
   return pub;
 }
 
@@ -129,7 +176,41 @@ function publicationsEqual(a, b) {
   });
 }
 
-async function fetchPublications(username) {
+function readLocalFeed(feedDir) {
+  if (!fs.existsSync(feedDir)) {
+    throw new Error(`Local feed directory not found: ${feedDir}`);
+  }
+
+  const cv = JSON.parse(fs.readFileSync(CV_PATH, 'utf8'));
+  const existing = cv.publications || [];
+  const existingIndex = indexExisting(existing);
+
+  const files = fs.readdirSync(feedDir).filter((name) => name.endsWith('.md'));
+  const fromFeed = files.map((filename) => {
+    const fullPath = path.join(feedDir, filename);
+    const content = fs.readFileSync(fullPath, 'utf8');
+    const meta = parseFrontmatter(content);
+    const link = normaliseLink(meta.link || '');
+    const slug = linkSlug(link);
+    const prior = existingIndex.get(slug);
+
+    const publication = buildPublication({
+      title: prior?.title || (meta.title || '').replace(/…/g, '…').trim(),
+      date: formatDate(meta.date),
+      publisher: publisherFromLink(link),
+      link,
+      subtitle: prior?.subtitle || extractSubtitleFromMarkdown(content),
+      tags: prior?.tags,
+      boosted: meta.boosted === true || prior?.boosted === true,
+    });
+
+    return publication;
+  });
+
+  return fromFeed.sort((a, b) => new Date(b.date) - new Date(a.date));
+}
+
+async function fetchRssPublications(username) {
   const feedUrl = `https://medium.com/feed/@${username.replace(/^@/, '')}`;
   const feed = await parser.parseURL(feedUrl);
 
@@ -151,8 +232,9 @@ async function fetchPublications(username) {
       date: formatDate(item.pubDate),
       publisher: publisherFromLink(link),
       link,
-      subtitle: prior?.subtitle || extractSubtitle(item),
+      subtitle: prior?.subtitle || extractSubtitleFromRss(item),
       tags: prior?.tags,
+      boosted: prior?.boosted === true,
     });
 
     return publication;
@@ -168,24 +250,34 @@ async function fetchPublications(username) {
   return [...fromFeed, ...retained].sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
+async function fetchPublications({ source, feedDir, username }) {
+  const useLocal = source === 'local' || (source === 'auto' && fs.existsSync(feedDir));
+  if (useLocal) {
+    console.log(`[sync_medium] reading local feed: ${feedDir}`);
+    return readLocalFeed(feedDir);
+  }
+  console.log(`[sync_medium] reading RSS feed for @${username}`);
+  return fetchRssPublications(username);
+}
+
 async function main() {
-  const { dryRun, username } = parseArgs(process.argv.slice(2));
+  const { dryRun, source, feedDir, username } = parseArgs(process.argv.slice(2));
 
   const cv = JSON.parse(fs.readFileSync(CV_PATH, 'utf8'));
   const previous = cv.publications || [];
-  const next = await fetchPublications(username);
+  const next = await fetchPublications({ source, feedDir, username });
 
   if (publicationsEqual(previous, next)) {
-    console.log(`[sync_medium] @${username}: ${next.length} articles, cv.json already up to date`);
+    console.log(`[sync_medium] ${next.length} articles, cv.json already up to date`);
     process.exit(0);
   }
 
   const added = next.filter((p) => !previous.some((e) => linkSlug(e.link) === linkSlug(p.link)));
   const removed = previous.filter((p) => !next.some((e) => linkSlug(e.link) === linkSlug(p.link)));
 
-  console.log(`[sync_medium] @${username}: ${next.length} articles (${added.length} new, ${removed.length} removed)`);
+  console.log(`[sync_medium] ${next.length} articles (${added.length} new, ${removed.length} removed)`);
   for (const pub of added) {
-    console.log(`  + ${pub.date} ${pub.title}`);
+    console.log(`  + ${pub.date} ${pub.title}${pub.boosted ? ' [boosted]' : ''}`);
   }
   for (const pub of removed) {
     console.log(`  - ${pub.date} ${pub.title}`);

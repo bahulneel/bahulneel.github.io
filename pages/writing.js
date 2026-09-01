@@ -8,20 +8,60 @@ const formatDate = (date) => {
   return new Date(date).toLocaleDateString('en-GB', options);
 };
 
+function PublicationCard({ pub, featured = false }) {
+  const card = (
+    <Card
+      title={pub.title}
+      link={pub.link}
+      subtitle={`${formatDate(pub.date)}${pub.publisher ? ` · ${pub.publisher}` : ''}`}
+      content={
+        <>
+          {pub.subtitle && (
+            <p itemProp="description">{pub.subtitle}</p>
+          )}
+          {pub.tags && pub.tags.length > 0 && (
+            <p className="text-sm">
+              {pub.tags.map((tag, i) => (
+                <span
+                  key={i}
+                  className="inline-block mr-2 mb-1 px-2 py-0.5 rounded bg-primary-teal text-accent-white"
+                >
+                  {tag}
+                </span>
+              ))}
+            </p>
+          )}
+        </>
+      }
+      itemScope
+      itemType="http://schema.org/Article"
+      itemProp={{ title: 'headline', subtitle: 'datePublished', content: 'description' }}
+    />
+  );
+
+  if (featured) return card;
+  return <div className="opacity-80">{card}</div>;
+}
+
 function Page() {
   const publications = (cv.publications || [])
     .slice()
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  // Group by year (descending) for at-a-glance scannability over a multi-year body of work.
-  const byYear = publications.reduce((acc, pub) => {
-    const year = new Date(pub.date).getFullYear();
-    if (!acc[year]) acc[year] = [];
-    acc[year].push(pub);
-    return acc;
-  }, {});
+  const boosted = publications.filter((pub) => pub.boosted);
+  const archive = publications.filter((pub) => !pub.boosted);
 
-  const years = Object.keys(byYear).sort((a, b) => b - a);
+  const groupByYear = (items) => {
+    const byYear = items.reduce((acc, pub) => {
+      const year = new Date(pub.date).getFullYear();
+      if (!acc[year]) acc[year] = [];
+      acc[year].push(pub);
+      return acc;
+    }, {});
+    return Object.keys(byYear).sort((a, b) => b - a).map((year) => ({ year, items: byYear[year] }));
+  };
+
+  const archiveByYear = groupByYear(archive);
 
   return (
     <div
@@ -40,41 +80,27 @@ function Page() {
         programming and AI-assisted development. Each piece links to the
         original post.
       </p>
-      {years.map((year) => (
-        <div key={year}>
-          <h2 className="font-bold mt-6 mb-2">{year}</h2>
-          {byYear[year].map((pub, index) => (
-            <Card
-              key={`${year}-${index}`}
-              title={pub.title}
-              link={pub.link}
-              subtitle={`${formatDate(pub.date)}${pub.publisher ? ` · ${pub.publisher}` : ''}`}
-              content={
-                <>
-                  {pub.subtitle && (
-                    <p itemProp="description">{pub.subtitle}</p>
-                  )}
-                  {pub.tags && pub.tags.length > 0 && (
-                    <p className="text-sm">
-                      {pub.tags.map((tag, i) => (
-                        <span
-                          key={i}
-                          className="inline-block mr-2 mb-1 px-2 py-0.5 rounded bg-primary-teal text-accent-white"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </p>
-                  )}
-                </>
-              }
-              itemScope
-              itemType="http://schema.org/Article"
-              itemProp={{ title: 'headline', subtitle: 'datePublished', content: 'description' }}
-            />
+      {boosted.length > 0 && (
+        <section className="mb-8">
+          <h2 className="font-bold text-primary-darkBlue mb-2">Featured</h2>
+          {boosted.map((pub, index) => (
+            <PublicationCard key={`featured-${index}`} pub={pub} featured />
           ))}
-        </div>
-      ))}
+        </section>
+      )}
+      {archiveByYear.length > 0 && (
+        <section>
+          <h2 className="font-bold text-secondary-gray mb-2">Archive</h2>
+          {archiveByYear.map(({ year, items }) => (
+            <div key={year}>
+              <h3 className="font-semibold text-secondary-gray mt-4 mb-2">{year}</h3>
+              {items.map((pub, index) => (
+                <PublicationCard key={`${year}-${index}`} pub={pub} />
+              ))}
+            </div>
+          ))}
+        </section>
+      )}
     </div>
   );
 }

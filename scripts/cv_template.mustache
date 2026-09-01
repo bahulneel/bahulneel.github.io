@@ -1,8 +1,10 @@
 = {{{basics.name}}}
+:keywords: {{{docKeywords}}}
+:description: {{{docDescription}}}
 
 [%hardbreaks]
 Email: {{{basics.email}}} | Phone: {{{basics.phone}}} | Location: {{{basics.location.city}}}, {{{basics.location.country}}}
-{{#basics.profiles}}{{{network}}}: {{{url}}}{{#unless @last}} | {{/unless}}{{/basics.profiles}}
+{{#basics.profiles}}{{{network}}}: {{{url}}}{{#unless @last}} | {{/unless}}{{/basics.profiles}} | Canonical profile: {{{canonicalSchemaUrl}}}
 
 == Professional Summary
 
@@ -56,3 +58,34 @@ _{{formatDate startDate}} - {{formatDate endDate}}_
 {{/highlights}}
 
 {{/projects}}
+
+== Writing
+
+{{#if publicationsBoosted.length}}
+=== Featured
+
+{{#publicationsBoosted}}
+==== {{{title}}}
+_{{formatPubDate date}}{{#if publisher}} · {{{publisher}}}{{/if}}_
+
+{{#if subtitle}}
+{{subtitle}}
+{{/if}}
+
+link:{{{link}}}[Read on {{#if publisher}}{{{publisher}}}{{else}}web{{/if}}]
+
+{{#if tags}}
+*Tags:* {{#tags}}{{{.}}}{{^@last}}, {{/@last}}{{/tags}}
+{{/if}}
+
+{{/publicationsBoosted}}
+{{/if}}
+{{#if publicationsArchive.length}}
+=== Archive
+
+[.small]
+{{#publicationsArchive}}
+* _{{formatPubDate date}}_ — link:{{{link}}}[{{{title}}}]
+{{/publicationsArchive}}
+
+{{/if}}
