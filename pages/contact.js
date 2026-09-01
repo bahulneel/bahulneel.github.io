@@ -1,6 +1,7 @@
 // Contact content
 import Head from 'next/head';
 import { useState } from 'react';
+import ProfileLinks from '../components/ProfileLinks';
 
 function Page() {
   const [name, setName] = useState('');
@@ -33,8 +34,7 @@ function Page() {
         <button type="submit" className="bg-primary-teal text-accent-white px-4 py-2 rounded hover:bg-primary-darkBlue">Send</button>
       </form>
       <div className="mt-6">
-        <a href="https://github.com/bahulneel" className="hover:underline mr-4">GitHub</a>
-        <a href="https://linkedin.com/in/bahulneel" className="hover:underline">LinkedIn</a>
+        <ProfileLinks linkClassName="text-primary-teal hover:underline" />
       </div>
     </div>
   );

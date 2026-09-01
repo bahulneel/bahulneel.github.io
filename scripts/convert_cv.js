@@ -77,6 +77,22 @@ Handlebars.registerHelper('companyLabel', function (entry) {
   return new Handlebars.SafeString(str);
 });
 
+Handlebars.registerHelper('profileLink', function (profile) {
+  if (!profile || !profile.url) return '';
+  const label = profile.network || profile.url;
+  return new Handlebars.SafeString(`link:${profile.url}[${label}]`);
+});
+
+Handlebars.registerHelper('mailtoLink', function (email) {
+  if (!email) return '';
+  return new Handlebars.SafeString(`link:mailto:${email}[${email}]`);
+});
+
+Handlebars.registerHelper('urlLink', function (url) {
+  if (!url) return '';
+  return new Handlebars.SafeString(`link:${url}[${url}]`);
+});
+
 function effectiveEndDate(entry) {
   return entry.endDate ? new Date(entry.endDate + '-01') : REFERENCE_DATE;
 }

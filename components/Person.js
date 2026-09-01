@@ -1,5 +1,6 @@
 import React from 'react';
 import cv from '../public/cv.json';
+import ProfileLinks from './ProfileLinks';
 
 const Person = () => {
   return (
@@ -8,6 +9,7 @@ const Person = () => {
       <div className="flex flex-col">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold" itemProp="name">{cv.basics.name}</h1>
         <p className="text-sm md:text-base lg:text-lg" itemProp="description">{cv.basics.summary}</p>
+        <ProfileLinks className="mt-4 not-prose text-sm" linkClassName="text-primary-teal hover:underline" />
       </div>
     </div>
   );

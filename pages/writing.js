@@ -1,6 +1,7 @@
 // Writing content
 import Head from 'next/head';
 import Card from '../components/Card';
+import ProfileLinks from '../components/ProfileLinks';
 import cv from '../public/cv.json';
 
 const formatDate = (date) => {
@@ -74,12 +75,13 @@ function Page() {
         <title>Writing</title>
       </Head>
       <h1 className="text-3xl font-bold mb-2">Writing</h1>
-      <p className="mb-6">
+      <p className="mb-4">
         Long-form pieces on Level Up Coding and Medium — a running thread from
         platform thinking and knowledge engineering through type-level
         programming and AI-assisted development. Each piece links to the
         original post.
       </p>
+      <ProfileLinks className="mb-6" linkClassName="text-primary-teal hover:underline" />
       {boosted.length > 0 && (
         <section className="mb-8">
           <h2 className="font-bold text-primary-darkBlue mb-2">Featured</h2>

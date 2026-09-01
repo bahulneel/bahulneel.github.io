@@ -3,8 +3,8 @@
 :description: {{{docDescription}}}
 
 [%hardbreaks]
-Email: {{{basics.email}}} | Phone: {{{basics.phone}}} | Location: {{{basics.location.city}}}, {{{basics.location.country}}}
-{{#basics.profiles}}{{{network}}}: {{{url}}}{{#unless @last}} | {{/unless}}{{/basics.profiles}} | Canonical JSON: {{{canonicalSchemaUrl}}}
+Email: {{mailtoLink basics.email}} | Phone: {{{basics.phone}}} | Location: {{{basics.location.city}}}, {{{basics.location.country}}}
+{{#basics.profiles}}{{profileLink this}}{{#unless @last}} | {{/unless}}{{/basics.profiles}} | link:{{{canonicalSchemaUrl}}}[Canonical JSON]
 
 == Professional Summary
 

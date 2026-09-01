@@ -2,8 +2,8 @@
 
 [%hardbreaks]
 {{{basics.label}}} | {{{basics.location.city}}}, {{{basics.location.country}}}
-{{{basics.email}}} | {{{basics.phone}}} | {{{basics.url}}}
-{{#basics.profiles}}{{{network}}}: {{{url}}}{{#unless @last}} | {{/unless}}{{/basics.profiles}}
+{{mailtoLink basics.email}} | {{{basics.phone}}} | {{urlLink basics.url}}
+{{#basics.profiles}}{{profileLink this}}{{#unless @last}} | {{/unless}}{{/basics.profiles}}
 
 == Professional Summary
 
