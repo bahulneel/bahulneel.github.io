@@ -48,9 +48,9 @@ function Page() {
         Named concepts, specifications, and patterns, distinct from general skills and
         shippable repos. Each entry links to its specification, repository, or article
         where published. Implementations are listed under{' '}
-        <Link href="/projects"><a className="text-primary-teal hover:underline">Projects</a></Link>
+        <Link href="/projects"><a className="content-link">Projects</a></Link>
         ; long form exposition under{' '}
-        <Link href="/writing"><a className="text-primary-teal hover:underline">Writing</a></Link>.
+        <Link href="/writing"><a className="content-link">Writing</a></Link>.
       </p>
       {groups.map(({ org, label, items }) => (
         <section key={org} className="mb-8">

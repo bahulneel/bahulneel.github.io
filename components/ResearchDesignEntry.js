@@ -19,7 +19,7 @@ function ReferenceLinks({ references }) {
       {entries.map(([key, url], index) => (
         <span key={key}>
           {index > 0 && ' · '}
-          <a href={url} className="text-accent-lightBlue hover:underline">
+          <a href={url} className="content-link">
             {REFERENCE_LABELS[key] || key}
           </a>
         </span>

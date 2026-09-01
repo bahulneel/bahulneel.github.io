@@ -1,6 +1,6 @@
 import cv from '../public/cv.json';
 
-function ProfileLinks({ className = '', linkClassName = 'text-accent-lightBlue hover:underline' }) {
+function ProfileLinks({ className = '', linkClassName = 'content-link' }) {
   const profiles = cv.basics.profiles || [];
 
   if (profiles.length === 0) return null;

@@ -48,7 +48,7 @@ function ArchiveList({ archiveByYear }) {
 
   return (
     <details className="mt-6 text-secondary-gray">
-      <summary className="cursor-pointer font-semibold text-sm hover:text-primary-teal">
+      <summary className="cursor-pointer font-semibold text-sm text-secondary-gray hover:text-link">
         Archive ({total} posts)
       </summary>
       <ul className="mt-3 pl-5 list-disc text-sm space-y-3">
@@ -60,7 +60,7 @@ function ArchiveList({ archiveByYear }) {
                 <li key={`${year}-${index}`} itemScope itemType="http://schema.org/Article">
                   <a
                     href={pub.link}
-                    className="text-primary-teal hover:underline"
+                    className="content-link"
                     itemProp="url"
                   >
                     <span itemProp="headline">{pub.title}</span>
@@ -115,7 +115,7 @@ function Page() {
         programming and AI assisted development. Each piece links to the
         original post.
       </p>
-      <ProfileLinks className="mb-6" linkClassName="text-primary-teal hover:underline" />
+      <ProfileLinks className="mb-6" />
       {boosted.length > 0 && (
         <section className="mb-8">
           <h2 className="font-bold text-primary-darkBlue mb-2">Featured</h2>

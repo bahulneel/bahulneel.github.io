@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .content-link {
+    @apply text-link hover:text-link-hover hover:underline underline-offset-2;
+  }
+}

@@ -40,7 +40,7 @@ function Page() {
         <a href="/writing">Writing</a>), maintain the open source projects above, and am usually
         somewhere mid conversation with the next idea.
       </p>
-      <ProfileLinks className="mt-6" linkClassName="text-primary-teal hover:underline" />
+      <ProfileLinks className="mt-6" />
     </div>
   );
 }

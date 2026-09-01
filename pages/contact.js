@@ -34,7 +34,7 @@ function Page() {
         <button type="submit" className="bg-primary-teal text-accent-white px-4 py-2 rounded hover:bg-primary-darkBlue">Send</button>
       </form>
       <div className="mt-6">
-        <ProfileLinks linkClassName="text-primary-teal hover:underline" />
+        <ProfileLinks />
       </div>
     </div>
   );

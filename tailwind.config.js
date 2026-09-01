@@ -15,6 +15,10 @@ module.exports = {
           lightBlue: '#00A8E8',
           white: '#FFFFFF',
         },
+        link: {
+          DEFAULT: '#0A1F44',
+          hover: '#005B99',
+        },
         gradient: {
           start: '#0A1F44',
           end: '#005B99',
@@ -28,9 +32,9 @@ module.exports = {
             '--tw-prose-body': theme('colors.secondary.gray'),
             '--tw-prose-headings': theme('colors.primary.darkBlue'),
             '--tw-prose-lead': theme('colors.secondary.lightGray'),
-            '--tw-prose-links': theme('colors.accent.lightBlue'),
-            '--tw-prose-links-hover': theme('colors.accent.lightBlue', 'hover'),
-            '--tw-prose-links-active': theme('colors.accent.lightBlue', 'active'),
+            '--tw-prose-links': theme('colors.link.DEFAULT'),
+            '--tw-prose-links-hover': theme('colors.link.hover'),
+            '--tw-prose-links-active': theme('colors.link.hover'),
             '--tw-prose-bold': theme('colors.accent.white'), // Changed to white for better contrast
             '--tw-prose-counters': theme('colors.secondary.gray'),
             '--tw-prose-bullets': theme('colors.primary.teal'),
@@ -38,7 +42,7 @@ module.exports = {
             '--tw-prose-quotes': theme('colors.primary.teal'),
             '--tw-prose-quote-borders': theme('colors.gradient.end'),
             '--tw-prose-captions': theme('colors.secondary.lightGray'),
-            '--tw-prose-code': theme('colors.accent.lightBlue'),
+            '--tw-prose-code': theme('colors.primary.teal'),
             '--tw-prose-pre-code': theme('colors.primary.teal'),
             '--tw-prose-pre-bg': theme('colors.primary.darkBlue'),
           },

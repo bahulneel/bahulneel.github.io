@@ -20,7 +20,7 @@ export default function InventionsRedirect() {
       <p className="mx-auto p-4">
         Moved to{' '}
         <Link href="/research-design">
-          <a className="text-primary-teal hover:underline">Research &amp; Design</a>
+          <a className="content-link">Research &amp; Design</a>
         </Link>
         .
       </p>

@@ -20,9 +20,9 @@ function Page() {
       <p className="mb-6">
         Open source work in flight and in production: agent rooms with friction, relational libraries,
         and front end frameworks. Research names and specifications live under{' '}
-        <a href="/research-design" className="text-primary-teal hover:underline">Research &amp; Design</a>
+        <a href="/research-design" className="content-link">Research &amp; Design</a>
         ; the longer argument is in{' '}
-        <a href="/writing" className="text-primary-teal hover:underline">Writing</a>.
+        <a href="/writing" className="content-link">Writing</a>.
       </p>
       {['Proprietary', 'Open Source']
         .filter((type) => groupedProjects[type])
