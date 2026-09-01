@@ -43,31 +43,31 @@ function Page() {
       {['Proprietary', 'Open Source']
         .filter((type) => groupedProjects[type])
         .map((type) => (
-        <div key={type}>
-          <h1 className="font-bold mb-4">{type} Projects</h1>
-          {['Active', 'WIP', 'Others'].map((status) => (
-            groupedProjects[type][status].length > 0 && (
-              <div key={status}>
-                {groupedProjects[type][status].map((project, index) => (
-                  <ProjectEntry
-                    key={index}
-                    title={project.title}
-                    description={project.description}
-                    repoLink={project.repoLink}
-                    status={project.status}
-                    type={project.type}
-                    link={project.link}
-                    highlights={project.highlights}
-                    itemScope
-                    itemType="http://schema.org/CreativeWork"
-                    itemProp={{ title: 'name', subtitle: 'creativeWorkStatus', content: 'description' }}
-                  />
-                ))}
-              </div>
-            )
-          ))}
-        </div>
-      ))}
+          <div key={type}>
+            <h1 className="font-bold mb-4">{type} Projects</h1>
+            {['Active', 'WIP', 'Others'].map((status) => (
+              groupedProjects[type][status].length > 0 && (
+                <div key={status}>
+                  {groupedProjects[type][status].map((project, index) => (
+                    <ProjectEntry
+                      key={index}
+                      title={project.title}
+                      description={project.description}
+                      repoLink={project.repoLink}
+                      status={project.status}
+                      type={project.type}
+                      link={project.link}
+                      highlights={project.highlights}
+                      itemScope
+                      itemType="http://schema.org/CreativeWork"
+                      itemProp={{ title: 'name', subtitle: 'creativeWorkStatus', content: 'description' }}
+                    />
+                  ))}
+                </div>
+              )
+            ))}
+          </div>
+        ))}
     </div>
   );
 }

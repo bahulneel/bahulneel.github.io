@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="bg-primary-darkBlue py-8 text-accent-white">
       <div className="mx-auto text-center space-y-4 px-4">
-        <ProfileLinks className="block" />
+        <ProfileLinks className="block" linkClassName="text-accent-lightBlue hover:text-accent-white hover:underline" />
         <div>
           <a href="/cv.json" className="text-accent-lightBlue hover:underline">CV (JSON)</a>
           <span className="mx-2">|</span>

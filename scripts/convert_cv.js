@@ -138,8 +138,20 @@ function groupResearchDesignByOrg(entries) {
     }));
 }
 
+// Entries are appended to cv.json as roles happen, so order there is arbitrary.
+// Sort by effective end date desc (ongoing roles end "today") so ongoing work
+// leads. Sort is intentionally simple — no special-casing — so the natural
+// recency order does the work.
+const annotatedWork = cvData.work
+  .map((entry) => ({
+    ...entry,
+    _effectiveEnd: effectiveEndDate(entry),
+  }))
+  .sort((a, b) => b._effectiveEnd - a._effectiveEnd);
+
 let renderData = {
   ...cvData,
+  work: annotatedWork,
   canonicalSchemaUrl,
   docKeywords,
   docDescription,
@@ -147,16 +159,7 @@ let renderData = {
   researchDesignGroups: groupResearchDesignByOrg(cvData.researchDesign || []),
 };
 if (mode === 'summary') {
-  // Sort work entries by effective end date desc (ongoing roles end "today")
-  // and slice into three slot-based tiers. Sort is intentionally simple — no
-  // special-casing — so the natural recency order does the work.
-  const annotatedWork = cvData.work
-    .map((entry) => ({
-      ...entry,
-      _effectiveEnd: effectiveEndDate(entry),
-    }))
-    .sort((a, b) => b._effectiveEnd - a._effectiveEnd);
-
+  // Slice the sorted entries into three slot-based tiers.
   const fullEnd = SUMMARY_FULL_SLOTS;
   const bulletsEnd = SUMMARY_FULL_SLOTS + SUMMARY_BULLETS_SLOTS;
   const workFull = annotatedWork.slice(0, fullEnd);
@@ -165,6 +168,7 @@ if (mode === 'summary') {
 
   renderData = {
     ...cvData,
+    work: annotatedWork,
     canonicalSchemaUrl,
     docKeywords,
     docDescription,

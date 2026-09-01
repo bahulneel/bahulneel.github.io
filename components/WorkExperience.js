@@ -8,10 +8,17 @@ const formatDate = (date) => {
   return newDate.toLocaleDateString('en-US', options);
 };
 
+// Entries are appended to cv.json as roles happen, so order there is arbitrary.
+// Ongoing roles sort ahead of everything with a recorded end date.
+const effectiveEnd = (job) =>
+  job.endDate ? new Date(`${job.endDate}-01`).getTime() : Number.POSITIVE_INFINITY;
+
+const workByRecency = [...cv.work].sort((a, b) => effectiveEnd(b) - effectiveEnd(a));
+
 const WorkExperience = () => {
   return (
     <>
-      {cv.work.map((job, index) => (
+      {workByRecency.map((job, index) => (
         <Card
           key={index}
           title={`${job.position} at ${job.company}`}
