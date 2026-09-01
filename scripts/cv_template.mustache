@@ -4,7 +4,7 @@
 
 [%hardbreaks]
 Email: {{{basics.email}}} | Phone: {{{basics.phone}}} | Location: {{{basics.location.city}}}, {{{basics.location.country}}}
-{{#basics.profiles}}{{{network}}}: {{{url}}}{{#unless @last}} | {{/unless}}{{/basics.profiles}} | Canonical profile: {{{canonicalSchemaUrl}}}
+{{#basics.profiles}}{{{network}}}: {{{url}}}{{#unless @last}} | {{/unless}}{{/basics.profiles}} | Canonical JSON: {{{canonicalSchemaUrl}}}
 
 == Professional Summary
 
@@ -58,6 +58,37 @@ _{{formatDate startDate}} - {{formatDate endDate}}_
 {{/highlights}}
 
 {{/projects}}
+
+== Research & Design
+
+Named concepts, specifications, and patterns. Implementations are listed under == Projects above.
+
+{{#researchDesignGroups}}
+=== {{org}}
+
+{{#items}}
+==== {{{name}}} (_{{{kind}}}, {{{status}}}_)
+
+{{{summary}}}
+
+{{#if references.spec}}
+*Specification:* link:{{{references.spec}}}[View]
+{{/if}}
+{{#if references.repo}}
+*Repository:* link:{{{references.repo}}}[View]
+{{/if}}
+{{#if references.docs}}
+*Documentation:* link:{{{references.docs}}}[View]
+{{/if}}
+{{#if references.article}}
+*Article:* link:{{{references.article}}}[Read]
+{{/if}}
+{{#if relatedProject}}
+*Implementation:* {{{relatedProject}}}
+{{/if}}
+
+{{/items}}
+{{/researchDesignGroups}}
 
 == Writing
 

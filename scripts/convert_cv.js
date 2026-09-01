@@ -90,7 +90,7 @@ const cvData = JSON.parse(fs.readFileSync('public/cv.json', 'utf8'));
 
 const canonicalSchemaUrl = cvData.canonicalSchema || 'https://bahulneel.github.io/cv.json';
 const docKeywords = 'Curry-Howard, DCSGS, RelationalFabric, Canon, Howard, Suss, Relativistic UI, RaCSTS, Agent Brain Trust, RPL';
-const docDescription = `Canonical JSON-LD profile and architectural schema: ${canonicalSchemaUrl}`;
+const docDescription = `Canonical JSON profile and architectural schema: ${canonicalSchemaUrl}`;
 
 function partitionPublications(publications) {
   const sorted = publications
@@ -102,12 +102,33 @@ function partitionPublications(publications) {
   };
 }
 
+const RESEARCH_DESIGN_ORG_ORDER = ['RelationalFabric', 'bahulneel', 'relativistic-ui', 'TotalPerspective'];
+const RESEARCH_DESIGN_STATUS_ORDER = { Active: 0, Published: 1, Early: 2, Superseded: 3 };
+
+function groupResearchDesignByOrg(entries) {
+  const byOrg = (entries || []).reduce((acc, item) => {
+    if (!acc[item.org]) acc[item.org] = [];
+    acc[item.org].push(item);
+    return acc;
+  }, {});
+
+  return RESEARCH_DESIGN_ORG_ORDER
+    .filter((org) => byOrg[org]?.length)
+    .map((org) => ({
+      org,
+      items: byOrg[org].sort(
+        (a, b) => (RESEARCH_DESIGN_STATUS_ORDER[a.status] ?? 9) - (RESEARCH_DESIGN_STATUS_ORDER[b.status] ?? 9),
+      ),
+    }));
+}
+
 let renderData = {
   ...cvData,
   canonicalSchemaUrl,
   docKeywords,
   docDescription,
   ...partitionPublications(cvData.publications || []),
+  researchDesignGroups: groupResearchDesignByOrg(cvData.researchDesign || []),
 };
 if (mode === 'summary') {
   // Sort work entries by effective end date desc (ongoing roles end "today")
@@ -132,6 +153,7 @@ if (mode === 'summary') {
     docKeywords,
     docDescription,
     ...partitionPublications(cvData.publications || []),
+    researchDesignGroups: groupResearchDesignByOrg(cvData.researchDesign || []),
     workFull,
     workBullets,
     workOneLiner,

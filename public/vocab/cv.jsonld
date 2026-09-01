@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "@language": "en",
+    "cv": "https://bahulneel.github.io/vocab/cv#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "adms": "http://www.w3.org/ns/adms#"
+  },
+  "@graph": [
+    {
+      "@id": "cv:confidential",
+      "@type": "rdf:Property",
+      "rdfs:comment": "When true, public copy uses a placeholder label and omits identifying client or product details.",
+      "rdfs:range": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    {
+      "@id": "cv:references",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Structured outbound links for a research or design entry: spec, repo, docs, article."
+    },
+    {
+      "@id": "cv:highlight",
+      "@type": "rdf:Property",
+      "rdfs:subPropertyOf": "schema:description",
+      "rdfs:comment": "A bullet highlight under work, project, or role entries."
+    },
+    {
+      "@id": "cv:relatedProject",
+      "@type": "rdf:Property",
+      "rdfs:range": "schema:CreativeWork",
+      "rdfs:comment": "Human-readable title of the implementing project entry in the projects array."
+    }
+  ]
+}

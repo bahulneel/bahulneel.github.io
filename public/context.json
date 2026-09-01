@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cv": "https://bahulneel.github.io/vocab/cv#",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "basics": {
+      "@type": "Person"
+    },
+    "work": {
+      "@container": "@set",
+      "@type": "OrganizationRole"
+    },
+    "projects": {
+      "@container": "@set",
+      "@type": "SoftwareSourceCode"
+    },
+    "researchDesign": {
+      "@container": "@set",
+      "@type": "CreativeWork"
+    },
+    "publications": {
+      "@container": "@set",
+      "@type": "ScholarlyArticle"
+    },
+    "skills": {
+      "@container": "@set",
+      "@type": "DefinedTermSet"
+    },
+    "education": {
+      "@container": "@set",
+      "@type": "EducationalOccupationalCredential"
+    },
+    "label": "jobTitle",
+    "summary": "description",
+    "company": {
+      "@id": "schema:worksFor",
+      "@type": "Organization"
+    },
+    "position": "roleName",
+    "highlights": {
+      "@id": "cv:highlight",
+      "@container": "@set"
+    },
+    "repoLink": {
+      "@id": "codeRepository",
+      "@type": "@id"
+    },
+    "link": {
+      "@id": "url",
+      "@type": "@id"
+    },
+    "subtitle": "alternativeHeadline",
+    "tags": {
+      "@id": "keywords",
+      "@container": "@set"
+    },
+    "publisher": {
+      "@type": "Organization"
+    },
+    "keywords": {
+      "@id": "skos:prefLabel",
+      "@container": "@set"
+    },
+    "kind": "genre",
+    "org": "sourceOrganization",
+    "status": "creativeWorkStatus",
+    "confidential": {
+      "@id": "cv:confidential",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "references": {
+      "@id": "cv:references",
+      "@type": "@json"
+    },
+    "highlight": {
+      "@id": "cv:highlight",
+      "rdfs:subPropertyOf": "schema:description"
+    },
+    "relatedProject": {
+      "@id": "cv:relatedProject",
+      "rdfs:range": "schema:CreativeWork"
+    },
+    "canonicalSchema": {
+      "@id": "adms:identifier",
+      "@type": "@id"
+    },
+    "boosted": {
+      "@id": "schema:featured",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    }
+  }
+}
