@@ -19,6 +19,12 @@
       "rdfs:comment": "Structured outbound links for a research or design entry: spec, repo, docs, article."
     },
     {
+      "@id": "cv:intro",
+      "@type": "rdf:Property",
+      "rdfs:subPropertyOf": "schema:description",
+      "rdfs:comment": "First person site introduction. Distinct from summary, which is the third person professional summary used in the CV artefacts."
+    },
+    {
       "@id": "cv:highlight",
       "@type": "rdf:Property",
       "rdfs:subPropertyOf": "schema:description",

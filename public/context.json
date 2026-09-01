@@ -38,6 +38,10 @@
     },
     "label": "jobTitle",
     "summary": "description",
+    "intro": {
+      "@id": "cv:intro",
+      "rdfs:subPropertyOf": "schema:description"
+    },
     "company": {
       "@id": "schema:worksFor",
       "@type": "Organization"

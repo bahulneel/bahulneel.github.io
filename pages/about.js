@@ -10,35 +10,39 @@ function Page() {
       </Head>
       <h1 className="text-3xl font-bold mb-4">About Me</h1>
       <p className="mb-4">
-        I am a software architect and engineer with over twenty years of experience, working where data
-        platforms, web systems, and team leadership meet. I am drawn to problems where the right
-        abstractions make the right thing easier, and to the long, patient work of finding those
-        abstractions and giving them away.
+        I have been building software since 1999, long enough to have watched several good ideas get
+        forgotten and then rediscovered under new names. My work sits where data platforms, web systems,
+        and team leadership meet. The part that holds my attention is narrower: the recurring cost of code
+        that has to interrogate the shape of its data at every boundary, and what becomes possible once it
+        does not.
       </p>
       <p className="mb-4">
-        From June 2024 to May 2026 I led architecture and delivery of a client platform from concept to
-        launch ready. The engagement is complete; the product is unlaunched and specifics remain under
-        NDA. What I can say is that it exercised a distributed offline first graph store, Schema.org
+        From June 2024 to May 2026 I led architecture and delivery of a client platform, from concept to
+        launch ready. The engagement closed complete but unlaunched, and the specifics stay under NDA.
+        What I can say is what it forced me to build: a distributed offline first graph store, Schema.org
         oriented semantic modelling, early production work on mouldable interfaces, and planning based
-        interaction chains. Those ideas now live in the open under{' '}
-        <a href="https://github.com/RelationalFabric">RelationalFabric</a>: the DCSGS whitepaper,
-        libraries including <em>Canon</em> (lazy typing), <em>Howard</em> (claims in the Curry–Howard
-        tradition), and <em>Suss</em> (reference implementation of RaCSTS for propagator networks).
-        Alongside that I have been building{' '}
-        <a href="https://github.com/bahulneel/agent-brain-trust">Agent Brain Trust</a>, expert
-        collectives that turn AI assistants into a room with friction, and <em>RPL</em>, a Markdown
-        embedded reasoning framework that makes prompt reasoning inspectable.
+        interaction chains that surface the prerequisite actions instead of blocking the user.
       </p>
       <p className="mb-4">
-        The thread through all of it: a long standing interest in workplace neurodiversity (ADHD
-        diagnosed, ASD assessment pending). I think the perspectives that come with it, relentless pattern
-        spotting, comfort sitting with ambiguity, a low tolerance for ceremonious abstractions, show up in
-        how I work and what I build.
+        Those ideas are public now.{' '}
+        <a href="https://github.com/RelationalFabric">RelationalFabric</a> carries the DCSGS whitepaper on
+        distributed graph storage and the libraries that came out of the same thinking: <em>Canon</em> for
+        lazy typing, <em>Howard</em> for claims in the Curry–Howard tradition, and <em>Suss</em> as the
+        reference implementation of RaCSTS for propagator networks. Alongside them sits{' '}
+        <a href="https://github.com/bahulneel/agent-brain-trust">Agent Brain Trust</a>, a set of expert
+        collectives that turn an AI assistant into a room with friction, and <em>RPL</em>, a Markdown
+        embedded reasoning framework that makes a model's reasoning inspectable rather than inferred. Most
+        recently I have been arguing that technical debt has no recorded artefact form, and drafting one.
+      </p>
+      <p className="mb-4">
+        The thread through all of it is a long standing interest in workplace neurodiversity. I am ADHD
+        diagnosed with an ASD assessment pending, and the traits that come with that, relentless pattern
+        spotting, comfort sitting with ambiguity, a low tolerance for ceremonious abstraction, are not
+        incidental to the work. They are most of the method.
       </p>
       <p>
-        Outside contracted work I write long form pieces on Level Up Coding and Medium (see{' '}
-        <a href="/writing">Writing</a>), maintain the open source projects above, and am usually
-        somewhere mid conversation with the next idea.
+        I write the long form version of all this on Level Up Coding and Medium. If you want the argument
+        rather than the summary, start with <a href="/writing">Writing</a>.
       </p>
       <ProfileLinks className="mt-6" />
     </div>

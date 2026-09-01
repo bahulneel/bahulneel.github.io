@@ -13,7 +13,8 @@
     "email": "bahulneel@gmail.com",
     "phone": "+44 77712 603207",
     "url": "https://bahulneel.github.io",
-    "summary": "Software architect and engineer with twenty years across data platforms, web systems, and team leadership. Drawn to problems where the right abstractions make the right thing easier, and to the patient work of finding those abstractions and giving them away. Builds and leads technical teams. Advocates for workplace neurodiversity (ADHD diagnosed, ASD assessment pending) and for the perspectives that brings to problem solving and innovation.",
+    "intro": "I look for the abstractions that make the right thing easier, then give them away. Right now that means distributed graph stores, relational type systems, and AI collaborators built to argue back rather than agree. Most of it is public, and most of it started as something a client needed.",
+    "summary": "Software architect and engineer working across data platforms, web systems, and team leadership since 1999. Most recently delivered a confidential client platform from concept to launch ready, built on a distributed offline first graph store and semantic domain modelling. That work now continues in the open through RelationalFabric, alongside research on relational data systems and agent native development. Advocates for workplace neurodiversity and the perspectives it brings.",
     "image": "profile.webp",
     "location": {
       "city": "London",
