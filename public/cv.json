@@ -13,8 +13,8 @@
     "email": "bahulneel@gmail.com",
     "phone": "+44 77712 603207",
     "url": "https://bahulneel.github.io",
-    "intro": "I see abstractions easily, and I notice when two from different places describe the same thing. Studying physics taught me why that matters: physics owes its reach to the abstractions it builds models from, and to its willingness to replace a model when a better one appears. That view has shaped how I work in software since 1999. I am a software architect and engineer. I build systems that have to survive contact with reality, and I have led teams doing that across data platforms, web systems, and technical leadership. When the abstractions turn out to be new, I name them, codify them in open specifications and libraries, and publish the argument in long form when the thinking needs room. I read widely outside software because that is where the useful collisions come from. I was diagnosed with ADHD in mid life, with an ASD assessment pending, and I am public about it on purpose. The pattern spotting and the depth of focus are part of what makes me useful, not something I work around.",
-    "summary": "Sees abstractions readily and recognises when abstractions from different domains describe the same structure. A physics education instilled a conviction that explanatory power lives in abstractions and model based reasoning, and in replacing models rather than defending them. Software architect and engineer since 1999, building and leading production systems across data platforms, web systems, and technical leadership. Names and ships novel abstractions as open specifications and libraries, and publishes long form technical writing when the argument needs room. Reads widely outside software for the cross domain collisions that produce new abstractions. Diagnosed with ADHD in mid life with an ASD assessment pending, and public about AuDHD as part of what makes the work distinctive.",
+    "intro": "The biggest lesson studying physics left me is that explanatory power lives in abstractions and model-based reasoning: physics describes the universe through the models it builds from them, and replaces a model when a better one appears rather than defending it. That matched how my brain already worked, and has lived rent-free in my head ever since. I notice when abstractions from different places describe the same thing.\n\nI have led teams across data platforms, web systems, and technical leadership. When the abstractions turn out to be new, I name them, codify them in open specifications and libraries, and publish the argument in long-form when it needs room. I read widely outside software because that is where the useful collisions come from.\n\nI was diagnosed with ADHD in mid-life, with an ASD assessment pending, and I am public about it on purpose. The pattern spotting and the depth of focus are part of what makes me useful, not something I work around.\n\nSomeone once quoted to me, author forgotten, that \"code was the thing that got in the way of making software\". It struck a chord with me, and has sat at the back of my head like a silent mantra ever since. I have been building software since the turn of the century and designing it for nearly as long, and in that time my most successful work has trended towards alleviating the sentiment of that quote, through better abstractions and more power given to models.\n\nI have noticed that the software industry tried to skip to the end with AI-assisted coding and has noticed the cracks. I think we missed steps somewhere between what my career has taught me and the promise of vibe-coding, and that is where I live these days, between the promise of AI and the code that will get it done, and I am setting up shop. My goal is to help people get from ideation to release without all that messing about with code, but with code.",
+    "summary": "A physics education left a conviction that explanatory power lives in abstractions and model-based reasoning, and in replacing models rather than defending them. Notices when abstractions from different domains describe the same structure. Has led teams across data platforms, web systems, and technical leadership; names and ships novel abstractions as open specifications and libraries, and publishes long-form when the argument needs room. Reads widely outside software for the cross-domain collisions that produce new abstractions. Diagnosed with ADHD in mid-life with an ASD assessment pending, and public about AuDHD as part of what makes the work distinctive. A line quoted second-hand, author forgotten: \"code was the thing that got in the way of making software\", which struck a chord and has sat like a silent mantra ever since. Building software since the turn of the century and designing it for nearly as long; most successful work has trended towards alleviating the sentiment of that quote, through better abstractions and more power given to models. The software industry tried to skip to the end with AI-assisted coding and has noticed the cracks; work sits in the missed steps between what that career taught and the promise of vibe-coding\u2014between the promise of AI and the code that will get it done\u2014helping people get from ideation to release without all that messing about with code, but with code.",
     "image": "profile.webp",
     "location": {
       "city": "London",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "title": "RPL — Relational Prompt Language",
+      "title": "RPL \u2014 Relational Prompt Language",
       "description": "A Markdown embedded reasoning framework with associated logic for structuring how an LLM reasons about a user's request. Instead of relying on highly tuned prose and guessing what the model inferred, RPL lets you declare explicit relations, goals, and constraints so reasoning state becomes inspectable, queryable, and continuable across context boundaries. Spawned out of Agent Brain Trust and published as a standalone artifact.",
       "repoLink": "https://github.com/bahulneel/agent-brain-trust/tree/main/docs/rpl",
       "status": "Active",
@@ -209,7 +209,7 @@
       ]
     },
     {
-      "title": "Relational Fabric — library platform",
+      "title": "Relational Fabric \u2014 library platform",
       "description": "Planned platform surface for truly relational, data driven systems: construction primitives where relationships carry semantic meaning. The ecosystem is taking shape first through Canon, Howard, and Suss; the meta repository and named platform libraries (Filament, Weft, Warp, Shuttle) follow once those foundations stabilise and selected patterns from a confidential client engagement can be ported.",
       "link": "https://github.com/RelationalFabric/relational-fabric",
       "status": "Planned",
@@ -238,7 +238,7 @@
     },
     {
       "title": "Howard",
-      "description": "A logical primitive for truly relational data systems: composable propositions backed by deterministic predicates, in the spirit of the Curry–Howard correspondence. Early library; depends on patterns still landing in Canon and Suss, as set out in the writing on claims and validation.",
+      "description": "A logical primitive for truly relational data systems: composable propositions backed by deterministic predicates, in the spirit of the Curry\u2013Howard correspondence. Early library; depends on patterns still landing in Canon and Suss, as set out in the writing on claims and validation.",
       "repoLink": "https://github.com/RelationalFabric/howard",
       "status": "Early",
       "type": "Open Source",
@@ -265,7 +265,7 @@
       ]
     },
     {
-      "title": "Gravity — Relativistic UI framework",
+      "title": "Gravity \u2014 Relativistic UI framework",
       "description": "Vue and Nuxt framework for Relativistic UI: frames, fields, intent queries, and variant assembly without prop drilling semantic context. Paused until RelationalFabric reaches a stable base and a retrospective pass on the confidential client front end (under NDA) is complete.",
       "repoLink": "https://github.com/relativistic-ui/gravity",
       "status": "Paused",
@@ -290,7 +290,7 @@
         "spec": "https://github.com/RelationalFabric/relational-fabric/blob/main/docs/whitepapers/Distributed%20Context-Sensitive%20Graph%20Store.md",
         "repo": "https://github.com/RelationalFabric/DCSGS"
       },
-      "relatedProject": "Relational Fabric — library platform"
+      "relatedProject": "Relational Fabric \u2014 library platform"
     },
     {
       "name": "RaCSTS",
@@ -320,7 +320,7 @@
     },
     {
       "name": "Claims",
-      "summary": "First class composable propositions backed by deterministic predicates, replacing ad hoc boolean validation with verifiable, cacheable proofs in the Curry–Howard tradition.",
+      "summary": "First class composable propositions backed by deterministic predicates, replacing ad hoc boolean validation with verifiable, cacheable proofs in the Curry\u2013Howard tradition.",
       "org": "RelationalFabric",
       "kind": "Pattern",
       "status": "Active",
@@ -408,7 +408,7 @@
         "repo": "https://github.com/bahulneel/agent-brain-trust/tree/main/docs/rpl",
         "docs": "https://bahulneel.github.io/agent-brain-trust/rpl/"
       },
-      "relatedProject": "RPL — Relational Prompt Language"
+      "relatedProject": "RPL \u2014 Relational Prompt Language"
     },
     {
       "name": "LRPL",
@@ -420,7 +420,7 @@
         "spec": "https://github.com/bahulneel/agent-brain-trust/blob/main/docs/rpl/specification/lrpl.md",
         "repo": "https://github.com/bahulneel/agent-brain-trust/tree/main/docs/rpl"
       },
-      "relatedProject": "RPL — Relational Prompt Language"
+      "relatedProject": "RPL \u2014 Relational Prompt Language"
     },
     {
       "name": "Remediation Record (RR)",
@@ -484,7 +484,7 @@
         "repo": "https://github.com/relativistic-ui/gravity",
         "docs": "https://github.com/relativistic-ui/gravity/tree/develop/docs"
       },
-      "relatedProject": "Gravity — Relativistic UI framework"
+      "relatedProject": "Gravity \u2014 Relativistic UI framework"
     },
     {
       "name": "Set High, Act Low",
@@ -583,7 +583,7 @@
     },
     {
       "title": "Towards a Tactical Solution to a General Problem",
-      "subtitle": "Strategies compose tactics — and the Military Pattern that emerges when you let the abstraction lead",
+      "subtitle": "Strategies compose tactics \u2014 and the Military Pattern that emerges when you let the abstraction lead",
       "date": "2026-03-02",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/towards-a-tactical-solution-to-a-general-problem-8341730bb690",
@@ -593,7 +593,7 @@
     },
     {
       "title": "When Your Abstraction Escapes",
-      "subtitle": "The dangerous art of following ideas where they lead — from fast value hashing to serialisable propagator networks",
+      "subtitle": "The dangerous art of following ideas where they lead \u2014 from fast value hashing to serialisable propagator networks",
       "date": "2026-01-03",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/when-your-abstraction-escapes-fed44f9fea42",
@@ -616,7 +616,7 @@
     },
     {
       "title": "The Logic of Claims: Why Validation Is Broken, and What Replaces It",
-      "subtitle": "From ad-hoc boolean checks to first-class propositions — how Howard transforms the foundation of software architecture",
+      "subtitle": "From ad-hoc boolean checks to first-class propositions \u2014 how Howard transforms the foundation of software architecture",
       "date": "2025-12-30",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/the-logic-of-claims-why-validation-is-broken-and-what-replaces-it-dd16464a4f0c",
@@ -663,7 +663,7 @@
     },
     {
       "title": "When Your Strategy Needs a Strategy: Tactical Error or Unfinished Business",
-      "subtitle": "In the real world, strategies are composed of tactics. The Strategy Pattern just displaces complexity — what if we finished the job?",
+      "subtitle": "In the real world, strategies are composed of tactics. The Strategy Pattern just displaces complexity \u2014 what if we finished the job?",
       "date": "2025-08-04",
       "publisher": "Level Up Coding",
       "link": "https://levelup.gitconnected.com/when-your-strategy-needs-a-strategy-tactical-error-or-unfinished-business-e42129792032",
@@ -888,7 +888,7 @@
       "name": "Type-Level and Theoretical Architectures",
       "keywords": [
         "Bloom / CALM",
-        "Curry–Howard correspondence",
+        "Curry\u2013Howard correspondence",
         "Monotonic reasoning",
         "propagator networks",
         "Relational programming",

@@ -8,7 +8,11 @@ const Person = () => {
       <img src={cv.basics.image} alt={`${cv.basics.name}'s profile`} className="w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48 rounded-full mb-4 lg:mb-0 lg:ml-8" itemProp="image" />
       <div className="flex flex-col">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold" itemProp="name">{cv.basics.name}</h1>
-        <p className="text-sm md:text-base lg:text-lg" itemProp="description">{cv.basics.intro || cv.basics.summary}</p>
+        <div className="text-sm md:text-base lg:text-lg" itemProp="description">
+          {(cv.basics.intro || cv.basics.summary).split('\n\n').map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
         <ProfileLinks className="mt-4 not-prose text-sm" />
       </div>
     </div>
