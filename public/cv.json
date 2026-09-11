@@ -1,5 +1,6 @@
 {
   "@context": "https://bahulneel.github.io/context.json",
+  "@id": "https://bahulneel.github.io/cv.json",
   "@type": "ProfilePage",
   "mainEntity": {
     "@id": "https://bahulneel.github.io/#person"
@@ -13,8 +14,69 @@
     "email": "bahulneel@gmail.com",
     "phone": "+44 77712 603207",
     "url": "https://bahulneel.github.io",
-    "intro": "The biggest lesson studying physics left me is that explanatory power lives in abstractions and model-based reasoning: physics describes the universe through the models it builds from them, and replaces a model when a better one appears rather than defending it. That matched how my brain already worked, and has lived rent-free in my head ever since. I notice when abstractions from different places describe the same thing.\n\nI have led teams across data platforms, web systems, and technical leadership. When the abstractions turn out to be new, I name them, codify them in open specifications and libraries, and publish the argument in long-form when it needs room. I read widely outside software because that is where the useful collisions come from.\n\nI was diagnosed with ADHD in mid-life, with an ASD assessment pending, and I am public about it on purpose. The pattern spotting and the depth of focus are part of what makes me useful, not something I work around.\n\nSomeone once quoted to me, author forgotten, that \"code was the thing that got in the way of making software\". It struck a chord with me, and has sat at the back of my head like a silent mantra ever since. I have been building software since the turn of the century and designing it for nearly as long, and in that time my most successful work has trended towards alleviating the sentiment of that quote, through better abstractions and more power given to models.\n\nI have noticed that the software industry tried to skip to the end with AI-assisted coding and has noticed the cracks. I think we missed steps somewhere between what my career has taught me and the promise of vibe-coding, and that is where I live these days, between the promise of AI and the code that will get it done, and I am setting up shop. My goal is to help people get from ideation to release without all that messing about with code, but with code.",
-    "summary": "A physics education left a conviction that explanatory power lives in abstractions and model-based reasoning, and in replacing models rather than defending them. Notices when abstractions from different domains describe the same structure. Has led teams across data platforms, web systems, and technical leadership; names and ships novel abstractions as open specifications and libraries, and publishes long-form when the argument needs room. Reads widely outside software for the cross-domain collisions that produce new abstractions. Diagnosed with ADHD in mid-life with an ASD assessment pending, and public about AuDHD as part of what makes the work distinctive. A line quoted second-hand, author forgotten: \"code was the thing that got in the way of making software\", which struck a chord and has sat like a silent mantra ever since. Building software since the turn of the century and designing it for nearly as long; most successful work has trended towards alleviating the sentiment of that quote, through better abstractions and more power given to models. The software industry tried to skip to the end with AI-assisted coding and has noticed the cracks; work sits in the missed steps between what that career taught and the promise of vibe-coding\u2014between the promise of AI and the code that will get it done\u2014helping people get from ideation to release without all that messing about with code, but with code.",
+    "summary": "Software Architect and Engineer with over two decades of experience delivering complex data platforms, semantic systems, and distributed architectures. Specialises in model-based reasoning, data-centric abstractions, and bridging symbolic logic with modern AI-assisted development. Leverages an AuDHD perspective for rapid structural pattern recognition to help engineering teams eliminate friction and ship resilient systems.",
+    "subjectOf": [
+      {
+        "@id": "https://bahulneel.github.io/#website",
+        "@type": "WebSite",
+        "name": "Bahul Neel Upadhyaya",
+        "url": "https://bahulneel.github.io",
+        "headline": "Software Architect & Engineer",
+        "about": {
+          "@id": "https://bahulneel.github.io/#person"
+        },
+        "creator": {
+          "@id": "https://bahulneel.github.io/#person"
+        },
+        "hasPart": [
+          {
+            "@id": "https://bahulneel.github.io/"
+          },
+          {
+            "@id": "https://bahulneel.github.io/about"
+          }
+        ]
+      },
+      {
+        "@id": "https://bahulneel.github.io/",
+        "@type": [
+          "WebPage",
+          "ProfilePage"
+        ],
+        "name": "Bahul Neel Upadhyaya",
+        "url": "https://bahulneel.github.io/",
+        "headline": "Software Architect & Engineer",
+        "isPartOf": {
+          "@id": "https://bahulneel.github.io/#website"
+        },
+        "about": {
+          "@id": "https://bahulneel.github.io/#person"
+        },
+        "mainEntity": {
+          "@id": "https://bahulneel.github.io/#person"
+        },
+        "text": "The biggest lesson studying physics left me is that explanatory power lives in abstractions and model-based reasoning: physics describes the universe through the models it builds from them, and replaces a model when a better one appears rather than defending it. That matched how my brain already worked, and has lived rent-free in my head ever since. I notice when abstractions from different places describe the same thing.\n\nI have led teams across data platforms, web systems, and technical leadership. When the abstractions turn out to be new, I name them, codify them in open specifications and libraries, and publish the argument in long-form when it needs room. I read widely outside software because that is where the useful collisions come from.\n\nI was diagnosed with ADHD in mid-life, with an ASD assessment pending, and I am public about it on purpose. The pattern spotting and the depth of focus are part of what makes me useful, not something I work around.\n\nSomeone once quoted to me, author forgotten, that \"code was the thing that got in the way of making software\". It struck a chord with me, and has sat at the back of my head like a silent mantra ever since. I have been building software since the turn of the century and designing it for nearly as long, and in that time my most successful work has trended towards alleviating the sentiment of that quote, through better abstractions and more power given to models.\n\nI have noticed that the software industry tried to skip to the end with AI-assisted coding and has noticed the cracks. I think we missed steps somewhere between what my career has taught me and the promise of vibe-coding, and that is where I live these days, between the promise of AI and the code that will get it done, and I am setting up shop. My goal is to help people get from ideation to release without all that messing about with code, but with code."
+      },
+      {
+        "@id": "https://bahulneel.github.io/about",
+        "@type": [
+          "WebPage",
+          "AboutPage"
+        ],
+        "name": "About Me",
+        "url": "https://bahulneel.github.io/about",
+        "isPartOf": {
+          "@id": "https://bahulneel.github.io/#website"
+        },
+        "about": {
+          "@id": "https://bahulneel.github.io/#person"
+        },
+        "mainEntity": {
+          "@id": "https://bahulneel.github.io/#person"
+        },
+        "text": "Studying physics taught me that the real power is not in the equations but in the abstractions underneath them, and in the models those abstractions assemble. Physics gets the universe right by treating every model as provisional: improve it, replace it, never defend it past its usefulness. A model, for me, is a claim about how something works, held together by abstractions. That way of looking never left; it is still how I hold large systems in view, and why I keep catching two abstractions from unrelated fields wearing the same shape.\n\nI have been a software architect and engineer for most of my working life, leading teams through data platforms, web systems, and technical leadership roles. The abstractions only earn their keep when something real is standing on them, and most of a career has gone into making sure they do.\n\nI was diagnosed with ADHD in mid-life, with an ASD assessment pending. I am public about it on purpose. The diagnosis arrived after years of explaining my own working methods without the words for them. The masked version of me is slower and worse. Pattern spotting, depth of focus, wide reading, and an inability to accept an abstraction on faith are not side effects to manage around; they are part of why I am a distinctive hire.\n\nI read a long way outside software: military doctrine, formal logic, philosophy of science, design. New abstractions usually arrive at the collision between those worlds and whatever I am building. Naming them is what happens when I can see them clearly enough to build from, not a campaign against the status quo. I am fine with how things are; I would just rather people could disagree with me in specifics than nod along with something unnamed.\n\nEarly in my career someone quoted a line to me, author forgotten: \"code was the thing that got in the way of making software\". It has stayed with me. Building since the turn of the century, and designing for nearly as long, the work that held up best kept moving toward that sentiment: better abstractions, and more of the power sitting in models rather than in the code that happens to express them.\n\nLately the industry has tried to jump straight to the end with AI-assisted coding, and the cracks are showing. Between what that career taught me and the promise of vibe-coding there are steps we skipped. That is the ground I am claiming: between the promise of AI and the code that will actually get the job done. I am setting up shop there, to carry an idea through to a release without all that messing about with code, but with code.\n\nFrom June 2024 to May 2026 I led architecture and delivery of a confidential client platform, from concept to launch-ready. The engagement closed complete but unlaunched; the specifics stay under NDA. What is public is the thinking it produced: a distributed graph store specification (DCSGS), semantic modelling, mouldable interfaces, and planning-based interaction chains that surface prerequisite actions instead of blocking the user.\n\nThe open source side of that work runs through [RelationalFabric](https://github.com/RelationalFabric). Canon is the usable library for lazy typing, still evolving. Howard and Suss carry the claims and propagator network ideas at an earlier stage, in the order the writing describes. The Relational Fabric platform name covers a wider surface not yet assembled. [Agent Brain Trust](https://github.com/bahulneel/agent-brain-trust) and *RPL* sit on a parallel track: inspectable reasoning and AI rooms that refuse to skip the useful steps.\n\nWhen the thinking needs room, I publish it: specifications, patterns, open source libraries, and long-form pieces. The site holds the shorter version; Level Up Coding and Medium hold the arguments. If you want the argument rather than the summary, start with [Writing](/writing)."
+      }
+    ],
     "image": "profile.webp",
     "location": {
       "city": "London",
