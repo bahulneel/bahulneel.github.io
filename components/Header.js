@@ -15,9 +15,10 @@ import {
   faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
 import cv from '../public/cv.json';
+import { aboutPageWork } from '../lib/siteContent';
 
 const LEADING_LINKS = [
-  { href: '/about', label: 'About', icon: faUser },
+  { href: '/about', label: aboutPageWork(cv)?.name || 'About', icon: faUser },
   { href: '/experience', label: 'Experience', icon: faBriefcase },
   { href: '/skills', label: 'Skills', icon: faCode },
 ];
