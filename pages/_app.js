@@ -4,13 +4,15 @@ import Footer from '../components/Footer';
 import { useEffect } from 'react';
 import Head from 'next/head';
 import cv from '../public/cv.json';
+import { cvSummaryFromSite } from '../lib/siteContent';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     document.body.className = 'bg-radial-gradient w-screen h-screen';
   }, []);
 
-  const { name, image, summary } = cv.basics;
+  const { name, image } = cv.basics;
+  const summary = cvSummaryFromSite(cv);
 
   return (
     <>

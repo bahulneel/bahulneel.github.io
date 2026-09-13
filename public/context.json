@@ -43,6 +43,7 @@
       "@container": "@set"
     },
     "text": "schema:text",
+    "description": "schema:description",
     "headline": "schema:headline",
     "hasPart": {
       "@id": "schema:hasPart",

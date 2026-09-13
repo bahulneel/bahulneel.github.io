@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import ProfileLinks from '../components/ProfileLinks';
 import cv from '../public/cv.json';
-import { RichText, workOfType } from '../lib/siteContent';
+import { RichText, aboutPageWork, websiteWork } from '../lib/siteContent';
 
 function Page() {
-  const aboutPage = workOfType(cv, 'AboutPage');
-  const website = workOfType(cv, 'WebSite');
-  const title = aboutPage?.name || 'About Me';
+  const aboutPage = aboutPageWork(cv);
+  const website = websiteWork(cv);
+  const title = aboutPage?.name || 'My journey';
 
   return (
     <div

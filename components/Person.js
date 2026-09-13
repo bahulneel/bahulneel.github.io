@@ -1,11 +1,12 @@
 import React from 'react';
 import cv from '../public/cv.json';
 import ProfileLinks from './ProfileLinks';
-import { RichText, workOfType } from '../lib/siteContent';
+import { RichText, cvSummaryFromSite, homePageWork, websiteWork } from '../lib/siteContent';
 
 const Person = () => {
-  const homePage = workOfType(cv, 'ProfilePage');
-  const website = workOfType(cv, 'WebSite');
+  const homePage = homePageWork(cv);
+  const website = websiteWork(cv);
+  const summary = cvSummaryFromSite(cv);
 
   return (
     <div
@@ -24,7 +25,7 @@ const Person = () => {
           {homePage.name}
         </a>
       )}
-      <meta itemProp="description" content={cv.basics.summary} />
+      {summary && <meta itemProp="description" content={summary} />}
       <img
         src={cv.basics.image}
         alt={`${cv.basics.name}'s profile`}
