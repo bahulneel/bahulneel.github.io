@@ -45,7 +45,8 @@
         ],
         "name": "Who I am",
         "url": "https://bahulneel.github.io/",
-        "headline": "Software Architect & Engineer",
+        "headline": "I move power out of code and into models.",
+        "abstract": "Software architect and engineer, building since the turn of the century. I work between the promise of AI and the code that actually gets the job done.",
         "isPartOf": {
           "@id": "https://bahulneel.github.io/#website"
         },
@@ -55,7 +56,33 @@
         "mainEntity": {
           "@id": "https://bahulneel.github.io/#person"
         },
-        "text": "I am a software architect and engineer, and have been building software since the turn of the century. I have led teams through data platforms, semantic systems, web systems, and technical leadership, and the work I am proudest of moved power out of code and into models.\n\nHow I think came from physics: explanatory power lives in abstractions and in the models built from them, and a model is worth replacing the moment a better one appears rather than defending. I notice when abstractions from unrelated places describe the same shape, and I name them when I can see them clearly enough to build from.\n\nI was diagnosed with ADHD in mid-life, with an ASD assessment pending, and I am public about it on purpose. The pattern spotting and the depth of focus are part of what makes me useful, not something I work around.\n\nThese days I work between the promise of AI and the code that will actually get the job done, helping people carry an idea through to release without all that messing about with code, but with code. The longer arc is in [My journey](/about); the arguments are in [Writing](/writing)."
+        "hasPart": [
+          {
+            "@type": "ItemList",
+            "name": "At a glance",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "What I do",
+                "description": "Architecture and delivery for data platforms, semantic systems, and distributed systems, from concept to launch."
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "How I think",
+                "description": "Model-based reasoning, learned from physics: the abstraction carries the explanation, and a model is worth replacing as soon as a better one turns up."
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "How I am wired",
+                "description": "AuDHD, diagnosed in mid-life and public about it: fast structural pattern spotting and deep focus."
+              }
+            ]
+          }
+        ],
+        "text": "The long version is in [My journey](/about), the arguments are in [Writing](/writing), and the code is in [Projects](/projects)."
       },
       {
         "@id": "https://bahulneel.github.io/about",

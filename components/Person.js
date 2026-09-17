@@ -1,12 +1,22 @@
 import React from 'react';
 import cv from '../public/cv.json';
 import ProfileLinks from './ProfileLinks';
-import { RichText, cvSummaryFromSite, homePageWork, websiteWork } from '../lib/siteContent';
+import {
+  InlineText,
+  RichText,
+  cvSummaryFromSite,
+  homePageWork,
+  websiteWork,
+  workAbstract,
+  workHighlights,
+} from '../lib/siteContent';
 
 const Person = () => {
   const homePage = homePageWork(cv);
   const website = websiteWork(cv);
   const summary = cvSummaryFromSite(cv);
+  const abstract = workAbstract(homePage);
+  const highlights = workHighlights(homePage);
 
   return (
     <div
@@ -33,8 +43,36 @@ const Person = () => {
         itemProp="image"
       />
       <div className="flex flex-col">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold" itemProp="name">{cv.basics.name}</h1>
-        <div className="text-sm md:text-base lg:text-lg">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold !mb-2" itemProp="name">
+          {cv.basics.name}
+        </h1>
+        {homePage?.headline && (
+          <p className="text-primary-teal font-semibold !mt-0 !mb-3">{homePage.headline}</p>
+        )}
+        {abstract && <p className="text-sm md:text-base lg:text-lg !mt-0">{abstract}</p>}
+        {highlights && (
+          <>
+            {highlights.name && (
+              <h2 className="text-sm md:text-base uppercase tracking-wide text-secondary-gray !mb-2">
+                {highlights.name}
+              </h2>
+            )}
+            <ul className="text-sm md:text-base lg:text-lg !mt-0">
+              {highlights.items.map((item) => (
+                <li key={item.id}>
+                  <strong>{item.name}</strong>
+                  {item.description && (
+                    <>
+                      {' — '}
+                      <InlineText text={item.description} keyPrefix={item.id} />
+                    </>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        <div className="text-sm md:text-base">
           <RichText work={homePage} />
         </div>
         <ProfileLinks className="mt-4 not-prose text-sm" />

@@ -47,9 +47,9 @@
     "headline": "schema:headline",
     "hasPart": {
       "@id": "schema:hasPart",
-      "@container": "@set",
-      "@type": "@id"
+      "@container": "@set"
     },
+    "abstract": "schema:abstract",
     "isPartOf": {
       "@id": "schema:isPartOf",
       "@type": "@id"
