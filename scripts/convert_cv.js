@@ -24,6 +24,7 @@ const fs = require('fs');
 const path = require('path');
 const Handlebars = require('handlebars');
 const { parseISO, format } = require('date-fns');
+const { cvSummaryFromSite } = require('../lib/siteWorks');
 
 // ---------------------------------------------------------------------------
 // Tunable constants (top-of-file by design — easy to dial in/out)
@@ -149,8 +150,14 @@ const annotatedWork = cvData.work
   }))
   .sort((a, b) => b._effectiveEnd - a._effectiveEnd);
 
+const basics = {
+  ...cvData.basics,
+  summary: cvSummaryFromSite(cvData),
+};
+
 let renderData = {
   ...cvData,
+  basics,
   work: annotatedWork,
   canonicalSchemaUrl,
   docKeywords,
@@ -168,6 +175,7 @@ if (mode === 'summary') {
 
   renderData = {
     ...cvData,
+    basics,
     work: annotatedWork,
     canonicalSchemaUrl,
     docKeywords,

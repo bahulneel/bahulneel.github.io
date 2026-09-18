@@ -5,7 +5,7 @@ def cv_to_adoc:
 
   == Professional Summary
 
-  \(.basics.summary)
+  \((.basics.subjectOf // []) | map(select((.["@type"] | if type == "array" then . else [.] end) | index("WebSite"))) | .[0].text // .[0].description)
 
   == Professional Experience
   " +
